@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask the Evidence — Cognitive Security &amp; AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .modes { display: flex; gap: .5rem; margin: 0 0 1.2rem; flex-wrap: wrap; }
+  .modes button {
+    font: 600 .82rem var(--sans); letter-spacing: .03em;
+    padding: .45rem 1rem; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--hairline); background: var(--bg-raised); color: var(--muted);
+    transition: all .15s ease;
+  }
+  .modes button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .unlock { display: none; margin: 0 0 1.2rem; }
+  .unlock.show { display: block; }
+  .unlock input {
+    width: 100%; padding: .6rem 1rem; font: .9rem ui-monospace, monospace;
+    border: 1px solid var(--hairline); border-radius: 10px;
+    background: var(--bg-raised); color: var(--ink);
+  }
+  .unlock p { font-size: .8rem; color: var(--faint); margin: .4rem 0 0; }
+  #status { font-size: .82rem; color: var(--faint); margin: .5rem 0 0; min-height: 1.2em; }
+  .qrow { display: flex; gap: .6rem; }
+  .qrow button {
+    font: 600 1rem var(--sans); padding: 0 1.4rem; border-radius: 999px;
+    border: none; background: var(--accent); color: #fff; cursor: pointer;
+  }
+  .qrow button:disabled { opacity: .45; cursor: default; }
+  #log { margin-top: 2rem; }
+  .youq {
+    font-family: var(--serif); font-size: 1.15rem; font-weight: 650;
+    margin: 2.2rem 0 .9rem; padding-left: .8rem; border-left: 3px solid var(--accent);
+  }
+  .hit .prov {
+    display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .hit .passage { font-size: .95rem; margin: .35rem 0 .2rem; }
+  .hit mark { background: color-mix(in srgb, var(--accent) 16%, transparent);
+              color: inherit; border-radius: 3px; padding: 0 .1em; }
+  .hit .type { font-size: .64rem; font-weight: 700; letter-spacing: .09em;
+               text-transform: uppercase; background: var(--accent-soft); color: var(--accent);
+               border-radius: 5px; padding: .14rem .48rem; white-space: nowrap; }
+  .noresult { color: var(--muted); font-style: italic; }
+  .guarantee {
+    border: 1px solid var(--gold); border-radius: 12px; background: var(--quote-bg);
+    padding: .8rem 1.1rem; font-size: .88rem; color: var(--muted); margin: 0 0 1.6rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a><a class="here" href="ask.html">Ask the Evidence</a></nav>
+
+  <header>
+    <h1>Ask the Evidence</h1>
+    <p class="sub">Ask a question; get back the exact passages from the collection that address it,
+    each with its source, year, and page. This is verbatim retrieval — <b>no AI writes the
+    answers</b>, so nothing can be made up. For synthesis across papers, see the
+    <a href="synthesis.html">Synthesis</a> page.</p>
+  </header>
+
+  <div class="guarantee">Every result below is a verbatim string from the corpus — either a
+  machine-verified quote from a paper (with page number) or curated metadata from the catalog.
+  Retrieval is ranked keyword search (BM25) running entirely in your browser; your questions are
+  never sent to any server or AI service.</div>
+
+  <div class="modes">
+    <button id="m-pub" class="on">Verified evidence (public)</button>
+    <button id="m-full">Full text of all papers (team)</button>
+  </div>
+
+  <div class="unlock" id="unlock">
+    <input id="token" type="password" placeholder="GitHub token with read access to cognitive-security-research…">
+    <p>Team members only: paste a fine-grained GitHub personal-access token (read-only
+    “Contents” permission on the private repo). It is stored only in this browser
+    (localStorage) and used solely to fetch the paper text from the private repository.</p>
+  </div>
+
+  <div class="qrow">
+    <input id="q" type="search" placeholder="e.g. does sycophancy reduce trust? · false memories · cognitive forcing functions" autocomplete="off">
+    <button id="go" disabled>Ask</button>
+  </div>
+  <div id="status">Loading verified evidence…</div>
+
+  <div id="log"></div>
+
+  <footer>Verbatim retrieval over the cognitive-security-research collection. Public corpus:
+  verified quotes, claims, and summaries. Team corpus: page-anchored passages from every PDF,
+  loaded privately. No generative AI is involved in producing results.</footer>
+</main>
+
+<script>
+"use strict";
+const REPO = "amberbellou/cognitive-security-research";
+const BLOB = `https://github.com/${REPO}/blob/main/`;
+const RAW_FULL = `https://raw.githubusercontent.com/${REPO}/main/analysis/corpus-fulltext.json`;
+
+const STOP = new Set(("a an and are as at be but by for from has have how in is it its of on or "
+ + "that the to was were what when where which who will with do does did not this these those "
+ + "can could should would may might we you they i he she").split(" "));
+
+function tokenize(s) {
+  return s.toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length > 1 && !STOP.has(w));
+}
+
+function buildIndex(corpus) {
+  const postings = new Map();          // term -> [ [docId, tf], ... ]
+  const dl = new Array(corpus.passages.length);
+  let total = 0;
+  corpus.passages.forEach((p, id) => {
+    const toks = tokenize(p.text);
+    dl[id] = toks.length || 1;
+    total += dl[id];
+    const tf = new Map();
+    toks.forEach(t => tf.set(t, (tf.get(t) || 0) + 1));
+    tf.forEach((n, t) => {
+      if (!postings.has(t)) postings.set(t, []);
+      postings.get(t).push([id, n]);
+    });
+  });
+  return { postings, dl, avgdl: total / (dl.length || 1), N: dl.length };
+}
+
+function search(corpus, idx, query, topk = 8) {
+  const terms = [...new Set(tokenize(query))];
+  const scores = new Map();
+  const k1 = 1.5, b = 0.75;
+  terms.forEach(t => {
+    const plist = idx.postings.get(t);
+    if (!plist) return;
+    const idf = Math.log((idx.N - plist.length + 0.5) / (plist.length + 0.5) + 1);
+    plist.forEach(([id, tf]) => {
+      const s = idf * tf * (k1 + 1) / (tf + k1 * (1 - b + b * idx.dl[id] / idx.avgdl));
+      scores.set(id, (scores.get(id) || 0) + s);
+    });
+  });
+  return [...scores.entries()].sort((a, b2) => b2[1] - a[1]).slice(0, topk)
+    .map(([id, s]) => ({ ...corpus.passages[id], score: s }));
+}
+
+function esc(s) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function highlight(text, query) {
+  let out = esc(text);
+  [...new Set(tokenize(query))].forEach(t => {
+    out = out.replace(new RegExp(`(?<![\\w])(${t})`, "gi"), "<mark>$1</mark>");
+  });
+  return out;
+}
+
+// ── state ─────────────────────────────────────────────────────────────────
+const S = { mode: "pub", pub: null, full: null, pubIdx: null, fullIdx: null };
+const $ = id => document.getElementById(id);
+const status = m => { $("status").textContent = m; };
+
+async function loadPublic() {
+  const r = await fetch("corpus-public.json");
+  S.pub = await r.json();
+  S.pubIdx = buildIndex(S.pub);
+  status(`Verified evidence ready — ${S.pub.passages.length} passages from ${S.pub.papers.length} papers.`);
+  $("go").disabled = false;
+}
+
+async function loadFull() {
+  if (S.full) { status(readyFullMsg()); return; }
+  // local/dev fallback first, then private fetch with token
+  try {
+    const r = await fetch("corpus-fulltext.json");
+    if (r.ok) { S.full = await r.json(); finishFull(); return; }
+  } catch (e) { /* not local */ }
+  const tok = localStorage.getItem("cogsec_gh_token") || $("token").value.trim();
+  if (!tok) { status("Paste your GitHub token above, then ask a question."); return; }
+  status("Fetching full text from the private repository…");
+  try {
+    const r = await fetch(RAW_FULL, { headers: { Authorization: "token " + tok } });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    S.full = await r.json();
+    localStorage.setItem("cogsec_gh_token", tok);
+    finishFull();
+  } catch (e) {
+    status("Could not fetch the team corpus (" + e.message +
+           "). Check that your token has read access to " + REPO + ".");
+  }
+}
+function finishFull() {
+  status("Building search index…");
+  setTimeout(() => { S.fullIdx = buildIndex(S.full); status(readyFullMsg()); $("go").disabled = false; }, 30);
+}
+function readyFullMsg() {
+  return `Full text ready — ${S.full.passages.length.toLocaleString()} page-anchored passages from ${S.full.papers.length} papers.`;
+}
+
+function setMode(m) {
+  S.mode = m;
+  $("m-pub").classList.toggle("on", m === "pub");
+  $("m-full").classList.toggle("on", m === "full");
+  $("unlock").classList.toggle("show", m === "full" && !S.full);
+  $("go").disabled = m === "pub" ? !S.pubIdx : !S.fullIdx;
+  if (m === "full") loadFull();
+  else if (S.pubIdx) status(`Verified evidence ready — ${S.pub.passages.length} passages from ${S.pub.papers.length} papers.`);
+}
+
+function ask() {
+  const q = $("q").value.trim();
+  if (!q) return;
+  const corpus = S.mode === "pub" ? S.pub : S.full;
+  const idx = S.mode === "pub" ? S.pubIdx : S.fullIdx;
+  if (!corpus || !idx) return;
+  const hits = search(corpus, idx, q);
+  const log = $("log");
+  const block = document.createElement("div");
+  let html = `<div class="youq">${esc(q)}</div>`;
+  if (!hits.length) {
+    html += `<p class="noresult">No passage in this corpus matches that phrasing — try different terms
+             (the search is keyword-based, so use words the papers would use).</p>`;
+  }
+  hits.forEach(h => {
+    const paper = corpus.papers[h.k];
+    const link = BLOB + encodeURI(paper.path).replace(/#/g, "%23");
+    const page = h.p ? `PDF p.${h.p}` : (h.page ? `p.${h.page}` : "");
+    const type = h.type || "full text";
+    html += `<article class="card hit">
+      <div class="prov"><span class="meta">${esc(paper.authors.split(",")[0])} ${esc(String(paper.year))} ·
+        ${esc(paper.topic)} ${page ? "· " + page : ""}</span>
+        <span class="type">${esc(type)}</span></div>
+      <p class="passage">“${highlight(h.text, q)}”</p>
+      <p class="meta" style="text-transform:none;letter-spacing:0"><a href="${link}" target="_blank" rel="noopener">${esc(paper.title)}</a></p>
+    </article>`;
+  });
+  block.innerHTML = html;
+  log.prepend(block);
+  $("q").select();
+}
+
+$("m-pub").onclick = () => setMode("pub");
+$("m-full").onclick = () => setMode("full");
+$("go").onclick = ask;
+$("q").addEventListener("keydown", e => { if (e.key === "Enter") ask(); });
+$("token").addEventListener("change", loadFull);
+loadPublic();
+</script>
+</body>
+</html>
