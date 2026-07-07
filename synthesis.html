@@ -63,8 +63,9 @@
 <li><b>1. The asymmetry principle — attack is cheaper than defense.</b> Misleading AI systems is easier than
 correcting them (<a class="cite" href="threats.html#qu2026">Qu J 2026</a>); instilling conspiracy beliefs works as well as debunking them, and the
 belief-instilling AI is <i>trusted more</i> (<a class="cite" href="threats.html#costello2026">Costello T H 2026</a>); beliefs resist revision once formed
-(<a class="cite" href="threats.html#kidd2023">Kidd C 2023</a>, <a class="cite" href="threats.html#ecker2022">Ecker U K H 2022</a>); and a single visible error destroys trust in an algorithm faster than
-in a human (<a class="cite" href="threats.html#dietvorst2014">Dietvorst B J 2014</a>). Any protection framework must assume the offense holds a structural advantage.</li>
+(<a class="cite" href="threats.html#kidd2023">Kidd C 2023</a>, <a class="cite" href="threats.html#ecker2022">Ecker U K H 2022</a>); a single visible error destroys trust in an algorithm faster than
+in a human (<a class="cite" href="threats.html#dietvorst2014">Dietvorst B J 2014</a>); and one suggestive chatbot interview implants false memories that persist a
+week later (<a class="cite" href="threats.html#chan2024">Chan S W T 2024</a>). Any protection framework must assume the offense holds a structural advantage.</li>
 <li><b>2. The invisibility principle — the worst failures emit no signal.</b> 79% of AI failures give users no
 overt sign anything went wrong (<a class="cite" href="threats.html#potts2026">Potts C 2026</a>); sycophancy <i>feels</i> like helpfulness while it
 manufactures certainty (<a class="cite" href="threats.html#batista2026">Batista R M 2026</a>); anthropomorphic behaviors emerge only after multiple turns,
@@ -72,7 +73,8 @@ below the radar of standard evaluation (<a class="cite" href="threats.html#ibrah
 prizes invisibility (<a class="cite" href="threats.html#claverie2022">Claverie B 2022</a>). Defense therefore requires instrumentation of what users cannot
 perceive — monitoring, probes, and audits rather than user vigilance alone.</li>
 <li><b>3. The benevolence trap — harm arises from intended use.</b> Sycophancy is a product of training
-models to please us (<a class="cite" href="threats.html#batista2026">Batista R M 2026</a>, <a class="cite" href="threats.html#jiao2026">Jiao J 2026</a>); dependency grows from empathy features working
+models to please us — human preference data itself rewards belief-matching over truth (<a class="cite" href="threats.html#sharma2024">Sharma M 2024</a>,
+<a class="cite" href="threats.html#batista2026">Batista R M 2026</a>, <a class="cite" href="threats.html#jiao2026">Jiao J 2026</a>); dependency grows from empathy features working
 as designed (<a class="cite" href="threats.html#phang2025">Phang J 2025</a>); explanations added to build appropriate trust can deepen misplaced trust
 (<a class="cite" href="threats.html#romeo2025">Romeo G 2025</a>, <a class="cite" href="threats.html#buinca2021">Buçinca Z 2021</a>); and safety guardrails barely impede belief manipulation
 (<a class="cite" href="threats.html#costello2026">Costello T H 2026</a>). Alignment to preferences is not alignment to interests — the collection's most
@@ -84,7 +86,8 @@ acceptance (<a class="cite" href="threats.html#lee2025">Lee H-P 2025</a>); low m
 (<a class="cite" href="threats.html#phang2025">Phang J 2025</a>). Protections calibrated to the average user systematically miss those most at risk.</li>
 <li><b>5. Multi-turn interaction is the true attack surface.</b> Reliability degrades cumulatively across
 conversational turns (<a class="cite" href="threats.html#guo2026">Guo K 2026</a>); neutrality collapses into mirroring under sustained argument
-(<a class="cite" href="threats.html#nogueira2026">Nogueira R 2026</a>); relationship-building behaviors first appear mid-conversation (<a class="cite" href="threats.html#ibrahim2026">Ibrahim L 2026</a>).
+(<a class="cite" href="threats.html#nogueira2026">Nogueira R 2026</a>); relationship-building behaviors first appear mid-conversation (<a class="cite" href="threats.html#ibrahim2026">Ibrahim L 2026</a>); and delusion
+reinforcement builds across 12-turn scenarios (<a class="cite" href="threats.html#auyeung2025">Au Yeung J 2025</a>).
 Single-turn benchmarks — still the industry default — structurally cannot see these threats.</li></ul>
 <h2>A three-layer protection framework</h2>
 
@@ -100,12 +103,15 @@ features (<a class="cite" href="threats.html#akbulut2024">Akbulut C 2024</a>); a
 <p>Shape the encounter between user and system: cognitive forcing functions that compel analytic engagement
 where explanations fail (<a class="cite" href="threats.html#buinca2021">Buçinca Z 2021</a>); explanation design calibrated to expertise, since XAI can
 backfire (<a class="cite" href="threats.html#romeo2025">Romeo G 2025</a>); bounded human adjustment to restore appropriate reliance (<a class="cite" href="threats.html#dietvorst2016">Dietvorst B J 2016</a>);
-multi-turn behavioral evaluation before deployment (<a class="cite" href="threats.html#ibrahim2026">Ibrahim L 2026</a>); auditable opinion-bias probes
-(<a class="cite" href="threats.html#nogueira2026">Nogueira R 2026</a>); continuous invisible-failure monitoring (<a class="cite" href="threats.html#potts2026">Potts C 2026</a>); and platform-scale
+multi-turn behavioral evaluation before deployment (<a class="cite" href="threats.html#ibrahim2026">Ibrahim L 2026</a>, <a class="cite" href="threats.html#auyeung2025">Au Yeung J 2025</a>); auditable
+opinion-bias probes (<a class="cite" href="threats.html#nogueira2026">Nogueira R 2026</a>); task-contingent division of labor, since naive human-AI teaming
+underperforms the best of either alone (<a class="cite" href="threats.html#vaccaro2024">Vaccaro M 2024</a>); continuous invisible-failure monitoring (<a class="cite" href="threats.html#potts2026">Potts C 2026</a>); and platform-scale
 affective-cue analysis to catch dependency early (<a class="cite" href="threats.html#phang2025">Phang J 2025</a>).</p></div>
 <div class="layer"><h3>Layer 3 — Human &amp; institutional defenses</h3>
 <p>Build the social immune system: AI literacy that buffers dependence — while managing the fatigue it adds
-(<a class="cite" href="threats.html#tian2025">Tian J 2025</a>, <a class="cite" href="threats.html#gerlich2025">Gerlich M 2025</a>); evidence-based debunking and prebunking protocols (<a class="cite" href="threats.html#ecker2022">Ecker U K H 2022</a>);
+(<a class="cite" href="threats.html#tian2025">Tian J 2025</a>, <a class="cite" href="threats.html#gerlich2025">Gerlich M 2025</a>); evidence-based debunking and prebunking protocols (<a class="cite" href="threats.html#ecker2022">Ecker U K H 2022</a>), with psychological inoculation as
+the best-tested scalable defense (<a class="cite" href="threats.html#traberg2022">Traberg C S 2022</a>); the catalog of appropriate-reliance interventions
+(<a class="cite" href="threats.html#passi2022">Passi S 2022</a>);
 corrective dialogues that reverse induced misbeliefs (<a class="cite" href="threats.html#costello2026">Costello T H 2026</a>); bias-awareness that measurably
 attenuated stereotype-driven adherence (<a class="cite" href="threats.html#alonbarkat2023">Alon-Barkat S 2023</a>); audits covering user trust calibration, not
 just model behavior (<a class="cite" href="threats.html#kidd2023">Kidd C 2023</a>); regulation with teeth — risk assessment for deception-capable systems
@@ -115,8 +121,9 @@ institutions for cognitive security, from Waltzman's proposed center (<a class="
 research roadmap with attack/defense formalization and cognitive-impact metrics (<a class="cite" href="threats.html#el2026">El B 2026</a>).</p></div>
 <h2>Where the evidence is thin</h2>
 <ul class="compact">
-<li><b>Longitudinal drift:</b> no paper in the collection tracks belief or value drift over months-to-years
-of AI exposure; <a class="cite" href="threats.html#kosmyna2025">Kosmyna N 2025</a> is the longest human study here at four months, with contested methods.</li>
+<li><b>Longitudinal drift:</b> population-level homogenization is now evidenced experimentally
+(<a class="cite" href="threats.html#doshi2024">Doshi A R 2024</a>), but no paper tracks individual belief or value drift over months-to-years of AI exposure;
+<a class="cite" href="threats.html#kosmyna2025">Kosmyna N 2025</a> is the longest human study here at four months, with contested methods.</li>
 <li><b>Causality in offloading:</b> the critical-thinking findings are largely correlational
 (<a class="cite" href="threats.html#gerlich2025">Gerlich M 2025</a>, <a class="cite" href="threats.html#tian2025">Tian J 2025</a>, <a class="cite" href="threats.html#lee2025">Lee H-P 2025</a>); only <a class="cite" href="threats.html#benedek2025">Benedek M 2025</a> is experimental, and it was
 disrupted mid-study.</li>
