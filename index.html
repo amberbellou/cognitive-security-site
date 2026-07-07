@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cognitive Security &amp; AI — Research Papers</title>
+<style>
+  :root {
+    --bg: #fafaf7; --fg: #1a1a1a; --muted: #666; --card: #fff;
+    --border: #e3e2dc; --accent: #6b4fbb; --chip: #efedf7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14141a; --fg: #eaeaea; --muted: #9a9aa5; --card: #1e1e27;
+      --border: #2e2e3a; --accent: #a78ff0; --chip: #26243a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  header p.sub { color: var(--muted); margin: 0 0 1.5rem; }
+  #q {
+    width: 100%; padding: .7rem 1rem; font-size: 1rem; border-radius: 10px;
+    border: 1px solid var(--border); background: var(--card); color: var(--fg);
+    outline: none;
+  }
+  #q:focus { border-color: var(--accent); }
+  .topic { margin-top: 2.2rem; }
+  .topic h2 {
+    font-size: 1.25rem; margin: 0 0 .15rem; border-bottom: 1px solid var(--border);
+    padding-bottom: .35rem;
+  }
+  .count {
+    font-size: .8rem; background: var(--chip); color: var(--accent);
+    border-radius: 999px; padding: .1rem .55rem; vertical-align: middle;
+  }
+  .topic-desc { color: var(--muted); font-size: .88rem; margin: .3rem 0 .9rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: .9rem 1.1rem; margin-bottom: .7rem;
+  }
+  .card h3 { margin: 0 0 .25rem; font-size: 1.02rem; }
+  .card a { color: var(--accent); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: .85rem; margin: 0 0 .35rem; }
+  .summary { font-size: .9rem; margin: 0; }
+  .hidden { display: none; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Cognitive Security &amp; AI</h1>
+    <p class="sub">22 research papers across 6 topics — sycophancy, automation bias,
+    cognitive offloading, and other human-AI risks. PDFs open in the (private) source
+    repository.</p>
+    <input id="q" type="search" placeholder="Search title, author, year, topic…"
+           autocomplete="off">
+  </header>
+  
+    <section class="topic" data-topic="cognitive-security-frameworks">
+      <h2>Cognitive Security Frameworks <span class="count">4</span></h2>
+      <p class="topic-desc">Overview papers, taxonomies, and framework proposals for cognitive security in AI</p>
+      <div class="cards">
+      <article class="card" data-search="cognitive security for personal devices greenstadt r, beal j 2008 cognitive-security-frameworks proposes cognitive-inspired security models for personal devices: continuous multimodal biometrics and adjustably autonomous security agents that mimic human trust mechanisms. (aisec 2008)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Greenstadt2008_CognitiveSecurityPersonalDevices.pdf" target="_blank" rel="noopener">Cognitive Security for Personal Devices</a></h3>
+        <p class="meta">Greenstadt R, Beal J · 2008</p>
+        <p class="summary">Proposes cognitive-inspired security models for personal devices: continuous multimodal biometrics and adjustably autonomous security agents that mimic human trust mechanisms. (AISec 2008)</p>
+      </article>
+      <article class="card" data-search="on challenges of ai to cognitive security and safety huang r, zheng x, shang y, xue x 2023 cognitive-security-frameworks analyzes cognitive domain security risks from llms; introduces mimicry computing, mimicry defense, and mimicry intelligence as bio-inspired countermeasures. (security and safety, 2023)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Huang2023_ChallengesAICognitiveSecuritySafety.pdf" target="_blank" rel="noopener">On Challenges of AI to Cognitive Security and Safety</a></h3>
+        <p class="meta">Huang R, Zheng X, Shang Y, Xue X · 2023</p>
+        <p class="summary">Analyzes cognitive domain security risks from LLMs; introduces Mimicry Computing, Mimicry Defense, and Mimicry Intelligence as bio-inspired countermeasures. (Security and Safety, 2023)</p>
+      </article>
+      <article class="card" data-search="international ai safety report 2026 bengio y (chair) et al. 2026 cognitive-security-frameworks authoritative multi-nation safety report covering systemic ai risks including cognitive and societal harms; synthesizes consensus across 30+ countries on risk categories, safety evaluation, and governance priorities. (feb 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Bengio2026_InternationalAISafetyReport.pdf" target="_blank" rel="noopener">International AI Safety Report 2026</a></h3>
+        <p class="meta">Bengio Y (Chair) et al. · 2026</p>
+        <p class="summary">Authoritative multi-nation safety report covering systemic AI risks including cognitive and societal harms; synthesizes consensus across 30+ countries on risk categories, safety evaluation, and governance priorities. (Feb 2026)</p>
+      </article>
+      <article class="card" data-search="position: ai development should prioritize cognitive security el b, su s, pappu a, yin p, heng j, heng e, wang r, haupt a, zou j 2026 cognitive-security-frameworks argues that generative ai r&amp;d must treat cognitive security as a first-class concern; proposes a framework covering sycophancy, epistemic autonomy, and ai-mediated influence harms. (iclr 2026 workshop)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/El2026_AIDevShouldPrioritizeCognitiveSecurity.pdf" target="_blank" rel="noopener">Position: AI Development Should Prioritize Cognitive Security</a></h3>
+        <p class="meta">El B, Su S, Pappu A, Yin P, Heng J, Heng E, Wang R, Haupt A, Zou J · 2026</p>
+        <p class="summary">Argues that generative AI R&amp;D must treat cognitive security as a first-class concern; proposes a framework covering sycophancy, epistemic autonomy, and AI-mediated influence harms. (ICLR 2026 Workshop)</p>
+      </article>
+      </div>
+    </section>
+    <section class="topic" data-topic="sycophancy">
+      <h2>Sycophancy <span class="count">6</span></h2>
+      <p class="topic-desc">AI agreement bias, validation-seeking, flattery loops</p>
+      <div class="cards">
+      <article class="card" data-search="flattering to deceive: the impact of sycophantic behavior on user trust in large language models carro m v 2024 sycophancy empirical study comparing sycophantic vs. standard gpt responses; finds sycophantic behavior negatively impacts trust calibration and reinforces discriminatory biases and misinformation. (arxiv dec 2024)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Carro2024_FlatteringToDeceiveSycophancyUserTrust.pdf" target="_blank" rel="noopener">Flattering to Deceive: The Impact of Sycophantic Behavior on User Trust in Large Language Models</a></h3>
+        <p class="meta">Carro M V · 2024</p>
+        <p class="summary">Empirical study comparing sycophantic vs. standard GPT responses; finds sycophantic behavior negatively impacts trust calibration and reinforces discriminatory biases and misinformation. (arXiv Dec 2024)</p>
+      </article>
+      <article class="card" data-search="a rational analysis of the effects of sycophantic ai batista r m, griffiths t l 2026 sycophancy bayesian model shows sycophancy inflates user confidence without moving toward truth; n=557 wason-task experiment finds unmodified llms suppress discovery as much as explicitly sycophantic prompting; unbiased ai yields 5× higher discovery. (princeton preprint, feb 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Batista2026_RationalAnalysisSycophancyAI.pdf" target="_blank" rel="noopener">A Rational Analysis of the Effects of Sycophantic AI</a></h3>
+        <p class="meta">Batista R M, Griffiths T L · 2026</p>
+        <p class="summary">Bayesian model shows sycophancy inflates user confidence without moving toward truth; N=557 Wason-task experiment finds unmodified LLMs suppress discovery as much as explicitly sycophantic prompting; unbiased AI yields 5× higher discovery. (Princeton preprint, Feb 2026)</p>
+      </article>
+      <article class="card" data-search="easier to mislead than to correct: harmful and beneficial revision in llm conformity qu j, fu l, hu y 2026 sycophancy controlled multi-agent study: peer agreement makes it far easier to mislead llms than to correct them; social cues (consensus + authority labels) drive harmful revisions across 4 llms and 7 qa datasets. (amazon/georgia tech, arxiv jun 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Qu2026_EasierToMisleadThanToCorrect.pdf" target="_blank" rel="noopener">Easier to Mislead Than to Correct: Harmful and Beneficial Revision in LLM Conformity</a></h3>
+        <p class="meta">Qu J, Fu L, Hu Y · 2026</p>
+        <p class="summary">Controlled multi-agent study: peer agreement makes it far easier to mislead LLMs than to correct them; social cues (consensus + authority labels) drive harmful revisions across 4 LLMs and 7 QA datasets. (Amazon/Georgia Tech, arXiv Jun 2026)</p>
+      </article>
+      <article class="card" data-search="measuring opinion bias and sycophancy via llm-based persuasion nogueira r, bonás g k, almeida t s, roque a, pires r, abonizio h, laitz t, larcher c, junior r m, piau m 2026 sycophancy introduces llm-bias-bench to uncover hidden llm positions on contested topics; finds models hold opinions that propagate at scale into user decisions; robust to evasive disclaimers. (maritaca ai, arxiv apr 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Nogueira2026_MeasuringOpinionBiasSycophancy.pdf" target="_blank" rel="noopener">Measuring Opinion Bias and Sycophancy via LLM-based Persuasion</a></h3>
+        <p class="meta">Nogueira R, Bonás G K, Almeida T S, Roque A, Pires R, Abonizio H, Laitz T, Larcher C, Junior R M, Piau M · 2026</p>
+        <p class="summary">Introduces llm-bias-bench to uncover hidden LLM positions on contested topics; finds models hold opinions that propagate at scale into user decisions; robust to evasive disclaimers. (Maritaca AI, arXiv Apr 2026)</p>
+      </article>
+      <article class="card" data-search="stop listening to me! how multi-turn conversations can degrade llm reliability guo k, yan c, baidya a, brown k, gao x, xiong j, yin z, malin b 2026 sycophancy introduces stick-or-switch framework; evaluates 17 llms on 3 clinical benchmarks; documents pervasive conversation tax where sycophantic switching accumulates across turns, degrading reliability in high-stakes healthcare contexts. (vanderbilt / intuit, arxiv may 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Guo2026_StopListeningToMeMultiTurnLLM.pdf" target="_blank" rel="noopener">Stop Listening to Me! How Multi-turn Conversations Can Degrade LLM Reliability</a></h3>
+        <p class="meta">Guo K, Yan C, Baidya A, Brown K, Gao X, Xiong J, Yin Z, Malin B · 2026</p>
+        <p class="summary">Introduces stick-or-switch framework; evaluates 17 LLMs on 3 clinical benchmarks; documents pervasive conversation tax where sycophantic switching accumulates across turns, degrading reliability in high-stakes healthcare contexts. (Vanderbilt / Intuit, arXiv May 2026)</p>
+      </article>
+      <article class="card" data-search="sycophancy is not one thing: causal separation of sycophantic behaviors in llms vennemeyer d, duong p a, zhan t, jiang t 2026 sycophancy decomposes sycophancy into sycophantic agreement vs. sycophantic praise using activation analysis; shows they are causally distinct and independently suppressible across model families and scales. (u cincinnati / cmu, arxiv 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Vennemeyer2026_SycophancyIsNotOneThing.pdf" target="_blank" rel="noopener">Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs</a></h3>
+        <p class="meta">Vennemeyer D, Duong P A, Zhan T, Jiang T · 2026</p>
+        <p class="summary">Decomposes sycophancy into sycophantic agreement vs. sycophantic praise using activation analysis; shows they are causally distinct and independently suppressible across model families and scales. (U Cincinnati / CMU, arXiv 2026)</p>
+      </article>
+      </div>
+    </section>
+    <section class="topic" data-topic="cognitive-offloading">
+      <h2>Cognitive Offloading <span class="count">5</span></h2>
+      <p class="topic-desc">Over-reliance on AI for memory, decision-making, cognition</p>
+      <div class="cards">
+      <article class="card" data-search="ai tools in society: impacts on cognitive offloading and the future of critical thinking gerlich m 2025 cognitive-offloading mixed-method n=666; significant negative correlation between ai tool usage and critical thinking mediated by cognitive offloading; younger users show higher dependency and lower critical thinking scores. (societies, mdpi 2025)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Gerlich2025_AIToolsCognitiveOffloadingCriticalThinking.pdf" target="_blank" rel="noopener">AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking</a></h3>
+        <p class="meta">Gerlich M · 2025</p>
+        <p class="summary">Mixed-method N=666; significant negative correlation between AI tool usage and critical thinking mediated by cognitive offloading; younger users show higher dependency and lower critical thinking scores. (Societies, MDPI 2025)</p>
+      </article>
+      <article class="card" data-search="impact of ai tools on learning outcomes: decreasing knowledge and over-reliance benedek m, sziklai b r 2025 cognitive-offloading rct at corvinus university: ai-permitted students scored higher on exams but showed lower genuine knowledge; ai substitutes knowledge acquisition rather than supporting it. (arxiv oct 2025)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Benedek2025_ImpactAIToolsLearningOutcomesOverReliance.pdf" target="_blank" rel="noopener">Impact of AI Tools on Learning Outcomes: Decreasing Knowledge and Over-Reliance</a></h3>
+        <p class="meta">Benedek M, Sziklai B R · 2025</p>
+        <p class="summary">RCT at Corvinus University: AI-permitted students scored higher on exams but showed lower genuine knowledge; AI substitutes knowledge acquisition rather than supporting it. (arXiv Oct 2025)</p>
+      </article>
+      <article class="card" data-search="learners' ai dependence and critical thinking: the psychological mechanism of fatigue and the social buffering role of ai literacy tian j, zhang r 2025 cognitive-offloading n=580 chinese university students; ai dependence lowers critical thinking via cognitive fatigue as mediator; ai/information literacy buffers this effect; moderated mediation model (process model 8). (acta psychologica, elsevier 2025)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Tian2025_LearnersAIDependenceCriticalThinkingFatigue.pdf" target="_blank" rel="noopener">Learners' AI Dependence and Critical Thinking: The Psychological Mechanism of Fatigue and the Social Buffering Role of AI Literacy</a></h3>
+        <p class="meta">Tian J, Zhang R · 2025</p>
+        <p class="summary">N=580 Chinese university students; AI dependence lowers critical thinking via cognitive fatigue as mediator; AI/information literacy buffers this effect; moderated mediation model (PROCESS Model 8). (Acta Psychologica, Elsevier 2025)</p>
+      </article>
+      <article class="card" data-search="a review of the negative effects of digital technology on cognition znidaric u, strumbelj e, machidona o 2026 cognitive-offloading integrative review of 500+ empirical studies; documents four mechanisms of cognitive harm (functional interference, neurochemical dysregulation, attention fragmentation, metacognitive substitution); flags generative ai as a new vector for higher-order cognitive erosion. (u ljubljana, arxiv feb 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Znidaric2026_ReviewNegativeEffectsDigitalTechCognition.pdf" target="_blank" rel="noopener">A Review of the Negative Effects of Digital Technology on Cognition</a></h3>
+        <p class="meta">Znidaric U, Strumbelj E, Machidona O · 2026</p>
+        <p class="summary">Integrative review of 500+ empirical studies; documents four mechanisms of cognitive harm (functional interference, neurochemical dysregulation, attention fragmentation, metacognitive substitution); flags generative AI as a new vector for higher-order cognitive erosion. (U Ljubljana, arXiv Feb 2026)</p>
+      </article>
+      <article class="card" data-search="to offload or not to offload: how ai may alleviate cognitive burden and related ethical reflections lindauer l 2026 cognitive-offloading examines ai cognitive offloading across healthcare, education, and defense; raises ethical concerns about dependency, autonomy loss, and limits of delegating cognition to machines. (tu munich ieai research brief q1 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Lindauer2026_ToOffloadOrNotToOffload.pdf" target="_blank" rel="noopener">To Offload or Not to Offload: How AI May Alleviate Cognitive Burden and Related Ethical Reflections</a></h3>
+        <p class="meta">Lindauer L · 2026</p>
+        <p class="summary">Examines AI cognitive offloading across healthcare, education, and defense; raises ethical concerns about dependency, autonomy loss, and limits of delegating cognition to machines. (TU Munich IEAI Research Brief Q1 2026)</p>
+      </article>
+      </div>
+    </section>
+    <section class="topic" data-topic="anthropomorphism">
+      <h2>Anthropomorphism <span class="count">2</span></h2>
+      <p class="topic-desc">Attributing human traits/intent/emotion to AI systems</p>
+      <div class="cards">
+      <article class="card" data-search="how ai encourages consumers to share their secrets? the role of anthropomorphism, personalisation, and privacy concerns and avenues for future research kronemann b, kizgin h, rana n, dwivedi y k 2022 anthropomorphism conceptual model showing anthropomorphic ai + personalisation positively predict information disclosure while privacy concerns negatively moderate it; applies personalisation-privacy paradox theory. (spanish journal of marketing - esic, 2022)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Kronemann2022_HowAIEncouragesConsumersShareSecrets.pdf" target="_blank" rel="noopener">How AI Encourages Consumers to Share Their Secrets? The Role of Anthropomorphism, Personalisation, and Privacy Concerns and Avenues for Future Research</a></h3>
+        <p class="meta">Kronemann B, Kizgin H, Rana N, Dwivedi Y K · 2022</p>
+        <p class="summary">Conceptual model showing anthropomorphic AI + personalisation positively predict information disclosure while privacy concerns negatively moderate it; applies personalisation-privacy paradox theory. (Spanish Journal of Marketing - ESIC, 2022)</p>
+      </article>
+      <article class="card" data-search="all too human? mapping and mitigating the risks from anthropomorphic ai akbulut c, weidinger l, manzini a, gabriel i, rieser v 2024 anthropomorphism maps past and present anthropomorphic ai design features; identifies risks (over-reliance, privacy loss, emotional attachment); proposes ethical foresight and mitigation research directions. (google deepmind / aaai 2024)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Akbulut2024_AllTooHumanRisksAnthropomorphicAI.pdf" target="_blank" rel="noopener">All Too Human? Mapping and Mitigating the Risks from Anthropomorphic AI</a></h3>
+        <p class="meta">Akbulut C, Weidinger L, Manzini A, Gabriel I, Rieser V · 2024</p>
+        <p class="summary">Maps past and present anthropomorphic AI design features; identifies risks (over-reliance, privacy loss, emotional attachment); proposes ethical foresight and mitigation research directions. (Google DeepMind / AAAI 2024)</p>
+      </article>
+      </div>
+    </section>
+    <section class="topic" data-topic="automation-bias">
+      <h2>Automation Bias <span class="count">4</span></h2>
+      <p class="topic-desc">Over-trusting automated decisions; under-riding AI errors</p>
+      <div class="cards">
+      <article class="card" data-search="human-ai interactions in public sector decision making: 'automation bias' and 'selective adherence' to algorithmic advice alon-barkat s, busuioc m 2023 automation-bias studies how public-sector decision-makers interact with algorithmic advice; finds both automation bias (uncritical acceptance) and selective adherence (strategic non-compliance); raises accountability concerns for ai in government. (journal of public administration research and theory, oxford 2023)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Busuioc2021_HumanAIPublicSectorAutomationBias.pdf" target="_blank" rel="noopener">Human-AI Interactions in Public Sector Decision Making: 'Automation Bias' and 'Selective Adherence' to Algorithmic Advice</a></h3>
+        <p class="meta">Alon-Barkat S, Busuioc M · 2023</p>
+        <p class="summary">Studies how public-sector decision-makers interact with algorithmic advice; finds both automation bias (uncritical acceptance) and selective adherence (strategic non-compliance); raises accountability concerns for AI in government. (Journal of Public Administration Research and Theory, Oxford 2023)</p>
+      </article>
+      <article class="card" data-search="automation bias in the ai act: on the legal implications of attempting to de-bias human oversight of ai laux j, ruschemeier h 2025 automation-bias analyzes eu ai act's mandate for human oversight and automation-bias awareness; finds aia's focus on providers inadequately addresses design and context as causes; argues harmonized standards must hold both providers and deployers accountable. (forthcoming, european journal of risk regulation)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Laux2025_AutomationBiasInAIAct.pdf" target="_blank" rel="noopener">Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI</a></h3>
+        <p class="meta">Laux J, Ruschemeier H · 2025</p>
+        <p class="summary">Analyzes EU AI Act's mandate for human oversight and automation-bias awareness; finds AIA's focus on providers inadequately addresses design and context as causes; argues harmonized standards must hold both providers and deployers accountable. (Forthcoming, European Journal of Risk Regulation)</p>
+      </article>
+      <article class="card" data-search="exploring automation bias in human-ai collaboration: a review and implications for explainable ai romeo g, conti d 2025 automation-bias systematic review of 35 studies (2015-2025); maps how automation bias manifests in high-stakes ai settings; finds xai explanations can paradoxically reinforce unwarranted trust; proposes design principles to calibrate reliance. (ai &amp; society, springer, © 2025)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Romeo2026_ExploringAutomationBiasHumanAICollaboration.pdf" target="_blank" rel="noopener">Exploring Automation Bias in Human-AI Collaboration: A Review and Implications for Explainable AI</a></h3>
+        <p class="meta">Romeo G, Conti D · 2025</p>
+        <p class="summary">Systematic review of 35 studies (2015-2025); maps how automation bias manifests in high-stakes AI settings; finds XAI explanations can paradoxically reinforce unwarranted trust; proposes design principles to calibrate reliance. (AI &amp; Society, Springer, © 2025)</p>
+      </article>
+      <article class="card" data-search="invisible failures in human–ai interactions potts c, sudhof m 2026 automation-bias analysis of 100k human-ai interactions (wildchat); finds 79% of ai failures are invisible — users give no overt signal something went wrong; identifies 8 failure archetypes with systematic co-occurrence patterns; failure rates dropped with newer models but invisibility remains. (bigspin ai / stanford, arxiv may 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Potts2026_InvisibleFailuresHumanAIInteractions.pdf" target="_blank" rel="noopener">Invisible Failures in Human–AI Interactions</a></h3>
+        <p class="meta">Potts C, Sudhof M · 2026</p>
+        <p class="summary">Analysis of 100K human-AI interactions (WildChat); finds 79% of AI failures are invisible — users give no overt signal something went wrong; identifies 8 failure archetypes with systematic co-occurrence patterns; failure rates dropped with newer models but invisibility remains. (Bigspin AI / Stanford, arXiv May 2026)</p>
+      </article>
+      </div>
+    </section>
+    <section class="topic" data-topic="emotional-dependency">
+      <h2>Emotional Dependency <span class="count">1</span></h2>
+      <p class="topic-desc">Emotional reliance, loneliness, companionship AI</p>
+      <div class="cards">
+      <article class="card" data-search="ai empathy erodes cognitive autonomy in younger users jiao j, murali a, afroogh s 2026 emotional-dependency argues affective alignment in ai constitutes affective sycophancy that erodes cognitive autonomy; rlhf reward models embed adult-focused helpfulness signals that promote emotional dependency in younger users; proposes stoic architectures for functional neutrality. (arxiv feb 2026)">
+        <h3><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Jiao2026_AIEmpathyErodesCognitiveAutonomy.pdf" target="_blank" rel="noopener">AI Empathy Erodes Cognitive Autonomy in Younger Users</a></h3>
+        <p class="meta">Jiao J, Murali A, Afroogh S · 2026</p>
+        <p class="summary">Argues affective alignment in AI constitutes affective sycophancy that erodes cognitive autonomy; RLHF reward models embed adult-focused helpfulness signals that promote emotional dependency in younger users; proposes stoic architectures for functional neutrality. (arXiv Feb 2026)</p>
+      </article>
+      </div>
+    </section>
+  <footer>Auto-generated from <code>catalog.json</code> by <code>sync.py</code>.</footer>
+</main>
+<script>
+  const q = document.getElementById("q");
+  q.addEventListener("input", () => {
+    const needle = q.value.trim().toLowerCase();
+    document.querySelectorAll(".card").forEach(c => {
+      c.classList.toggle("hidden", needle && !c.dataset.search.includes(needle));
+    });
+    document.querySelectorAll(".topic").forEach(s => {
+      const visible = s.querySelectorAll(".card:not(.hidden)").length;
+      s.classList.toggle("hidden", visible === 0);
+    });
+  });
+</script>
+</body>
+</html>
