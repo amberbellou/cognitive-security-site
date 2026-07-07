@@ -4,58 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Threat Map — Cognitive Security &amp; AI</title>
-<style>
-  :root {
-    --bg: #fafaf7; --fg: #1a1a1a; --muted: #666; --card: #fff;
-    --border: #e3e2dc; --accent: #6b4fbb; --chip: #efedf7; --quote: #f4f2fb;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #14141a; --fg: #eaeaea; --muted: #9a9aa5; --card: #1e1e27;
-            --border: #2e2e3a; --accent: #a78ff0; --chip: #26243a; --quote: #221f33; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg);
-         font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-  main { max-width: 880px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-  nav.top { margin-bottom: 1.6rem; font-size: .9rem; }
-  nav.top a { color: var(--accent); text-decoration: none; margin-right: 1.1rem; }
-  nav.top a.here { font-weight: 700; }
-  h1 { font-size: 1.8rem; margin: 0 0 .3rem; }
-  p.sub { color: var(--muted); margin: 0 0 1.6rem; }
-  h2 { font-size: 1.3rem; margin: 2.4rem 0 .2rem; border-bottom: 1px solid var(--border); padding-bottom: .35rem; }
-  h2 .tcode, h3 .tcode { color: var(--accent); font-family: ui-monospace, monospace; margin-right: .5rem; }
-  p.tdesc { color: var(--muted); font-size: .92rem; margin: .4rem 0 1rem; }
-  h3 { font-size: 1.05rem; margin: 1.4rem 0 .5rem; }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-          padding: .95rem 1.15rem; margin-bottom: .8rem; }
-  .card h4 { margin: 0 0 .2rem; font-size: .98rem; }
-  .card h4 a { color: var(--accent); text-decoration: none; }
-  .meta { color: var(--muted); font-size: .82rem; margin: 0 0 .5rem; }
-  .badge { display: inline-block; font-size: .68rem; font-weight: 700; letter-spacing: .04em;
-           background: var(--chip); color: var(--accent); border-radius: 5px;
-           padding: .1rem .4rem; margin-left: .5rem; vertical-align: middle; }
-  .claim { font-size: .92rem; margin: .45rem 0 .2rem; }
-  blockquote { margin: .25rem 0 .6rem; padding: .5rem .8rem; background: var(--quote);
-               border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;
-               font-size: .86rem; font-style: italic; }
-  blockquote .pg { font-style: normal; color: var(--muted); font-size: .78rem; }
-  .prot { font-size: .9rem; background: var(--chip); border-radius: 8px;
-          padding: .5rem .8rem; margin: .4rem 0; }
-  .prot b { color: var(--accent); }
-  a.cite { color: var(--accent); text-decoration: none; white-space: nowrap; }
-  a.cite:hover { text-decoration: underline; }
-  .note { border: 1px solid var(--border); border-radius: 10px; background: var(--card);
-          padding: .8rem 1rem; font-size: .87rem; color: var(--muted); margin: 1.4rem 0; }
-  footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; }
-  ul.compact li { margin-bottom: .45rem; font-size: .95rem; }
-  .layer { border: 1px solid var(--border); border-radius: 12px; background: var(--card);
-           padding: 1rem 1.2rem; margin: 1rem 0; }
-  .layer h3 { margin-top: 0; }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<nav class="top"><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a></nav>
+<nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a></nav>
 <h1>Cognitive Security Threat Map</h1>
 <p class="sub">Five threat classes against human cognition, built from 77 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
 <h2 id="T1"><span class="tcode">T1</span>Attacks on Belief Formation</h2>
