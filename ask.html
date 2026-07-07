@@ -148,8 +148,11 @@ function search(corpus, idx, query, topk = 8) {
 function esc(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
+function cleanQuote(t) {
+  return t.replace(/(\w)- (\w)/g, "$1$2").replace(/(\w) - (\w)/g, "$1$2").replace(/\s+/g, " ");
+}
 function highlight(text, query) {
-  let out = esc(text);
+  let out = esc(cleanQuote(text));
   [...new Set(tokenize(query))].forEach(t => {
     out = out.replace(new RegExp(`(?<![\\w])(${t})`, "gi"), "<mark>$1</mark>");
   });
