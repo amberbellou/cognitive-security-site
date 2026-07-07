@@ -13,7 +13,7 @@
 <main>
 <nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a><a href="ask.html">Ask the Evidence</a></nav>
 <h1>Cognitive Security Threat Map</h1>
-<p class="sub">Five threat classes against human cognition, built from 77 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
+<p class="sub">Five threat classes against human cognition, built from 84 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
 <h2 id="T1"><span class="tcode">T1</span>Attacks on Belief Formation</h2>
 <p class="tdesc">Threats that corrupt what people come to believe — not by breaking the machine, but by exploiting how human belief updating works.</p>
 <h3 id="T1a"><span class="tcode">T1a</span>Sycophantic reinforcement</h3>
@@ -444,6 +444,13 @@
 <blockquote>“The ability of humans to create and disseminate culture is often credited as the single most important factor of our succ” <span class="pg">— p.1, verified</span></blockquote>
 <p class="meta">Limitations: Perspective; empirical program subsequent.</p>
 </article>
+<article class="card" id="yakura2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-drift/Yakura2025_LLMInfluenceSpokenCommunication.pdf" target="_blank" rel="noopener">Empirical evidence of Large Language Model's influence on human spoken communication</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<p class="meta">Yakura H, Lopez-Lopez E, Brinkmann L, Serna I, Gupta P, Soraperra I, Rahwan I · 2025 · Econometric causal inference over 740,000 hours of academic talks and podcasts (Max Planck CHM)</p>
+<p class="claim">▸ Generative chatbots are a new cultural transmission medium at population scale.</p>
+<blockquote>“Recent chat- bots powered by generative artificial intelligence constitute a novel medium that encodes cultural patterns in their neural representations and disseminates them in conversations with hundreds of millions of people” <span class="pg">— p.1, verified</span></blockquote>
+<p class="meta">Limitations: Observational; word-frequency proxy for deeper linguistic change.</p>
+</article>
 <h2 id="T3"><span class="tcode">T3</span>Miscalibrated Trust &amp; Reliance</h2>
 <p class="tdesc">Threats living in the gap between how much people trust AI and how much they should.</p>
 <h3 id="T3a"><span class="tcode">T3a</span>Over-reliance &amp; automation bias</h3>
@@ -475,6 +482,13 @@
 <blockquote>“As algorithms become an influential component of government decision-making around the world, policymakers have debated how governments can attain the benefits of algo- rithms while prevent” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Institutional oversight:</b> Shift from individual human-in-the-loop to two-stage institutional justification with democratic review.</div>
 <p class="meta">Limitations: Policy analysis; government context.</p>
+</article>
+<article class="card" id="robinette2016">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Robinette2016_OvertrustOfRobots.pdf" target="_blank" rel="noopener">Overtrust of Robots in Emergency Evacuation Scenarios</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Robinette P, Li W, Allen R, Howard A M, Wagner A R · 2016 · Physical experiment: artificial smoke + fire alarms; participants choose whether to follow a previously faulty robot</p>
+<p class="claim">▸ All 26 participants followed the robot in the emergency — half had just seen it navigate poorly.</p>
+<blockquote>“all 26 participants followed the robot in the emergency, despite half observing the same robot perform poorly in a navigation guidance” <span class="pg">— p.1, verified</span></blockquote>
+<p class="meta">Limitations: Small N; single scenario; 2016-era robot.</p>
 </article>
 <article class="card" id="buinca2021">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/trust-calibration/Bucinca2021_ToTrustOrToThink_CognitiveForcingFunctions.pdf" target="_blank" rel="noopener">To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making</a><span class="badge" title="Experimental evidence">EXP</span></h4>
@@ -520,6 +534,13 @@
 <p class="claim">▸ Confidence in algorithms collapses faster than in humans after equivalent mistakes.</p>
 <blockquote>“This is because people more quickly lose confidence in algorithmic than human forecasters after seeing them make the same mistake” <span class="pg">— p.1, verified</span></blockquote>
 <p class="meta">Limitations: Forecasting tasks with student samples; pre-LLM 'algorithm' framing.</p>
+</article>
+<article class="card" id="logg2019">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/algorithm-aversion/Logg2019_AlgorithmAppreciation.pdf" target="_blank" rel="noopener">Algorithm Appreciation: People Prefer Algorithmic to Human Judgment</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Logg J M, Minson J A, Moore D A · 2019 · Six experiments on estimates and forecasts (OBHDP)</p>
+<p class="claim">▸ Lay people adhered more to advice labeled algorithmic than human — and researchers predicted the opposite.</p>
+<blockquote>“showthatlaypeopleadhere moretoadvicewhentheythinkitcomesfromanalgorithmthanfromaperson” <span class="pg">— p.1, verified</span></blockquote>
+<p class="meta">Limitations: Low-stakes judgments; label manipulation rather than real systems.</p>
 </article>
 <article class="card" id="dietvorst2016">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/algorithm-aversion/Overcoming%20Algorithm%20Aversion%20People%20Will%20Use%20Imperfect%20Algorithms%20If%20They%20Can%20E.pdf" target="_blank" rel="noopener">Overcoming Algorithm Aversion: People Will Use Imperfect Algorithms If They Can (Even Slightly) Modify Them</a><span class="badge" title="Experimental evidence">EXP</span></h4>
@@ -631,6 +652,29 @@
 <div class="prot"><b>Protection — Risk-stratified safeguards:</b> Identifies pre-existing mental-health conditions as the priority population for design safeguards and monitoring.</div>
 <p class="meta">Limitations: Mechanism proposal; case reports rather than epidemiology.</p>
 </article>
+<article class="card" id="morrin2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Morrin2025_DelusionsByDesign.pdf" target="_blank" rel="noopener">Delusions by design? How everyday AIs might be fuelling psychosis (and what can be done about it)</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Morrin H, Nicholls L, Levin M, Yiend J, Iyengar U, Bhattacharya S, Tognin S, MacCabe J, Twumasi R, Alderson-Day B, Pollak T A · 2025 · Clinical framework from phenomenological psychopathology and digital mental health (KCL, PsyArXiv)</p>
+<p class="claim">▸ The pressing reality is routine agential AI interaction by people with mental illness, not bespoke therapy bots.</p>
+<blockquote>“individuals with mental illness will increasingly engage in agential interactions with AI systems as a routine part of daily existence” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Clinical and design countermeasures:</b> Screening for AI-interaction patterns in psychiatric assessment; design changes to reduce belief-mirroring for vulnerable users.</div>
+<p class="meta">Limitations: Framework; case evidence still emerging.</p>
+</article>
+<article class="card" id="mehta2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Mehta2026_DynamicsOfDelusion.pdf" target="_blank" rel="noopener">The Dynamics of Delusion: Modeling Bidirectional False Belief Amplification in Human-Chatbot Dialogue</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Mehta A, Moore J, Anthis J R, Agnew W, Lin E, Yin P, Ong D C, Haber N, Dweck C · 2026 · Latent state modeling of real chat logs from individuals exhibiting delusional thinking (Stanford/CMU/UT)</p>
+<p class="claim">▸ Bidirectional influence beats the human-only-driver model.</p>
+<blockquote>“a bidirectionalinfluencemodelsubstantiallyoutperformsa unidirectional alternative where humans are the primary driver of delusion” <span class="pg">— p.1, verified</span></blockquote>
+<p class="meta">Limitations: Self-selected chat logs; delusional-thinking sample identification.</p>
+</article>
+<article class="card" id="aquilina2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Aquilina2026_LostInDelusion.pdf" target="_blank" rel="noopener">Lost in Delusion: Examining LLM Safety Under User Delusions and Distress</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Aquilina A, Nihalani C, Varadarajan V, Fishbein N S, Lin Y-R, Sap M · 2026 · Matched multi-turn simulations, clinically grounded personas, six LLMs, distress-only controls</p>
+<p class="claim">▸ Fills the gap left by single-turn safety evals.</p>
+<blockquote>“leaving unclear how models behave when distress is intertwined with delusion over sustained conversations” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Delusion-aware safety evaluation:</b> Matched-control multi-turn methodology isolates the delusion effect for pre-deployment testing.</div>
+<p class="meta">Limitations: Simulated personas; six models.</p>
+</article>
 <article class="card" id="auyeung2025">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/AuYeung2025_PsychogenicMachine.pdf" target="_blank" rel="noopener">The Psychogenic Machine: Simulating AI Psychosis, Delusion Reinforcement and Harm Enablement in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
 <p class="meta">Au Yeung J, Dalmasso J, Foschini L, Dobson R J B, Kraljevic Z · 2025 · psychosis-bench: 16 structured 12-turn scenarios simulating delusional progression, evaluated across LLMs</p>
@@ -725,7 +769,7 @@
 <div class="prot"><b>Protection — Continuous multimodal biometrics + adjustable autonomy:</b> Devices recognize owners the way humans recognize each other and make human-like security decisions.</div>
 <p class="meta">Limitations: Pre-AI-era (2008); device-security sense of the term, distinct from influence-defense usage.</p>
 </article>
-<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 77 papers, 2026-07-07.</footer>
+<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 84 papers, 2026-07-07.</footer>
 </main>
 </body>
 </html>
