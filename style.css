@@ -365,3 +365,24 @@ footer code {
   
   .card, article.card { padding: 1rem 1.05rem .9rem; }
 }
+
+/* ── Jump chips (TOC) ────────────────────────────────────────────────── */
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: 1.1rem 0 .4rem;
+}
+.chip {
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--bg-raised);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: .28rem .8rem;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+.chip b { color: var(--accent); font-weight: 700; margin-right: .25rem; }
+.chip:hover { border-color: var(--accent); color: var(--ink); }
