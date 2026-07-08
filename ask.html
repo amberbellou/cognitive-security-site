@@ -87,6 +87,7 @@
     <input id="q" type="search" placeholder="e.g. does sycophancy reduce trust? · false memories · cognitive forcing functions" autocomplete="off">
     <button id="go" disabled>Ask</button>
   </div>
+  <div class="toc" id="examples"></div>
   <div id="status">Loading verified evidence…</div>
 
   <div id="log"></div>
@@ -172,30 +173,59 @@ async function loadPublic() {
   $("go").disabled = false;
 }
 
-async function loadFull() {
+// IndexedDB cache: 6 MB corpus loads instantly on repeat visits (24 h TTL)
+const IDB = {
+  open: () => new Promise((res, rej) => {
+    const q = indexedDB.open("cogsec", 1);
+    q.onupgradeneeded = () => q.result.createObjectStore("kv");
+    q.onsuccess = () => res(q.result); q.onerror = () => rej(q.error);
+  }),
+  get: async k => { const db = await IDB.open(); return new Promise((res, rej) => {
+    const q = db.transaction("kv").objectStore("kv").get(k);
+    q.onsuccess = () => res(q.result); q.onerror = () => rej(q.error); }); },
+  set: async (k, v) => { const db = await IDB.open(); return new Promise((res, rej) => {
+    const q = db.transaction("kv", "readwrite").objectStore("kv").put(v, k);
+    q.onsuccess = () => res(); q.onerror = () => rej(q.error); }); }
+};
+
+async function loadFull(forceFresh) {
   if (S.full) { status(readyFullMsg()); return; }
-  // local/dev fallback first, then private fetch with token
+  // local/dev fallback first
   try {
     const r = await fetch("corpus-fulltext.json");
     if (r.ok) { S.full = await r.json(); finishFull(); return; }
   } catch (e) { /* not local */ }
+  // cached copy (24 h TTL)
+  if (!forceFresh) {
+    try {
+      const c = await IDB.get("fulltext");
+      if (c && Date.now() - c.time < 864e5) {
+        S.full = c.data; finishFull(true); return;
+      }
+    } catch (e) { /* no cache */ }
+  }
   const tok = localStorage.getItem("cogsec_gh_token") || $("token").value.trim();
   if (!tok) { status("Paste your GitHub token above, then ask a question."); return; }
-  status("Fetching full text from the private repository…");
+  status("Fetching full text from the private repository (cached locally for a day after this)…");
   try {
     const r = await fetch(RAW_FULL, { headers: { Authorization: "token " + tok } });
     if (!r.ok) throw new Error("HTTP " + r.status);
     S.full = await r.json();
     localStorage.setItem("cogsec_gh_token", tok);
+    IDB.set("fulltext", { time: Date.now(), data: S.full }).catch(() => {});
     finishFull();
   } catch (e) {
     status("Could not fetch the team corpus (" + e.message +
            "). Check that your token has read access to " + REPO + ".");
   }
 }
-function finishFull() {
+function finishFull(fromCache) {
   status("Building search index…");
-  setTimeout(() => { S.fullIdx = buildIndex(S.full); status(readyFullMsg()); $("go").disabled = false; }, 30);
+  setTimeout(() => {
+    S.fullIdx = buildIndex(S.full);
+    status(readyFullMsg() + (fromCache ? " (from local cache)" : ""));
+    $("go").disabled = false;
+  }, 30);
 }
 function readyFullMsg() {
   return `Full text ready — ${S.full.passages.length.toLocaleString()} page-anchored passages from ${S.full.papers.length} papers.`;
@@ -247,7 +277,20 @@ $("m-pub").onclick = () => setMode("pub");
 $("m-full").onclick = () => setMode("full");
 $("go").onclick = ask;
 $("q").addEventListener("keydown", e => { if (e.key === "Enter") ask(); });
-$("token").addEventListener("change", loadFull);
+$("token").addEventListener("change", () => loadFull(true));
+
+const EXAMPLES = ["does sycophancy reduce trust?", "false memories from chatbots",
+                  "cognitive forcing functions", "automation bias in government",
+                  "emotional dependency in heavy users", "inoculation against misinformation"];
+$("examples").innerHTML = EXAMPLES.map(e =>
+  `<a class="chip" href="#" data-q="${e}">${e}</a>`).join("");
+$("examples").addEventListener("click", ev => {
+  const q = ev.target.closest("[data-q]");
+  if (!q) return;
+  ev.preventDefault();
+  $("q").value = q.dataset.q;
+  ask();
+});
 loadPublic();
 </script>
 </body>
