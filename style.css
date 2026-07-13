@@ -386,3 +386,6 @@ footer code {
 }
 .chip b { color: var(--accent); font-weight: 700; margin-right: .25rem; }
 .chip:hover { border-color: var(--accent); color: var(--ink); }
+
+/* anchor targets clear the sticky nav */
+[id] { scroll-margin-top: 4.5rem; }
