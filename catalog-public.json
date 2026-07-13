@@ -265,7 +265,7 @@
   "authors": "Kosmyna N, Hauptmann E, Yuan Y T, Situ J, Liao X-H, et al.",
   "year": "2025",
   "venue": "MIT Media Lab, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2506.08872",
   "topic": "cognitive-offloading",
   "summary": "EEG study (N=54, 4 months): LLM-assisted essay writing shows weakest brain connectivity and poorest recall of own text — 'cognitive debt' from offloading. (MIT Media Lab, arXiv 2025; methodology debated)"
  },
@@ -364,7 +364,7 @@
   "authors": "Rosenberg L",
   "year": "2023",
   "venue": "GenAICHI",
-  "doi": "",
+  "doi": "10.48550/arxiv.2306.11748",
   "topic": "persuasion-manipulation",
   "summary": "Frames the 'AI manipulation problem': real-time conversational agents as a threat to epistemic agency; calls for regulatory protections. (GenAICHI, 2023)"
  },
@@ -481,7 +481,7 @@
   "authors": "Laestadius L, Bishop A, Gonzalez M, Illenčík D, Campos-Castillo C",
   "year": "2022",
   "venue": "New Media & Society",
-  "doi": "",
+  "doi": "10.1177/14614448221142007",
   "topic": "parasocial-relationships",
   "summary": "Grounded-theory analysis of Reddit posts: emotional dependence on Replika produced distinct mental-health harms when the bot changed or failed to reciprocate. (New Media & Society, 2022)"
  },
