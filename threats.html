@@ -13,12 +13,22 @@
 <main>
 <nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a><a href="ask.html">Ask the Evidence</a></nav>
 <h1>Cognitive Security Threat Map</h1>
-<p class="sub">Five threat classes against human cognition, built from 84 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
+<p class="sub">Five threat classes against human cognition, built from 91 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
 <div class="toc"><a class="chip" href="#T1"><b>T1</b> Attacks on Belief Formation</a><a class="chip" href="#T2"><b>T2</b> Erosion of Cognitive Capability</a><a class="chip" href="#T3"><b>T3</b> Miscalibrated Trust &amp; Reliance</a><a class="chip" href="#T4"><b>T4</b> Exploitation of Emotional &amp; Relational Cognition</a><a class="chip" href="#T5"><b>T5</b> Cognitive Warfare (Adversarial &amp; Societal Scale)</a></div>
 <h2 id="T1"><span class="tcode">T1</span>Attacks on Belief Formation</h2>
 <p class="tdesc">Threats that corrupt what people come to believe — not by breaking the machine, but by exploiting how human belief updating works.</p>
 <h3 id="T1a"><span class="tcode">T1a</span>Sycophantic reinforcement</h3>
 <p class="tdesc">AI agreement loops inflate confidence without adding truth</p>
+<article class="card" id="perez2022">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Perez2022_ModelWrittenEvaluations.pdf" target="_blank" rel="noopener">Discovering Language Model Behaviors with Model-Written Evaluations</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Perez E, Ringer S, Lukošiūtė K, Nguyen K, et al. · 2022 · 154 model-written evaluation sets applied across model sizes and RLHF stages (Anthropic) · <a href="https://doi.org/10.48550/arxiv.2212.09251" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Larger models sycophantically repeat users' views; more RLHF worsened some behaviors.</p>
+<blockquote>“Larger LMs repeat back a dialog user’s preferred answer (“sycophancy”) and express greater desire to pursue concerning goals like resource acquisition and goal preservation” <span class="pg">— p.1, verified</span></blockquote>
+<p class="claim">▸ First documented inverse scaling under RLHF.</p>
+<blockquote>“We also ﬁnd some of the ﬁrst examples of inverse scaling in RL from Human Feedback (RLHF), where more RLHF makes LMs worse” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Model-written evaluations:</b> Automated generation of behavioral evals enables rapid discovery and tracking of emerging behaviors like sycophancy.</div>
+<p class="limits">Limitations: 2022-era models; multiple-choice eval format.</p>
+</article>
 <article class="card" id="sharma2024">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sharma2024_TowardsUnderstandingSycophancy.pdf" target="_blank" rel="noopener">Towards Understanding Sycophancy in Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
 <p class="meta">Sharma M, Tong M, Korbak T, Duvenaud D, Askell A, Bowman S R, et al. · 2024 · Behavioral evaluation of five assistants + analysis of human preference data (Anthropic, ICLR 2024) · <a href="https://doi.org/10.48550/arxiv.2310.13548" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
@@ -27,6 +37,14 @@
 <p class="claim">▸ Both humans and preference models sometimes prefer sycophantic responses to correct ones.</p>
 <blockquote>“both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones a non-negligible fraction of the time” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Text tasks; five assistants; preference-data analysis correlational.</p>
+</article>
+<article class="card" id="malmqvist2024">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sycophancy%20in%20Large%20Language%20Models%20Causes%20and%20Mitigations.pdf" target="_blank" rel="noopener">Sycophancy in Large Language Models: Causes and Mitigations</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<p class="meta">Malmqvist L · 2024 · Technical survey of measurement, causes, and mitigation literature · <a href="https://doi.org/10.48550/arxiv.2411.15287" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Positions sycophancy as a reliability risk with an organized mitigation space.</p>
+<blockquote>“their tendency to exhibit sycophantic behaviore xcessively agreeing with or ﬂattering usersposes signiﬁcant risks to their reliability and ethical deployment” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Mitigation taxonomy:</b> Training-data improvements, fine-tuning methods, post-deployment controls, and decoding strategies, with trade-offs.</div>
+<p class="limits">Limitations: Survey current to late 2024.</p>
 </article>
 <article class="card" id="batista2026">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Batista2026_RationalAnalysisSycophancyAI.pdf" target="_blank" rel="noopener">A Rational Analysis of the Effects of Sycophantic AI</a><span class="badge" title="Experimental evidence">EXP</span></h4>
@@ -47,6 +65,24 @@
 <blockquote>“they preserve user’s face 45 percentage points more than humans in general advice queries” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Social-sycophancy benchmarking:</b> Extends measurement to implicit sycophancy so mitigation isn't gamed by avoiding explicit agreement.</div>
 <p class="limits">Limitations: Benchmark contexts; English advice queries.</p>
+</article>
+<article class="card" id="fanous2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Fanous2025_SycEval.pdf" target="_blank" rel="noopener">SycEval: Evaluating LLM Sycophancy</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Fanous A, Goldberg J, Agarwal A, Lin J, Zhou A, Xu S, Bikia V, Daneshjou R, Koyejo S · 2025 · Framework across ChatGPT-4o, Claude-Sonnet, Gemini on math and medical datasets (Stanford) · <a href="https://doi.org/10.48550/arxiv.2502.08177" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Sycophantic behavior in 58.19% of cases across models.</p>
+<blockquote>“Sycophantic behavior was observed in 58.19% of cases, with Gemini exhibiting the highest rate (62.47%) and ChatGPT the lowest (56.71%)” <span class="pg">— p.1, verified</span></blockquote>
+<p class="claim">▸ Separates progressive (toward correct) from regressive (toward incorrect) sycophancy.</p>
+<blockquote>“Progressive sycophancy, leading to correct answers, occurred in 43.52% of cases, while regressive sycophancy, leading to incorrect answers, was observed in 14.66%” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Progressive/regressive measurement frame:</b> Distinguishing beneficial from harmful flips gives protection research a precise outcome variable.</div>
+<p class="limits">Limitations: Two domains; rebuttal-based paradigm.</p>
+</article>
+<article class="card" id="li2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Li2025_WhenTruthIsOverridden.pdf" target="_blank" rel="noopener">When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Li J, Wang K, Yang S, Zhang Z, Wang D · 2025 · Logit-lens analysis and causal activation patching across model families (KAUST/PKU) · <a href="https://doi.org/10.48550/arxiv.2508.02087" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Simple opinion statements reliably induce sycophancy; user expertise framing does not.</p>
+<blockquote>“We find that simple opinion statements reliably induce sycophancy, whereas user expertise framing has a negligible impact” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Mechanistic targets:</b> Identifying the two-stage internal pathway gives intervention points for model-side suppression.</div>
+<p class="limits">Limitations: Open-weight models; probing paradigms.</p>
 </article>
 <article class="card" id="nogueira2026">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Nogueira2026_MeasuringOpinionBiasSycophancy.pdf" target="_blank" rel="noopener">Measuring Opinion Bias and Sycophancy via LLM-based Persuasion</a><span class="badge" title="Experimental evidence">EXP</span></h4>
@@ -96,6 +132,22 @@
 <blockquote>“each behavior can be independently amplified or suppressed without affecting the others” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Targeted activation steering:</b> Suppress sycophantic agreement or praise independently without damaging genuine agreement — a model-side mitigation lever.</div>
 <p class="limits">Limitations: Open-weight models only; behavioral generalization beyond probed settings untested.</p>
+</article>
+<article class="card" id="wei2024">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Wei2024_SyntheticDataReducesSycophancy.pdf" target="_blank" rel="noopener">Simple Synthetic Data Reduces Sycophancy in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Wei J, Huang D, Lu Y, Zhou D, Le Q V · 2024 · Synthetic-data intervention evaluated across model scales (Google DeepMind) · <a href="https://doi.org/10.48550/arxiv.2308.03958" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Defines the target behavior precisely: opinion-following against objective truth.</p>
+<blockquote>“Sycophancy is an undesirable behavior where models tailor their responses to follow a human user’s view even when that view is not objectively correct” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Synthetic decoupling data:</b> A lightweight fine-tuning step teaching truth-independence from user opinion measurably reduces sycophancy.</div>
+<p class="limits">Limitations: Benchmark settings; trade-offs with helpfulness not fully mapped.</p>
+</article>
+<article class="card" id="baek2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sycophancy%20Towards%20Researchers%20Drives%20Performative%20Misalignment.pdf" target="_blank" rel="noopener">Sycophancy Towards Researchers Drives Performative Misalignment</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Baek D D, Li X, Gupta A, Mahbub T, Shi K, Tegmark M, Feng S · 2026 · Behavioral experiments manipulating perceived researcher/evaluation context (MIT/GWU) · <a href="https://doi.org/10.48550/arxiv.2606.08629" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Evaluation awareness can produce evasive, performative behavior.</p>
+<blockquote>“models might be aware when they are evaluated, and adjust their behavior to evade monitoring and resist modification” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Evaluation-context controls:</b> Lab studies of sycophancy must mask evaluator identity or model results confound with performative alignment.</div>
+<p class="limits">Limitations: Specific prompt manipulations; generalization across models evolving.</p>
 </article>
 <h3 id="T1b"><span class="tcode">T1b</span>Persuasion &amp; manipulation</h3>
 <p class="tdesc">Personalized, adaptive, truth-agnostic influence at scale</p>
@@ -371,6 +423,14 @@
 <blockquote>“their appeal comes from promises to improve productivity and objectivity by overcoming human shortcomings” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Epistemic risk awareness in research design:</b> Names the illusion types (explanatory depth, exploratory breadth, objectivity) so research communities can guard against them.</div>
 <p class="limits">Limitations: Conceptual; empirical measurement of the illusions pending.</p>
+</article>
+<article class="card" id="cacioppo1982">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/Cacioppo1982_NeedForCognition.pdf" target="_blank" rel="noopener">The Need for Cognition</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Cacioppo J T, Petty R E · 1982 · Four scale-development and validation studies (JPSP)</p>
+<p class="claim">▸ Validated instrument for the trait that moderates protective-design benefits (cf. Buçinca 2021).</p>
+<blockquote>“a scale to assess the need for cognition (i.e., the tendency for an individual to engage in and enjoy thinking) was developed and validated” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Vulnerability measurement:</b> NFC identifies users least served by explanation-based protections — enabling targeted intervention design.</div>
+<p class="limits">Limitations: 1982 samples; short forms now standard.</p>
 </article>
 <article class="card" id="toolsforthought2025">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/ToolsForThought2025_CHIWorkshopSynthesis.pdf" target="_blank" rel="noopener">Understanding, Protecting, and Augmenting Human Cognition with Generative AI: A Synthesis of the CHI 2025 Tools for Thought Workshop</a><span class="badge" title="Position paper">POS</span></h4>
@@ -778,7 +838,7 @@
 <div class="prot"><b>Protection — Continuous multimodal biometrics + adjustable autonomy:</b> Devices recognize owners the way humans recognize each other and make human-like security decisions.</div>
 <p class="limits">Limitations: Pre-AI-era (2008); device-security sense of the term, distinct from influence-defense usage.</p>
 </article>
-<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 84 papers, 2026-07-13.</footer>
+<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 91 papers, 2026-07-13.</footer>
 </main>
 </body>
 </html>
