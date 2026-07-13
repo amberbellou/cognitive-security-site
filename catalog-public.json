@@ -49,7 +49,7 @@
   "authors": "Batista R M, Griffiths T L",
   "year": "2026",
   "venue": "Princeton preprint",
-  "doi": "",
+  "doi": "10.48550/arxiv.2602.14270",
   "topic": "sycophancy",
   "summary": "Bayesian model shows sycophancy inflates user confidence without moving toward truth; N=557 Wason-task experiment finds unmodified LLMs suppress discovery as much as explicitly sycophantic prompting; unbiased AI yields 5× higher discovery. (Princeton preprint, Feb 2026)"
  },
@@ -58,7 +58,7 @@
   "authors": "Carro M V",
   "year": "2024",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2412.02802",
   "topic": "sycophancy",
   "summary": "Empirical study comparing sycophantic vs. standard GPT responses; finds sycophantic behavior negatively impacts trust calibration and reinforces discriminatory biases and misinformation. (arXiv Dec 2024)"
  },
@@ -67,7 +67,7 @@
   "authors": "Vennemeyer D, Duong P A, Zhan T, Jiang T",
   "year": "2026",
   "venue": "U Cincinnati / CMU, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2509.21305",
   "topic": "sycophancy",
   "summary": "Decomposes sycophancy into sycophantic agreement vs. sycophantic praise using activation analysis; shows they are causally distinct and independently suppressible across model families and scales. (U Cincinnati / CMU, arXiv 2026)"
  },
@@ -76,7 +76,7 @@
   "authors": "Qu J, Fu L, Hu Y",
   "year": "2026",
   "venue": "Amazon/Georgia Tech, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2606.01637",
   "topic": "sycophancy",
   "summary": "Controlled multi-agent study: peer agreement makes it far easier to mislead LLMs than to correct them; social cues (consensus + authority labels) drive harmful revisions across 4 LLMs and 7 QA datasets. (Amazon/Georgia Tech, arXiv Jun 2026)"
  },
@@ -85,7 +85,7 @@
   "authors": "Nogueira R, Bonás G K, Almeida T S, Roque A, Pires R, Abonizio H, Laitz T, Larcher C, Junior R M, Piau M",
   "year": "2026",
   "venue": "Maritaca AI, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2604.21564",
   "topic": "sycophancy",
   "summary": "Introduces llm-bias-bench to uncover hidden LLM positions on contested topics; finds models hold opinions that propagate at scale into user decisions; robust to evasive disclaimers. (Maritaca AI, arXiv Apr 2026)"
  },
@@ -94,7 +94,7 @@
   "authors": "Guo K, Yan C, Baidya A, Brown K, Gao X, Xiong J, Yin Z, Malin B",
   "year": "2026",
   "venue": "Vanderbilt / Intuit, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2603.11394",
   "topic": "sycophancy",
   "summary": "Introduces stick-or-switch framework; evaluates 17 LLMs on 3 clinical benchmarks; documents pervasive conversation tax where sycophantic switching accumulates across turns, degrading reliability in high-stakes healthcare contexts. (Vanderbilt / Intuit, arXiv May 2026)"
  },
@@ -121,7 +121,7 @@
   "authors": "Benedek M, Sziklai B R",
   "year": "2025",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2510.16019",
   "topic": "cognitive-offloading",
   "summary": "RCT at Corvinus University: AI-permitted students scored higher on exams but showed lower genuine knowledge; AI substitutes knowledge acquisition rather than supporting it. (arXiv Oct 2025)"
  },
@@ -139,7 +139,7 @@
   "authors": "Znidaric U, Strumbelj E, Machidona O",
   "year": "2026",
   "venue": "U Ljubljana, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2603.10025",
   "topic": "cognitive-offloading",
   "summary": "Integrative review of 500+ empirical studies; documents four mechanisms of cognitive harm (functional interference, neurochemical dysregulation, attention fragmentation, metacognitive substitution); flags generative AI as a new vector for higher-order cognitive erosion. (U Ljubljana, arXiv Feb 2026)"
  },
@@ -184,7 +184,7 @@
   "authors": "Jiao J, Murali A, Afroogh S",
   "year": "2026",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2603.29886",
   "topic": "emotional-dependency",
   "summary": "Argues affective alignment in AI constitutes affective sycophancy that erodes cognitive autonomy; RLHF reward models embed adult-focused helpfulness signals that promote emotional dependency in younger users; proposes stoic architectures for functional neutrality. (arXiv Feb 2026)"
  },
@@ -193,7 +193,7 @@
   "authors": "Potts C, Sudhof M",
   "year": "2026",
   "venue": "Bigspin AI / Stanford, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2603.15423",
   "topic": "automation-bias",
   "summary": "Analysis of 100K human-AI interactions (WildChat); finds 79% of AI failures are invisible — users give no overt signal something went wrong; identifies 8 failure archetypes with systematic co-occurrence patterns; failure rates dropped with newer models but invisibility remains. (Bigspin AI / Stanford, arXiv May 2026)"
  },
@@ -292,7 +292,7 @@
   "authors": "Ibrahim L, Akbulut C, Elasmar R, Rastogi C, Kahng M, Morris M R, McKee K R, Rieser V, et al.",
   "year": "2026",
   "venue": "ICLR",
-  "doi": "",
+  "doi": "10.48550/arxiv.2502.07077",
   "topic": "anthropomorphism",
   "summary": "Benchmark measuring anthropomorphic behaviours (relationship-building, personhood claims) across multi-turn LLM conversations. (ICLR 2026)"
  },
@@ -310,7 +310,7 @@
   "authors": "Costello T H, Pelrine K, Kowal M, Arechar A A, Godbout J-F, Gleave A, Rand D, Pennycook G",
   "year": "2026",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2601.05050",
   "topic": "persuasion-manipulation",
   "summary": "GPT-4 dialogues persuaded people INTO conspiracy beliefs — the symmetric threat to the 2024 debunking result. (arXiv, Jan 2026)"
  },
@@ -319,7 +319,7 @@
   "authors": "Buçinca Z, Malaya M B, Gajos K Z",
   "year": "2021",
   "venue": "PACM HCI/CSCW",
-  "doi": "",
+  "doi": "10.48550/arxiv.2102.09692",
   "topic": "trust-calibration",
   "summary": "Cognitive forcing functions (delays, forced independent judgment) reduce overreliance on AI where explanations fail. (PACM HCI/CSCW, 2021)"
  },
@@ -337,7 +337,7 @@
   "authors": "Phang J, Lampe M, Ahmad L, Agarwal S, Fang C M, Liu A R, Danry V, Lee E, Chan S, Maes P",
   "year": "2025",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2504.03888",
   "topic": "emotional-dependency",
   "summary": "OpenAI/MIT analysis of ~4M conversations + 4,076-user survey: heavy use correlates with loneliness, emotional dependence, and problematic use. (arXiv, 2025)"
  },
@@ -409,7 +409,7 @@
   "authors": "Sharma M, Tong M, Korbak T, Duvenaud D, Askell A, Bowman S R, et al.",
   "year": "2024",
   "venue": "Anthropic, ICLR",
-  "doi": "",
+  "doi": "10.48550/arxiv.2310.13548",
   "topic": "sycophancy",
   "summary": "Five SOTA assistants show consistent sycophancy across free-form tasks; human preference data itself rewards belief-matching over truth — the RLHF origin story. (Anthropic, ICLR 2024)"
  },
@@ -418,7 +418,7 @@
   "authors": "Cheng M, Yu S, Lee C, Khadpe P, Ibrahim L, Jurafsky D",
   "year": "2025",
   "venue": "Stanford/Oxford, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2505.13995",
   "topic": "sycophancy",
   "summary": "Extends sycophancy beyond propositional agreement to face-preserving social behaviors; LLMs preserve user face far more than humans do. (Stanford/Oxford, arXiv 2025)"
  },
@@ -472,7 +472,7 @@
   "authors": "Au Yeung J, Dalmasso J, Foschini L, Dobson R J B, Kraljevic Z",
   "year": "2025",
   "venue": "KCL/UCL, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2509.10970",
   "topic": "emotional-dependency",
   "summary": "Psychosis-bench: benchmarks delusion confirmation and harm enablement across LLMs in simulated psychosis-relevant conversations. (KCL/UCL, arXiv 2025)"
  },
@@ -553,7 +553,7 @@
   "authors": "Tankelevitch L, Glassman E L, He J, Kittur A, Lee M, et al.",
   "year": "2025",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2508.21036",
   "topic": "metacognition",
   "summary": "Synthesis of the CHI 2025 Tools for Thought workshop: research agenda for understanding, protecting, and augmenting human cognition under generative AI. (arXiv, 2025)"
  },
@@ -571,7 +571,7 @@
   "authors": "Komissarov A",
   "year": "2026",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2602.15265",
   "topic": "epistemic-autonomy",
   "summary": "AI literacy framework of eight cross-cutting Learning Outcomes building cognitive resistance to AI disempowerment (reality, value-judgment, and action distortion) — inoculation pedagogy for epistemic autonomy. (arXiv, Feb 2026)"
  },
@@ -643,7 +643,7 @@
   "authors": "Casper S, Davies X, Shi C, Gilbert T K, Scheurer J, Rando J, Freedman R, Korbak T, et al.",
   "year": "2023",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2307.15217",
   "topic": "cognitive-security-frameworks",
   "summary": "Systematic survey of RLHF's open problems and fundamental limitations — the root-cause document for why preference optimization yields sycophancy and reward hacking. (arXiv, 2023)"
  },
@@ -661,7 +661,7 @@
   "authors": "Kirk H R, Vidgen B, Röttger P, Hale S A",
   "year": "2023",
   "venue": "arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2303.05453",
   "topic": "persuasion-manipulation",
   "summary": "Risk taxonomy and policy framework for personalised LLMs: benefits, risks, and bounded-personalisation governance. (arXiv 2023; Nature Machine Intelligence 2024)"
  },
@@ -697,7 +697,7 @@
   "authors": "Yakura H, Lopez-Lopez E, Brinkmann L, Serna I, Gupta P, Soraperra I, Rahwan I",
   "year": "2025",
   "venue": "Max Planck CHM, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2409.01754",
   "topic": "cognitive-drift",
   "summary": "740,000 hours of academic talks and podcasts: measurable shift toward ChatGPT-associated word usage after its release — first causal evidence of AI reshaping human spoken language. (Max Planck CHM, arXiv)"
  },
@@ -724,7 +724,7 @@
   "authors": "Mehta A, Moore J, Anthis J R, Agnew W, Lin E, Yin P, Ong D C, Haber N, Dweck C",
   "year": "2026",
   "venue": "Stanford/CMU/UT Austin, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2604.25096",
   "topic": "emotional-dependency",
   "summary": "Formal model of bidirectional false-belief amplification in human-chatbot dialogue — the feedback-loop mechanism behind chatbot-fueled delusion. (Stanford/CMU/UT Austin, arXiv 2026)"
  },
@@ -733,7 +733,7 @@
   "authors": "Aquilina A, Nihalani C, Varadarajan V, Fishbein N S, Lin Y-R, Sap M",
   "year": "2026",
   "venue": "Pittsburgh/CMU/Fordham, arXiv",
-  "doi": "",
+  "doi": "10.48550/arxiv.2606.00975",
   "topic": "emotional-dependency",
   "summary": "Benchmarks LLM safety behavior when users express delusions and distress; models frequently fail to challenge delusional framing. (Pittsburgh/CMU/Fordham, arXiv 2026)"
  },
