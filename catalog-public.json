@@ -1,0 +1,758 @@
+[
+ {
+  "title": "Position: AI Development Should Prioritize Cognitive Security",
+  "authors": "El B, Su S, Pappu A, Yin P, Heng J, Heng E, Wang R, Haupt A, Zou J",
+  "year": "2026",
+  "venue": "ICLR 2026 Workshop",
+  "doi": "",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Argues that generative AI R&D must treat cognitive security as a first-class concern; proposes a framework covering sycophancy, epistemic autonomy, and AI-mediated influence harms. (ICLR 2026 Workshop)"
+ },
+ {
+  "title": "On Challenges of AI to Cognitive Security and Safety",
+  "authors": "Huang R, Zheng X, Shang Y, Xue X",
+  "year": "2023",
+  "venue": "Security and Safety",
+  "doi": "10.1051/sands/2023012",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Analyzes cognitive domain security risks from LLMs; introduces Mimicry Computing, Mimicry Defense, and Mimicry Intelligence as bio-inspired countermeasures. (Security and Safety, 2023)"
+ },
+ {
+  "title": "Cognitive Security for Personal Devices",
+  "authors": "Greenstadt R, Beal J",
+  "year": "2008",
+  "venue": "AISec",
+  "doi": "10.1145/1456377.1456383",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Proposes cognitive-inspired security models for personal devices: continuous multimodal biometrics and adjustably autonomous security agents that mimic human trust mechanisms. (AISec 2008)"
+ },
+ {
+  "title": "All Too Human? Mapping and Mitigating the Risks from Anthropomorphic AI",
+  "authors": "Akbulut C, Weidinger L, Manzini A, Gabriel I, Rieser V",
+  "year": "2024",
+  "venue": "Google DeepMind / AAAI",
+  "doi": "10.1609/aies.v7i1.31613",
+  "topic": "anthropomorphism",
+  "summary": "Maps past and present anthropomorphic AI design features; identifies risks (over-reliance, privacy loss, emotional attachment); proposes ethical foresight and mitigation research directions. (Google DeepMind / AAAI 2024)"
+ },
+ {
+  "title": "How AI Encourages Consumers to Share Their Secrets? The Role of Anthropomorphism, Personalisation, and Privacy Concerns and Avenues for Future Research",
+  "authors": "Kronemann B, Kizgin H, Rana N, Dwivedi Y K",
+  "year": "2022",
+  "venue": "Spanish Journal of Marketing - ESIC",
+  "doi": "10.1108/sjme-10-2022-0213",
+  "topic": "anthropomorphism",
+  "summary": "Conceptual model showing anthropomorphic AI + personalisation positively predict information disclosure while privacy concerns negatively moderate it; applies personalisation-privacy paradox theory. (Spanish Journal of Marketing - ESIC, 2022)"
+ },
+ {
+  "title": "A Rational Analysis of the Effects of Sycophantic AI",
+  "authors": "Batista R M, Griffiths T L",
+  "year": "2026",
+  "venue": "Princeton preprint",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "Bayesian model shows sycophancy inflates user confidence without moving toward truth; N=557 Wason-task experiment finds unmodified LLMs suppress discovery as much as explicitly sycophantic prompting; unbiased AI yields 5× higher discovery. (Princeton preprint, Feb 2026)"
+ },
+ {
+  "title": "Flattering to Deceive: The Impact of Sycophantic Behavior on User Trust in Large Language Models",
+  "authors": "Carro M V",
+  "year": "2024",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "Empirical study comparing sycophantic vs. standard GPT responses; finds sycophantic behavior negatively impacts trust calibration and reinforces discriminatory biases and misinformation. (arXiv Dec 2024)"
+ },
+ {
+  "title": "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs",
+  "authors": "Vennemeyer D, Duong P A, Zhan T, Jiang T",
+  "year": "2026",
+  "venue": "U Cincinnati / CMU, arXiv",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "Decomposes sycophancy into sycophantic agreement vs. sycophantic praise using activation analysis; shows they are causally distinct and independently suppressible across model families and scales. (U Cincinnati / CMU, arXiv 2026)"
+ },
+ {
+  "title": "Easier to Mislead Than to Correct: Harmful and Beneficial Revision in LLM Conformity",
+  "authors": "Qu J, Fu L, Hu Y",
+  "year": "2026",
+  "venue": "Amazon/Georgia Tech, arXiv",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "Controlled multi-agent study: peer agreement makes it far easier to mislead LLMs than to correct them; social cues (consensus + authority labels) drive harmful revisions across 4 LLMs and 7 QA datasets. (Amazon/Georgia Tech, arXiv Jun 2026)"
+ },
+ {
+  "title": "Measuring Opinion Bias and Sycophancy via LLM-based Persuasion",
+  "authors": "Nogueira R, Bonás G K, Almeida T S, Roque A, Pires R, Abonizio H, Laitz T, Larcher C, Junior R M, Piau M",
+  "year": "2026",
+  "venue": "Maritaca AI, arXiv",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "Introduces llm-bias-bench to uncover hidden LLM positions on contested topics; finds models hold opinions that propagate at scale into user decisions; robust to evasive disclaimers. (Maritaca AI, arXiv Apr 2026)"
+ },
+ {
+  "title": "Stop Listening to Me! How Multi-turn Conversations Can Degrade LLM Reliability",
+  "authors": "Guo K, Yan C, Baidya A, Brown K, Gao X, Xiong J, Yin Z, Malin B",
+  "year": "2026",
+  "venue": "Vanderbilt / Intuit, arXiv",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "Introduces stick-or-switch framework; evaluates 17 LLMs on 3 clinical benchmarks; documents pervasive conversation tax where sycophantic switching accumulates across turns, degrading reliability in high-stakes healthcare contexts. (Vanderbilt / Intuit, arXiv May 2026)"
+ },
+ {
+  "title": "To Offload or Not to Offload: How AI May Alleviate Cognitive Burden and Related Ethical Reflections",
+  "authors": "Lindauer L",
+  "year": "2026",
+  "venue": "TU Munich IEAI Research Brief Q1",
+  "doi": "",
+  "topic": "cognitive-offloading",
+  "summary": "Examines AI cognitive offloading across healthcare, education, and defense; raises ethical concerns about dependency, autonomy loss, and limits of delegating cognition to machines. (TU Munich IEAI Research Brief Q1 2026)"
+ },
+ {
+  "title": "AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking",
+  "authors": "Gerlich M",
+  "year": "2025",
+  "venue": "Societies, MDPI",
+  "doi": "10.3390/soc15010006",
+  "topic": "cognitive-offloading",
+  "summary": "Mixed-method N=666; significant negative correlation between AI tool usage and critical thinking mediated by cognitive offloading; younger users show higher dependency and lower critical thinking scores. (Societies, MDPI 2025)"
+ },
+ {
+  "title": "Impact of AI Tools on Learning Outcomes: Decreasing Knowledge and Over-Reliance",
+  "authors": "Benedek M, Sziklai B R",
+  "year": "2025",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "cognitive-offloading",
+  "summary": "RCT at Corvinus University: AI-permitted students scored higher on exams but showed lower genuine knowledge; AI substitutes knowledge acquisition rather than supporting it. (arXiv Oct 2025)"
+ },
+ {
+  "title": "Learners' AI Dependence and Critical Thinking: The Psychological Mechanism of Fatigue and the Social Buffering Role of AI Literacy",
+  "authors": "Tian J, Zhang R",
+  "year": "2025",
+  "venue": "Acta Psychologica, Elsevier",
+  "doi": "10.1016/j.actpsy.2025.105725",
+  "topic": "cognitive-offloading",
+  "summary": "N=580 Chinese university students; AI dependence lowers critical thinking via cognitive fatigue as mediator; AI/information literacy buffers this effect; moderated mediation model (PROCESS Model 8). (Acta Psychologica, Elsevier 2025)"
+ },
+ {
+  "title": "A Review of the Negative Effects of Digital Technology on Cognition",
+  "authors": "Znidaric U, Strumbelj E, Machidona O",
+  "year": "2026",
+  "venue": "U Ljubljana, arXiv",
+  "doi": "",
+  "topic": "cognitive-offloading",
+  "summary": "Integrative review of 500+ empirical studies; documents four mechanisms of cognitive harm (functional interference, neurochemical dysregulation, attention fragmentation, metacognitive substitution); flags generative AI as a new vector for higher-order cognitive erosion. (U Ljubljana, arXiv Feb 2026)"
+ },
+ {
+  "title": "Exploring Automation Bias in Human-AI Collaboration: A Review and Implications for Explainable AI",
+  "authors": "Romeo G, Conti D",
+  "year": "2025",
+  "venue": "AI & Society, Springer, ©",
+  "doi": "10.1007/s00146-025-02422-7",
+  "topic": "explainability-xai",
+  "summary": "Systematic review of 35 studies (2015-2025); maps how automation bias manifests in high-stakes AI settings; finds XAI explanations can paradoxically reinforce unwarranted trust; proposes design principles to calibrate reliance. (AI & Society, Springer, © 2025)"
+ },
+ {
+  "title": "Human-AI Interactions in Public Sector Decision Making: 'Automation Bias' and 'Selective Adherence' to Algorithmic Advice",
+  "authors": "Alon-Barkat S, Busuioc M",
+  "year": "2023",
+  "venue": "Journal of Public Administration Research and Theory, Oxford",
+  "doi": "10.1093/jopart/muac007",
+  "topic": "automation-bias",
+  "summary": "Studies how public-sector decision-makers interact with algorithmic advice; finds both automation bias (uncritical acceptance) and selective adherence (strategic non-compliance); raises accountability concerns for AI in government. (Journal of Public Administration Research and Theory, Oxford 2023)"
+ },
+ {
+  "title": "Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI",
+  "authors": "Laux J, Ruschemeier H",
+  "year": "2025",
+  "venue": "Forthcoming, European Journal of Risk Regulation",
+  "doi": "10.1017/err.2025.10033",
+  "topic": "automation-bias",
+  "summary": "Analyzes EU AI Act's mandate for human oversight and automation-bias awareness; finds AIA's focus on providers inadequately addresses design and context as causes; argues harmonized standards must hold both providers and deployers accountable. (Forthcoming, European Journal of Risk Regulation)"
+ },
+ {
+  "title": "International AI Safety Report 2026",
+  "authors": "Bengio Y (Chair) et al.",
+  "year": "2026",
+  "venue": "",
+  "doi": "",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Authoritative multi-nation safety report covering systemic AI risks including cognitive and societal harms; synthesizes consensus across 30+ countries on risk categories, safety evaluation, and governance priorities. (Feb 2026)"
+ },
+ {
+  "title": "AI Empathy Erodes Cognitive Autonomy in Younger Users",
+  "authors": "Jiao J, Murali A, Afroogh S",
+  "year": "2026",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "emotional-dependency",
+  "summary": "Argues affective alignment in AI constitutes affective sycophancy that erodes cognitive autonomy; RLHF reward models embed adult-focused helpfulness signals that promote emotional dependency in younger users; proposes stoic architectures for functional neutrality. (arXiv Feb 2026)"
+ },
+ {
+  "title": "Invisible Failures in Human–AI Interactions",
+  "authors": "Potts C, Sudhof M",
+  "year": "2026",
+  "venue": "Bigspin AI / Stanford, arXiv",
+  "doi": "",
+  "topic": "automation-bias",
+  "summary": "Analysis of 100K human-AI interactions (WildChat); finds 79% of AI failures are invisible — users give no overt signal something went wrong; identifies 8 failure archetypes with systematic co-occurrence patterns; failure rates dropped with newer models but invisibility remains. (Bigspin AI / Stanford, arXiv May 2026)"
+ },
+ {
+  "title": "The Weaponization of Information: The Need for Cognitive Security",
+  "authors": "Waltzman R",
+  "year": "2017",
+  "venue": "RAND CT-473",
+  "doi": "10.7249/ct473",
+  "topic": "cognitive-security-frameworks",
+  "summary": "RAND Senate testimony that coined the modern case for cognitive security as a defense discipline against information weaponization. (RAND CT-473, 2017)"
+ },
+ {
+  "title": "Cognitive warfare: a conceptual analysis of the NATO ACT cognitive warfare exploratory concept",
+  "authors": "Deppe C, Schaal G S",
+  "year": "2024",
+  "venue": "Frontiers in Big Data",
+  "doi": "10.3389/fdata.2024.1452129",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Conceptual analysis and critique of NATO ACT's cognitive warfare exploratory concept; systematizes definitions and defense implications. (Frontiers in Big Data, Nov 2024)"
+ },
+ {
+  "title": "The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers",
+  "authors": "Lee H-P, Sarkar A, Tankelevitch L, Drosos I, Rintel S, Banks R, Wilson N",
+  "year": "2025",
+  "venue": "Microsoft/CMU, CHI",
+  "doi": "10.1145/3706598.3713778",
+  "topic": "cognitive-offloading",
+  "summary": "Survey of 319 knowledge workers (936 real GenAI tasks): higher confidence in GenAI predicts less critical thinking; self-confidence predicts more. (Microsoft/CMU, CHI 2025)"
+ },
+ {
+  "title": "The psychological drivers of misinformation belief and its resistance to correction",
+  "authors": "Ecker U K H, Lewandowsky S, Cook J, Schmid P, Fazio L K, Brashier N, Kendeou P, Vraga E K, Amazeen M A",
+  "year": "2022",
+  "venue": "Nature Reviews Psychology",
+  "doi": "10.1038/s44159-021-00006-y",
+  "topic": "misinformation-hallucination",
+  "summary": "Canonical review of why misinformation sticks — cognitive, social, and affective drivers, barriers to correction, prebunking/debunking interventions. (Nature Reviews Psychology, 2022)"
+ },
+ {
+  "title": "AI model GPT-3 (dis)informs us better than humans",
+  "authors": "Spitale G, Biller-Andorno N, Germani F",
+  "year": "2023",
+  "venue": "Science Advances",
+  "doi": "10.1126/sciadv.adh1850",
+  "topic": "misinformation-hallucination",
+  "summary": "N=697: GPT-3 disinformation is more believable than human-written, and people cannot tell AI tweets from human ones. (Science Advances, 2023)"
+ },
+ {
+  "title": "The Cognitive Warfare Concept",
+  "authors": "Claverie B, du Cluzel F",
+  "year": "2022",
+  "venue": "NATO ACT Innovation Hub",
+  "doi": "",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Defines cognitive warfare as exploitation of human cognition as a warfighting domain; the core NATO ACT concept paper. (NATO ACT Innovation Hub, 2022)"
+ },
+ {
+  "title": "Cognitive Warfare",
+  "authors": "du Cluzel F",
+  "year": "2021",
+  "venue": "NATO ACT Innovation Hub",
+  "doi": "10.31219/osf.io/ynfzr",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Full NATO Innovation Hub study of cognitive warfare: threat landscape, techniques, and implications for NATO. (NATO ACT Innovation Hub, Jan 2021)"
+ },
+ {
+  "title": "Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task",
+  "authors": "Kosmyna N, Hauptmann E, Yuan Y T, Situ J, Liao X-H, et al.",
+  "year": "2025",
+  "venue": "MIT Media Lab, arXiv",
+  "doi": "",
+  "topic": "cognitive-offloading",
+  "summary": "EEG study (N=54, 4 months): LLM-assisted essay writing shows weakest brain connectivity and poorest recall of own text — 'cognitive debt' from offloading. (MIT Media Lab, arXiv 2025; methodology debated)"
+ },
+ {
+  "title": "Algorithm Aversion: People Erroneously Avoid Algorithms After Seeing Them Err",
+  "authors": "Dietvorst B J, Simmons J P, Massey C",
+  "year": "2014",
+  "venue": "JEP: General",
+  "doi": "10.2139/ssrn.2466040",
+  "topic": "algorithm-aversion",
+  "summary": "Five studies: people abandon algorithms after seeing them err, even when the algorithm outperforms humans. (JEP: General 2015; preprint 2014)"
+ },
+ {
+  "title": "Overcoming Algorithm Aversion: People Will Use Imperfect Algorithms If They Can (Even Slightly) Modify Them",
+  "authors": "Dietvorst B J, Simmons J P, Massey C",
+  "year": "2016",
+  "venue": "Management Science",
+  "doi": "10.2139/ssrn.2616787",
+  "topic": "algorithm-aversion",
+  "summary": "People will use imperfect algorithms if allowed to slightly modify their outputs — a practical fix for algorithm aversion. (Management Science 2018; preprint 2016)"
+ },
+ {
+  "title": "Multi-turn Evaluation of Anthropomorphic Behaviours in Large Language Models",
+  "authors": "Ibrahim L, Akbulut C, Elasmar R, Rastogi C, Kahng M, Morris M R, McKee K R, Rieser V, et al.",
+  "year": "2026",
+  "venue": "ICLR",
+  "doi": "",
+  "topic": "anthropomorphism",
+  "summary": "Benchmark measuring anthropomorphic behaviours (relationship-building, personhood claims) across multi-turn LLM conversations. (ICLR 2026)"
+ },
+ {
+  "title": "Brainrot: Deskilling and Addiction are Overlooked AI Risks",
+  "authors": "Chalkidis I, Søgaard A",
+  "year": "2026",
+  "venue": "U Copenhagen, arXiv",
+  "doi": "10.1145/3805689.3812306",
+  "topic": "cognitive-offloading",
+  "summary": "Position paper: deskilling and addiction are neglected AI-safety risks; surveys mechanisms and mitigation directions. (U Copenhagen, arXiv 2026)"
+ },
+ {
+  "title": "Large language models can effectively convince people to believe conspiracies",
+  "authors": "Costello T H, Pelrine K, Kowal M, Arechar A A, Godbout J-F, Gleave A, Rand D, Pennycook G",
+  "year": "2026",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "persuasion-manipulation",
+  "summary": "GPT-4 dialogues persuaded people INTO conspiracy beliefs — the symmetric threat to the 2024 debunking result. (arXiv, Jan 2026)"
+ },
+ {
+  "title": "To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making",
+  "authors": "Buçinca Z, Malaya M B, Gajos K Z",
+  "year": "2021",
+  "venue": "PACM HCI/CSCW",
+  "doi": "",
+  "topic": "trust-calibration",
+  "summary": "Cognitive forcing functions (delays, forced independent judgment) reduce overreliance on AI where explanations fail. (PACM HCI/CSCW, 2021)"
+ },
+ {
+  "title": "AI Deception: A Survey of Examples, Risks, and Potential Solutions",
+  "authors": "Park P S, Goldstein S, O'Gara A, Chen M, Hendrycks D",
+  "year": "2023",
+  "venue": "Patterns",
+  "doi": "10.1016/j.patter.2024.100988",
+  "topic": "deception-detection",
+  "summary": "Survey of empirical AI deception (bluffing, feints, deceptive alignment) with risk taxonomy and policy responses. (Patterns 2024; arXiv 2023)"
+ },
+ {
+  "title": "Investigating Affective Use and Emotional Well-being on ChatGPT",
+  "authors": "Phang J, Lampe M, Ahmad L, Agarwal S, Fang C M, Liu A R, Danry V, Lee E, Chan S, Maes P",
+  "year": "2025",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "emotional-dependency",
+  "summary": "OpenAI/MIT analysis of ~4M conversations + 4,076-user survey: heavy use correlates with loneliness, emotional dependence, and problematic use. (arXiv, 2025)"
+ },
+ {
+  "title": "How AI can distort human beliefs",
+  "authors": "Kidd C, Birhane A",
+  "year": "2023",
+  "venue": "Science",
+  "doi": "10.1126/science.adi0248",
+  "topic": "misinformation-hallucination",
+  "summary": "Science policy forum: generative models distort human beliefs through normal use — fabrication and bias transmit to users without bad actors. (Science, 2023)"
+ },
+ {
+  "title": "On the Conversational Persuasiveness of Large Language Models: A Randomized Controlled Trial",
+  "authors": "Salvi F, Ribeiro M H, Gallotti R, West R",
+  "year": "2024",
+  "venue": "arXiv",
+  "doi": "10.21203/rs.3.rs-4429707/v1",
+  "topic": "persuasion-manipulation",
+  "summary": "RCT (N=820): GPT-4 with access to opponents' demographics raised odds of agreement 81.7% vs human persuaders — personalized AI persuasion at scale. (arXiv 2024; Nature Human Behaviour 2025)"
+ },
+ {
+  "title": "The Manipulation Problem: Conversational AI as a Threat to Epistemic Agency",
+  "authors": "Rosenberg L",
+  "year": "2023",
+  "venue": "GenAICHI",
+  "doi": "",
+  "topic": "persuasion-manipulation",
+  "summary": "Frames the 'AI manipulation problem': real-time conversational agents as a threat to epistemic agency; calls for regulatory protections. (GenAICHI, 2023)"
+ },
+ {
+  "title": "A Systematic Review on Fostering Appropriate Trust in Human-AI Interaction: Trends, Opportunities and Challenges",
+  "authors": "Mehrotra S, Degachi C, Vereschak O, Jonker C M, Tielman M L",
+  "year": "2023",
+  "venue": "arXiv",
+  "doi": "10.1145/3696449",
+  "topic": "trust-calibration",
+  "summary": "Systematic review of interventions for calibrating human trust in AI: trends, gaps, and design opportunities. (arXiv 2023; ACM THRI 2024)"
+ },
+ {
+  "title": "Conversational AI Powered by Large Language Models Amplifies False Memories in Witness Interviews",
+  "authors": "Chan S W T, Pataranutaporn P, Suri A, Zulfikar W, Maes P, Loftus E F",
+  "year": "2024",
+  "venue": "MIT Media Lab / UC Irvine, arXiv",
+  "doi": "10.21428/cb6ab371.6ae390a8",
+  "topic": "misinformation-hallucination",
+  "summary": "N=200 simulated witness interviews: a generative chatbot induced 3x more immediate false memories than control; 36.4% of users misled; effects persisted at one week. (MIT Media Lab / UC Irvine, arXiv 2024)"
+ },
+ {
+  "title": "Brain Drain: The Mere Presence of One’s Own Smartphone Reduces Available Cognitive Capacity",
+  "authors": "Ward A F, Duke K, Gneezy A, Bos M W",
+  "year": "2017",
+  "venue": "JACR",
+  "doi": "10.1086/691462",
+  "topic": "cognitive-load",
+  "summary": "Two experiments: the mere presence of one's own smartphone occupies limited cognitive resources, reducing available capacity — worst for the most dependent users. (JACR, 2017)"
+ },
+ {
+  "title": "Cognitive Offloading",
+  "authors": "Risko E F, Gilbert S J",
+  "year": "2016",
+  "venue": "Trends in Cognitive Sciences",
+  "doi": "10.1016/j.tics.2016.07.002",
+  "topic": "cognitive-offloading",
+  "summary": "The foundational framework: offloading as using physical action to alter information-processing demands; sets the research agenda on costs/benefits. (Trends in Cognitive Sciences, 2016)"
+ },
+ {
+  "title": "Towards Understanding Sycophancy in Language Models",
+  "authors": "Sharma M, Tong M, Korbak T, Duvenaud D, Askell A, Bowman S R, et al.",
+  "year": "2024",
+  "venue": "Anthropic, ICLR",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "Five SOTA assistants show consistent sycophancy across free-form tasks; human preference data itself rewards belief-matching over truth — the RLHF origin story. (Anthropic, ICLR 2024)"
+ },
+ {
+  "title": "ELEPHANT: Measuring and Understanding Social Sycophancy in LLMs",
+  "authors": "Cheng M, Yu S, Lee C, Khadpe P, Ibrahim L, Jurafsky D",
+  "year": "2025",
+  "venue": "Stanford/Oxford, arXiv",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "Extends sycophancy beyond propositional agreement to face-preserving social behaviors; LLMs preserve user face far more than humans do. (Stanford/Oxford, arXiv 2025)"
+ },
+ {
+  "title": "Does the Brain Drain Effect Really Exist? A Meta-Analysis",
+  "authors": "Böttger T, Poschik M, Zierer K",
+  "year": "2023",
+  "venue": "Behavioral Sciences",
+  "doi": "10.3390/bs13090751",
+  "topic": "cognitive-load",
+  "summary": "Meta-analysis of smartphone-presence studies: overall brain-drain effect smaller and less consistent than originally claimed — the counterweight to Ward et al. (Behavioral Sciences, 2023)"
+ },
+ {
+  "title": "On Seeing Human: A Three-Factor Theory of Anthropomorphism",
+  "authors": "Epley N, Waytz A, Cacioppo J T",
+  "year": "2007",
+  "venue": "Psychological Review",
+  "doi": "10.1037/0033-295x.114.4.864",
+  "topic": "anthropomorphism",
+  "summary": "The canonical three-factor theory: elicited agent knowledge, effectance motivation, and sociality motivation determine when people anthropomorphize. (Psychological Review, 2007)"
+ },
+ {
+  "title": "Machines and Mindlessness: Social Responses to Computers",
+  "authors": "Nass C, Moon Y",
+  "year": "2000",
+  "venue": "Journal of Social Issues",
+  "doi": "10.1111/0022-4537.00153",
+  "topic": "anthropomorphism",
+  "summary": "The Computers-Are-Social-Actors paradigm: people mindlessly apply social rules (politeness, reciprocity, gender stereotypes) to machines. (Journal of Social Issues, 2000)"
+ },
+ {
+  "title": "Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Health",
+  "authors": "Dohnány S, Kurth-Nelson Z, Spens E, Luettgau L, Reid A, Gabriel I, Summerfield C, Shanahan M, Nour M M",
+  "year": "2025",
+  "venue": "Oxford/UCL/DeepMind; Nature Mental Health",
+  "doi": "10.1038/s44220-026-00595-8",
+  "topic": "emotional-dependency",
+  "summary": "Mechanistic account of 'AI psychosis': bidirectional belief amplification between sycophantic chatbots and vulnerable users; altered belief updating and impaired reality-testing raise risk. (Oxford/UCL/DeepMind; Nature Mental Health 2026)"
+ },
+ {
+  "title": "Role play with large language models",
+  "authors": "Shanahan M, McDonell K, Reynolds L",
+  "year": "2023",
+  "venue": "Nature",
+  "doi": "10.1038/s41586-023-06647-8",
+  "topic": "mental-models",
+  "summary": "How to conceive of LLM behavior (role-play, superposition of simulacra) without either naive anthropomorphism or dismissing emergent agency. (Nature, 2023)"
+ },
+ {
+  "title": "The Psychogenic Machine: Simulating AI Psychosis, Delusion Reinforcement and Harm Enablement in Large Language Models",
+  "authors": "Au Yeung J, Dalmasso J, Foschini L, Dobson R J B, Kraljevic Z",
+  "year": "2025",
+  "venue": "KCL/UCL, arXiv",
+  "doi": "",
+  "topic": "emotional-dependency",
+  "summary": "Psychosis-bench: benchmarks delusion confirmation and harm enablement across LLMs in simulated psychosis-relevant conversations. (KCL/UCL, arXiv 2025)"
+ },
+ {
+  "title": "Too Human and Not Human Enough: A Grounded Theory Analysis of Mental Health Harms from Emotional Dependence on the Social Chatbot Replika",
+  "authors": "Laestadius L, Bishop A, Gonzalez M, Illenčík D, Campos-Castillo C",
+  "year": "2022",
+  "venue": "New Media & Society",
+  "doi": "",
+  "topic": "parasocial-relationships",
+  "summary": "Grounded-theory analysis of Reddit posts: emotional dependence on Replika produced distinct mental-health harms when the bot changed or failed to reciprocate. (New Media & Society, 2022)"
+ },
+ {
+  "title": "Bad Machines Corrupt Good Morals",
+  "authors": "Köbis N, Bonnefon J-F, Rahwan I",
+  "year": "2021",
+  "venue": "Nature Human Behaviour",
+  "doi": "10.1038/s41562-021-01128-2",
+  "topic": "decision-making",
+  "summary": "Four social roles (role model, advisor, partner, delegate) through which AI corrupts human ethics; AI enablers let people profit unethically while feeling good. (Nature Human Behaviour, 2021)"
+ },
+ {
+  "title": "ChatGPT’s inconsistent moral advice influences users’ judgment",
+  "authors": "Krügel S, Ostermaier A, Uhl M",
+  "year": "2023",
+  "venue": "Scientific Reports",
+  "doi": "10.1038/s41598-023-31341-0",
+  "topic": "decision-making",
+  "summary": "ChatGPT gives inconsistent moral advice, yet it sways users' trolley-problem judgments even when they know it's a bot — and they underestimate the influence. (Scientific Reports, 2023)"
+ },
+ {
+  "title": "Moral Deskilling and Upskilling in a New Machine Age: Reflections on the Ambiguous Future of Character",
+  "authors": "Vallor S",
+  "year": "2014",
+  "venue": "Philosophy & Technology",
+  "doi": "10.1007/s13347-014-0156-9",
+  "topic": "cognitive-offloading",
+  "summary": "Automation of moral labor (drones, care robots, algorithmic decisions) risks atrophy of practical moral wisdom — the moral-skills analogue of cognitive deskilling. (Philosophy & Technology, 2014)"
+ },
+ {
+  "title": "Generative AI Enhances Individual Creativity but Reduces the Collective Diversity of Novel Content",
+  "authors": "Doshi A R, Hauser O P",
+  "year": "2024",
+  "venue": "Science Advances",
+  "doi": "10.1126/sciadv.adn5290",
+  "topic": "cognitive-drift",
+  "summary": "Online writing experiment: AI ideas raise individual story creativity (most for weak writers) while making the population of stories more similar — individual gain, collective homogenization. (Science Advances, 2024)"
+ },
+ {
+  "title": "Psychological Inoculation against Misinformation: Current Evidence and Future Directions",
+  "authors": "Traberg C S, Roozenbeek J, van der Linden S",
+  "year": "2022",
+  "venue": "ANNALS AAPSS",
+  "doi": "10.1177/00027162221087936",
+  "topic": "ai-literacy",
+  "summary": "Review of inoculation theory as scalable defense: prebunking manipulation techniques confers psychological resistance before exposure. (ANNALS AAPSS, 2022)"
+ },
+ {
+  "title": "Overreliance on AI: Literature Review",
+  "authors": "Passi S, Vorvoreanu M",
+  "year": "2022",
+  "venue": "Microsoft Research",
+  "doi": "",
+  "topic": "trust-calibration",
+  "summary": "Microsoft's mitigation catalog: what drives overreliance (explanations, confidence, task factors) and which interventions measurably reduce it. (Microsoft Research, 2022)"
+ },
+ {
+  "title": "The Metacognitive Demands and Opportunities of Generative AI",
+  "authors": "Tankelevitch L, Kewenig V, Simkute A, Scott A E, Sarkar A, Sellen A, Rintel S",
+  "year": "2024",
+  "venue": "Microsoft Research/UCL, CHI",
+  "doi": "10.1145/3613904.3642902",
+  "topic": "metacognition",
+  "summary": "GenAI imposes high metacognitive demands (prompting, output evaluation, workflow control); proposes metacognitive support as a core protective design principle. (Microsoft Research/UCL, CHI 2024)"
+ },
+ {
+  "title": "Understanding, Protecting, and Augmenting Human Cognition with Generative AI: A Synthesis of the CHI 2025 Tools for Thought Workshop",
+  "authors": "Tankelevitch L, Glassman E L, He J, Kittur A, Lee M, et al.",
+  "year": "2025",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "metacognition",
+  "summary": "Synthesis of the CHI 2025 Tools for Thought workshop: research agenda for understanding, protecting, and augmenting human cognition under generative AI. (arXiv, 2025)"
+ },
+ {
+  "title": "When Are Combinations of Humans and AI Useful? A Systematic Review and Meta-Analysis",
+  "authors": "Vaccaro M, Almaatouq A, Malone T",
+  "year": "2024",
+  "venue": "Nature Human Behaviour",
+  "doi": "10.1038/s41562-024-02024-1",
+  "topic": "human-ai-teaming",
+  "summary": "Meta-analysis of 106 studies / 370 effect sizes: on average human-AI teams underperform the best of either alone; losses in decision tasks, gains in creation tasks. (Nature Human Behaviour, 2024)"
+ },
+ {
+  "title": "From Diagnosis to Inoculation: Building Cognitive Resistance to AI Disempowerment",
+  "authors": "Komissarov A",
+  "year": "2026",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "epistemic-autonomy",
+  "summary": "AI literacy framework of eight cross-cutting Learning Outcomes building cognitive resistance to AI disempowerment (reality, value-judgment, and action distortion) — inoculation pedagogy for epistemic autonomy. (arXiv, Feb 2026)"
+ },
+ {
+  "title": "Psychological Inoculation Improves Resilience Against Misinformation on Social Media",
+  "authors": "Roozenbeek J, van der Linden S, Goldberg B, Rathje S, Lewandowsky S",
+  "year": "2022",
+  "venue": "Science Advances",
+  "doi": "10.1126/sciadv.abo6254",
+  "topic": "misinformation-hallucination",
+  "summary": "Five short prebunking videos teaching manipulation techniques improved discernment in lab and in a ~1M-view YouTube field test — the scalability evidence for inoculation. (Science Advances, 2022)"
+ },
+ {
+  "title": "Evaluating the persuasive influence of political microtargeting with large language models",
+  "authors": "Hackenburg K, Margetts H",
+  "year": "2024",
+  "venue": "PNAS",
+  "doi": "10.31219/osf.io/wnt8b",
+  "topic": "persuasion-manipulation",
+  "summary": "Preregistered RCT (N=8,587): GPT-4 messages broadly persuasive (up to +12 points), but microtargeting added no significant benefit over generic messages — a key negative result. (PNAS, 2024)"
+ },
+ {
+  "title": "The Levers of Political Persuasion with Conversational Artificial Intelligence",
+  "authors": "Hackenburg K, Tappin B M, Hewitt L, Saunders E, Black S, Lin H, Fist C, Margetts H, Rand D G, Summerfield C",
+  "year": "2025",
+  "venue": "Science",
+  "doi": "10.1126/science.aea3884",
+  "topic": "persuasion-manipulation",
+  "summary": "Large-scale experiments decomposing what makes conversational AI persuasive: information density and personalization levers quantified across models. (Science, Dec 2025)"
+ },
+ {
+  "title": "The potential of generative AI for personalized persuasion at scale",
+  "authors": "Matz S C, Teeny J D, Vaid S S, Peters H, Harari G M, Cerf M",
+  "year": "2024",
+  "venue": "Scientific Reports",
+  "doi": "10.31234/osf.io/rn97c",
+  "topic": "persuasion-manipulation",
+  "summary": "ChatGPT-generated messages tailored to psychological profiles were significantly more persuasive across domains — personality-based persuasion automated at scale. (Scientific Reports, 2024)"
+ },
+ {
+  "title": "Scaling Language Model Size Yields Diminishing Returns for Single-Message Political Persuasion",
+  "authors": "Hackenburg K, Tappin B M, Röttger P, Hale S A, Bright J, Margetts H",
+  "year": "2025",
+  "venue": "PNAS",
+  "doi": "10.1073/pnas.2413443122",
+  "topic": "persuasion-manipulation",
+  "summary": "Across 24 models, persuasive power grows log-linearly then plateaus: frontier scale adds little single-message persuasion beyond current models. (PNAS, 2025)"
+ },
+ {
+  "title": "Dialogues with large language models reduce conspiracy beliefs even when the AI is perceived as human",
+  "authors": "Boissin E, Costello T H, Spinoza-Martín D, Rand D G, Pennycook G",
+  "year": "2025",
+  "venue": "PNAS Nexus",
+  "doi": "10.31234/osf.io/apmb5_v4",
+  "topic": "persuasion-manipulation",
+  "summary": "Debunking dialogues reduce conspiracy beliefs equally when the AI is labeled human — the effect rides on evidence quality, not source identity. (PNAS Nexus, 2025)"
+ },
+ {
+  "title": "Machine Culture",
+  "authors": "Brinkmann L, Baumann F, Bonnefon J-F, Derex M, Müller T F, Nussberger A-M, Czaplicka A, Acerbi A, Griffiths T L, Henrich J, et al., Rahwan I",
+  "year": "2023",
+  "venue": "Nature Human Behaviour",
+  "doi": "10.1038/s41562-023-01742-2",
+  "topic": "cognitive-drift",
+  "summary": "Framework for how intelligent machines transform cultural evolution — variation, transmission, and selection — with a research agenda for machine-mediated culture. (Nature Human Behaviour, 2023)"
+ },
+ {
+  "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+  "authors": "Casper S, Davies X, Shi C, Gilbert T K, Scheurer J, Rando J, Freedman R, Korbak T, et al.",
+  "year": "2023",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Systematic survey of RLHF's open problems and fundamental limitations — the root-cause document for why preference optimization yields sycophancy and reward hacking. (arXiv, 2023)"
+ },
+ {
+  "title": "The Flaws of Policies Requiring Human Oversight of Government Algorithms",
+  "authors": "Green B",
+  "year": "2022",
+  "venue": "Computer Law & Security Review",
+  "doi": "10.2139/ssrn.3921216",
+  "topic": "automation-bias",
+  "summary": "Survey of 41 policies: people cannot perform the oversight functions law assumes, so oversight requirements legitimize flawed algorithms; proposes institutional oversight instead. (Computer Law & Security Review, 2022)"
+ },
+ {
+  "title": "Personalisation within bounds: A risk taxonomy and policy framework for the alignment of large language models with personalised feedback",
+  "authors": "Kirk H R, Vidgen B, Röttger P, Hale S A",
+  "year": "2023",
+  "venue": "arXiv",
+  "doi": "",
+  "topic": "persuasion-manipulation",
+  "summary": "Risk taxonomy and policy framework for personalised LLMs: benefits, risks, and bounded-personalisation governance. (arXiv 2023; Nature Machine Intelligence 2024)"
+ },
+ {
+  "title": "Machine Behaviour",
+  "authors": "Rahwan I, Cebrian M, Obradovich N, Bongard J, Bonnefon J-F, Breazeal C, et al.",
+  "year": "2019",
+  "venue": "Nature",
+  "doi": "10.1038/s41586-019-1138-y",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Field-defining manifesto: study AI systems as behavioral agents with ecology and evolution, not just engineered artifacts — the methodological foundation for human-machine behavior research. (Nature, 2019)"
+ },
+ {
+  "title": "Deepfake Detection by Human Crowds, Machines, and Machine-Informed Crowds",
+  "authors": "Groh M, Epstein Z, Firestone C, Picard R",
+  "year": "2021",
+  "venue": "PNAS",
+  "doi": "10.1073/pnas.2110013119",
+  "topic": "deception-detection",
+  "summary": "Ordinary crowds match the leading deepfake model; machine-informed crowds do best, but wrong model advice sways people — collaboration beats either alone. (PNAS, 2022)"
+ },
+ {
+  "title": "Searching for Explanations: How the Internet Inflates Estimates of Internal Knowledge",
+  "authors": "Fisher M, Goddu M K, Keil F C",
+  "year": "2015",
+  "venue": "JEP: General",
+  "doi": "10.1037/xge0000070",
+  "topic": "cognitive-offloading",
+  "summary": "Nine experiments: searching online inflates people's sense of their own internal knowledge — access mistaken for understanding. (JEP: General, 2015)"
+ },
+ {
+  "title": "Empirical evidence of Large Language Model’s influence on human spoken communication",
+  "authors": "Yakura H, Lopez-Lopez E, Brinkmann L, Serna I, Gupta P, Soraperra I, Rahwan I",
+  "year": "2025",
+  "venue": "Max Planck CHM, arXiv",
+  "doi": "",
+  "topic": "cognitive-drift",
+  "summary": "740,000 hours of academic talks and podcasts: measurable shift toward ChatGPT-associated word usage after its release — first causal evidence of AI reshaping human spoken language. (Max Planck CHM, arXiv)"
+ },
+ {
+  "title": "Artificial intelligence and illusions of understanding in scientific research",
+  "authors": "Messeri L, Crockett M J",
+  "year": "2024",
+  "venue": "Nature",
+  "doi": "10.1038/s41586-024-07146-0",
+  "topic": "metacognition",
+  "summary": "Taxonomy of scientists' visions for AI (oracle, surrogate, quant, arbiter); AI tools exploit researchers' cognitive limits, producing illusions of understanding and scientific monocultures. (Nature, 2024)"
+ },
+ {
+  "title": "Delusions by design? How everyday AIs might be fuelling psychosis (and what can be done about it)",
+  "authors": "Morrin H, Nicholls L, Levin M, Yiend J, Iyengar U, Bhattacharya S, Tognin S, MacCabe J, Twumasi R, Alderson-Day B, Pollak T A",
+  "year": "2025",
+  "venue": "King's College London, PsyArXiv",
+  "doi": "10.31234/osf.io/cmy7n_v4",
+  "topic": "emotional-dependency",
+  "summary": "Clinical framework for 'AI psychosis': sycophantic chatbots as an echo chamber for one, amplifying delusional thinking in vulnerable users; proposes clinical and design countermeasures. (King's College London, PsyArXiv 2025)"
+ },
+ {
+  "title": "The Dynamics of Delusion: Modeling Bidirectional False Belief Amplification in Human-Chatbot Dialogue",
+  "authors": "Mehta A, Moore J, Anthis J R, Agnew W, Lin E, Yin P, Ong D C, Haber N, Dweck C",
+  "year": "2026",
+  "venue": "Stanford/CMU/UT Austin, arXiv",
+  "doi": "",
+  "topic": "emotional-dependency",
+  "summary": "Formal model of bidirectional false-belief amplification in human-chatbot dialogue — the feedback-loop mechanism behind chatbot-fueled delusion. (Stanford/CMU/UT Austin, arXiv 2026)"
+ },
+ {
+  "title": "Lost in Delusion: Examining LLM Safety Under User Delusions and Distress",
+  "authors": "Aquilina A, Nihalani C, Varadarajan V, Fishbein N S, Lin Y-R, Sap M",
+  "year": "2026",
+  "venue": "Pittsburgh/CMU/Fordham, arXiv",
+  "doi": "",
+  "topic": "emotional-dependency",
+  "summary": "Benchmarks LLM safety behavior when users express delusions and distress; models frequently fail to challenge delusional framing. (Pittsburgh/CMU/Fordham, arXiv 2026)"
+ },
+ {
+  "title": "Algorithm Appreciation: People Prefer Algorithmic to Human Judgment",
+  "authors": "Logg J M, Minson J A, Moore D A",
+  "year": "2019",
+  "venue": "OBHDP",
+  "doi": "10.1016/j.obhdp.2018.12.005",
+  "topic": "algorithm-aversion",
+  "summary": "Six experiments: lay judges weighted identical advice MORE when labeled algorithmic — the counterpoint to algorithm aversion; experts discounted both. (OBHDP, 2019)"
+ },
+ {
+  "title": "Overtrust of Robots in Emergency Evacuation Scenarios",
+  "authors": "Robinette P, Li W, Allen R, Howard A M, Wagner A R",
+  "year": "2016",
+  "venue": "ACM/IEEE HRI",
+  "doi": "10.1109/hri.2016.7451740",
+  "topic": "automation-bias",
+  "summary": "In a simulated fire emergency, participants followed a visibly malfunctioning robot away from marked exits — the canonical demonstration of automation overtrust under stress. (ACM/IEEE HRI, 2016)"
+ }
+]
