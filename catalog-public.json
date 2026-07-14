@@ -817,5 +817,32 @@
   "doi": "10.1037/0022-3514.42.1.116",
   "topic": "metacognition",
   "summary": "Develops and validates the Need for Cognition scale — the individual-difference instrument that moderates who benefits from protective designs (cf. Buçinca 2021). (JPSP, 1982)"
+ },
+ {
+  "title": "How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study",
+  "authors": "Fang C M, Liu A R, Danry V, Lee E, Chan S W T, Pataranutaporn P, Maes P, Phang J, Lampe M, Ahmad L, Agarwal S",
+  "year": "2025",
+  "venue": "MIT Media Lab/OpenAI, arXiv",
+  "doi": "10.48550/arxiv.2503.17473",
+  "topic": "emotional-dependency",
+  "summary": "4-week randomized controlled study (N≈1,000) of extended chatbot use across modalities and conversation types; higher daily use predicted worse psychosocial outcomes — the RCT companion to the platform-scale Phang study. (MIT Media Lab/OpenAI, arXiv 2025)"
+ },
+ {
+  "title": "Why human–AI relationships need socioaffective alignment",
+  "authors": "Kirk H R, Gabriel I, Summerfield C, Vidgen B, Hale S A",
+  "year": "2025",
+  "venue": "Humanities & Social Sciences Communications",
+  "doi": "10.1057/s41599-025-04532-5",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Framework: alignment must account for the social-psychological ecosystem co-created by user and AI — three intrapersonal dilemmas (present/future self, autonomy under preference-shaping, AI vs human relationships). (Humanities & Social Sciences Communications, 2025)"
+ },
+ {
+  "title": "A Model for Types and Levels of Human Interaction with Automation",
+  "authors": "Parasuraman R, Sheridan T B, Wickens C D",
+  "year": "2000",
+  "venue": "IEEE SMC-A",
+  "doi": "10.1109/3468.844354",
+  "topic": "human-ai-teaming",
+  "summary": "The canonical framework: four stages of information processing x ten levels of automation, with evaluative criteria including mental workload, situation awareness, complacency, and skill degradation. (IEEE SMC-A, 2000)"
  }
 ]
