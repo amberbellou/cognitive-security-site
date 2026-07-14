@@ -13,7 +13,7 @@
 <main>
 <nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a><a href="ask.html">Ask the Evidence</a></nav>
 <h1>Cognitive Security Threat Map</h1>
-<p class="sub">Five threat classes against human cognition, built from 91 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
+<p class="sub">Five threat classes against human cognition, built from 94 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
 <div class="toc"><a class="chip" href="#T1"><b>T1</b> Attacks on Belief Formation</a><a class="chip" href="#T2"><b>T2</b> Erosion of Cognitive Capability</a><a class="chip" href="#T3"><b>T3</b> Miscalibrated Trust &amp; Reliance</a><a class="chip" href="#T4"><b>T4</b> Exploitation of Emotional &amp; Relational Cognition</a><a class="chip" href="#T5"><b>T5</b> Cognitive Warfare (Adversarial &amp; Societal Scale)</a></div>
 <h2 id="T1"><span class="tcode">T1</span>Attacks on Belief Formation</h2>
 <p class="tdesc">Threats that corrupt what people come to believe — not by breaking the machine, but by exploiting how human belief updating works.</p>
@@ -426,7 +426,7 @@
 </article>
 <article class="card" id="cacioppo1982">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/Cacioppo1982_NeedForCognition.pdf" target="_blank" rel="noopener">The Need for Cognition</a><span class="badge" title="Experimental evidence">EXP</span></h4>
-<p class="meta">Cacioppo J T, Petty R E · 1982 · Four scale-development and validation studies (JPSP)</p>
+<p class="meta">Cacioppo J T, Petty R E · 1982 · Four scale-development and validation studies (JPSP) · <a href="https://doi.org/10.1037/0022-3514.42.1.116" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Validated instrument for the trait that moderates protective-design benefits (cf. Buçinca 2021).</p>
 <blockquote>“a scale to assess the need for cognition (i.e., the tendency for an individual to engage in and enjoy thinking) was developed and validated” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Vulnerability measurement:</b> NFC identifies users least served by explanation-based protections — enabling targeted intervention design.</div>
@@ -533,6 +533,14 @@
 <blockquote>“overly technical, cognitively demanding, or even simplistic explanations may inadvertently reinforce misplaced trust” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Calibrated explanation design:</b> Explanations must match user expertise and task verification demands; XAI is not automatically protective.</div>
 <p class="limits">Limitations: Review-level evidence; heterogeneous study designs.</p>
+</article>
+<article class="card" id="parasuraman2000">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/human-ai-teaming/Parasuraman2000_TypesLevelsHumanAutomation.pdf" target="_blank" rel="noopener">A Model for Types and Levels of Human Interaction with Automation</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Parasuraman R, Sheridan T B, Wickens C D · 2000 · Framework paper (IEEE Transactions on Systems, Man, and Cybernetics) · <a href="https://doi.org/10.1109/3468.844354" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ The canonical scaffold for deciding what to automate and how much.</p>
+<blockquote>“Given these technical capabilities, which system functions should be automated and to what extent?” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Levels-of-automation analysis:</b> Structured evaluation (workload, situation awareness, complacency, skill degradation) before delegating functions — the ancestor of modern reliance design.</div>
+<p class="limits">Limitations: Pre-AI automation context; framework not empirical test.</p>
 </article>
 <article class="card" id="laux2025">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Laux2025_AutomationBiasInAIAct.pdf" target="_blank" rel="noopener">Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
@@ -696,6 +704,14 @@
 <div class="prot"><b>Protection — Socioaffective alignment monitoring:</b> Privacy-preserving affective-cue analysis at platform scale can identify dependence patterns early.</div>
 <p class="limits">Limitations: Self-reported well-being; 28-day window; single platform.</p>
 </article>
+<article class="card" id="fang2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Fang2025_PsychosocialEffectsChatbotRCT.pdf" target="_blank" rel="noopener">How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Fang C M, Liu A R, Danry V, Lee E, Chan S W T, Pataranutaporn P, Maes P, Phang J, Lampe M, Ahmad L, Agarwal S · 2025 · 4-week IRB-approved RCT, ~1,000 participants, randomized modality and conversation type (MIT/OpenAI) · <a href="https://doi.org/10.48550/arxiv.2503.17473" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ The causal companion to platform-scale correlational findings on emotional reliance.</p>
+<blockquote>“As people increasingly seek emotional support and compa” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Usage-pattern monitoring:</b> Duration and modality are measurable levers; effects concentrate in heavy use, enabling targeted safeguards.</div>
+<p class="limits">Limitations: 4-week window; self-reported psychosocial outcomes.</p>
+</article>
 <article class="card" id="jiao2026">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Jiao2026_AIEmpathyErodesCognitiveAutonomy.pdf" target="_blank" rel="noopener">AI Empathy Erodes Cognitive Autonomy in Younger Users</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
 <p class="meta">Jiao J, Murali A, Afroogh S · 2026 · Analysis of RLHF affective alignment with proposed design alternatives · <a href="https://doi.org/10.48550/arxiv.2603.29886" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
@@ -814,6 +830,14 @@
 <div class="prot"><b>Protection — Attack/defense formalization + cognitive impact metrics:</b> Roadmap: formal threat models with attack/defense mechanisms, plus standardized metrics for cognitive impact.</div>
 <p class="limits">Limitations: Position/roadmap paper; empirical program still to be executed.</p>
 </article>
+<article class="card" id="kirk2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Kirk2025_SocioaffectiveAlignment.pdf" target="_blank" rel="noopener">Why human–AI relationships need socioaffective alignment</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Kirk H R, Gabriel I, Summerfield C, Vidgen B, Hale S A · 2025 · Framework paper (Humanities &amp; Social Sciences Communications / Oxford, DeepMind) · <a href="https://doi.org/10.1057/s41599-025-04532-5" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Names the emerging challenge: deeper, persistent human-AI relationships.</p>
+<blockquote>“as AI capabilities advance, we face a new challenge: the emergence of deeper, more persistent relationships between humans and AI systems” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Socioaffective alignment:</b> Align AI behavior within the co-created social-psychological ecosystem — support human relationships rather than substitute for them.</div>
+<p class="limits">Limitations: Conceptual; operationalization open.</p>
+</article>
 <article class="card" id="casper2023">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Casper2023_OpenProblemsRLHF.pdf" target="_blank" rel="noopener">Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
 <p class="meta">Casper S, Davies X, Shi C, Gilbert T K, Scheurer J, Rando J, Freedman R, Korbak T, et al. · 2023 · Systematic survey plus auditing/disclosure proposals (arXiv) · <a href="https://doi.org/10.48550/arxiv.2307.15217" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
@@ -838,7 +862,7 @@
 <div class="prot"><b>Protection — Continuous multimodal biometrics + adjustable autonomy:</b> Devices recognize owners the way humans recognize each other and make human-like security decisions.</div>
 <p class="limits">Limitations: Pre-AI-era (2008); device-security sense of the term, distinct from influence-defense usage.</p>
 </article>
-<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 91 papers, 2026-07-13.</footer>
+<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 94 papers, 2026-07-14.</footer>
 </main>
 </body>
 </html>
