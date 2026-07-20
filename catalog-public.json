@@ -844,5 +844,23 @@
   "doi": "10.1109/3468.844354",
   "topic": "human-ai-teaming",
   "summary": "The canonical framework: four stages of information processing x ten levels of automation, with evaluative criteria including mental workload, situation awareness, complacency, and skill degradation. (IEEE SMC-A, 2000)"
+ },
+ {
+  "title": "Nudging and Boosting: Steering or Empowering Good Decisions",
+  "authors": "Hertwig R, Grüne-Yanoff T",
+  "year": "2017",
+  "venue": "Perspectives on Psychological Science",
+  "doi": "10.1177/1745691617702496",
+  "topic": "decision-making",
+  "summary": "The foundational distinction between nudges (steering behavior) and boosts (building competence) — the theoretical organizer for all protection-intervention design. (Perspectives on Psychological Science, 2017)"
+ },
+ {
+  "title": "Toolbox of individual-level interventions against online misinformation",
+  "authors": "Kozyreva A, Lorenz-Spreen P, Herzog S M, Ecker U K H, Lewandowsky S, Hertwig R, et al.",
+  "year": "2024",
+  "venue": "Nature Human Behaviour",
+  "doi": "10.1038/s41562-024-01881-0",
+  "topic": "ai-literacy",
+  "summary": "Nine intervention types systematized from 81 papers, with evidence summaries and a living online toolbox — the structural template for a cognitive-security protection layer. (Nature Human Behaviour, 2024)"
  }
 ]
