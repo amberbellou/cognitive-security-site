@@ -389,3 +389,47 @@ footer code {
 
 /* anchor targets clear the sticky nav */
 [id] { scroll-margin-top: 4.5rem; }
+
+/* ── Evidence-tier chips (from the OpenAlex citation audit) ──────────── */
+.tierchip {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: .13rem .45rem;
+  margin-left: .5rem;
+  vertical-align: .18em;
+  white-space: nowrap;
+}
+.tier-classic     { background: var(--gold); color: #3d3117; }
+.tier-established { background: var(--accent-soft); color: var(--accent); }
+.tier-cited       { border: 1px solid var(--hairline); color: var(--muted); }
+.tier-frontier    { border: 1px dashed var(--faint); color: var(--muted); }
+.tier-doctrine    { background: var(--quote-bg); border: 1px solid var(--gold); color: var(--muted); }
+
+/* ── Stats bar (index hero) ──────────────────────────────────────────── */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin: 1.4rem 0 .4rem;
+  padding: 1rem 1.3rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.stats div { min-width: 92px; }
+.stats b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 650;
+  color: var(--accent);
+  line-height: 1.1;
+}
+.stats span { font-size: .74rem; font-weight: 600; letter-spacing: .05em;
+              text-transform: uppercase; color: var(--faint); }
