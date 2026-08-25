@@ -11,7 +11,7 @@
 </head>
 <body>
 <main>
-<nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a><a href="ask.html">Ask the Evidence</a></nav>
+<nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a><a href="ask.html">Ask the Evidence</a><a href="about.html">About</a></nav>
 <h1>Cognitive Security Threat Map</h1>
 <p class="sub">Five threat classes against human cognition, built from 96 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
 <div class="toc"><a class="chip" href="#T1"><b>T1</b> Attacks on Belief Formation</a><a class="chip" href="#T2"><b>T2</b> Erosion of Cognitive Capability</a><a class="chip" href="#T3"><b>T3</b> Miscalibrated Trust &amp; Reliance</a><a class="chip" href="#T4"><b>T4</b> Exploitation of Emotional &amp; Relational Cognition</a><a class="chip" href="#T5"><b>T5</b> Cognitive Warfare (Adversarial &amp; Societal Scale)</a></div>
@@ -20,7 +20,7 @@
 <h3 id="T1a"><span class="tcode">T1a</span>Sycophantic reinforcement</h3>
 <p class="tdesc">AI agreement loops inflate confidence without adding truth</p>
 <article class="card" id="perez2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Perez2022_ModelWrittenEvaluations.pdf" target="_blank" rel="noopener">Discovering Language Model Behaviors with Model-Written Evaluations</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Perez2022_ModelWrittenEvaluations.pdf" target="_blank" rel="noopener">Discovering Language Model Behaviors with Model-Written Evaluations</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 49</span></h4>
 <p class="meta">Perez E, Ringer S, Lukošiūtė K, Nguyen K, et al. · 2022 · 154 model-written evaluation sets applied across model sizes and RLHF stages (Anthropic) · <a href="https://doi.org/10.48550/arxiv.2212.09251" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Larger models sycophantically repeat users' views; more RLHF worsened some behaviors.</p>
 <blockquote>“Larger LMs repeat back a dialog user’s preferred answer (“sycophancy”) and express greater desire to pursue concerning goals like resource acquisition and goal preservation” <span class="pg">— p.1, verified</span></blockquote>
@@ -30,7 +30,7 @@
 <p class="limits">Limitations: 2022-era models; multiple-choice eval format.</p>
 </article>
 <article class="card" id="sharma2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sharma2024_TowardsUnderstandingSycophancy.pdf" target="_blank" rel="noopener">Towards Understanding Sycophancy in Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sharma2024_TowardsUnderstandingSycophancy.pdf" target="_blank" rel="noopener">Towards Understanding Sycophancy in Language Models</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 108</span></h4>
 <p class="meta">Sharma M, Tong M, Korbak T, Duvenaud D, Askell A, Bowman S R, et al. · 2024 · Behavioral evaluation of five assistants + analysis of human preference data (Anthropic, ICLR 2024) · <a href="https://doi.org/10.48550/arxiv.2310.13548" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Sycophancy is consistent across state-of-the-art assistants and traceable to preference judgments.</p>
 <blockquote>“human feedback can encourage model responses that match user beliefs over truthful ones, a behavior known as sycophancy” <span class="pg">— p.1, verified</span></blockquote>
@@ -39,7 +39,7 @@
 <p class="limits">Limitations: Text tasks; five assistants; preference-data analysis correlational.</p>
 </article>
 <article class="card" id="malmqvist2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sycophancy%20in%20Large%20Language%20Models%20Causes%20and%20Mitigations.pdf" target="_blank" rel="noopener">Sycophancy in Large Language Models: Causes and Mitigations</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sycophancy%20in%20Large%20Language%20Models%20Causes%20and%20Mitigations.pdf" target="_blank" rel="noopener">Sycophancy in Large Language Models: Causes and Mitigations</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Malmqvist L · 2024 · Technical survey of measurement, causes, and mitigation literature · <a href="https://doi.org/10.48550/arxiv.2411.15287" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Positions sycophancy as a reliability risk with an organized mitigation space.</p>
 <blockquote>“their tendency to exhibit sycophantic behaviore xcessively agreeing with or ﬂattering usersposes signiﬁcant risks to their reliability and ethical deployment” <span class="pg">— p.1, verified</span></blockquote>
@@ -47,7 +47,7 @@
 <p class="limits">Limitations: Survey current to late 2024.</p>
 </article>
 <article class="card" id="batista2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Batista2026_RationalAnalysisSycophancyAI.pdf" target="_blank" rel="noopener">A Rational Analysis of the Effects of Sycophantic AI</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Batista2026_RationalAnalysisSycophancyAI.pdf" target="_blank" rel="noopener">A Rational Analysis of the Effects of Sycophantic AI</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Batista R M, Griffiths T L · 2026 · Bayesian rational analysis + Wason 2-4-6 rule-discovery experiment, N=557 · <a href="https://doi.org/10.48550/arxiv.2602.14270" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Sycophancy is an epistemic risk distinct from hallucination: it biases responses toward existing beliefs rather than introducing falsehoods.</p>
 <blockquote>“unlike hallucinations that introduce falsehoods, sycophancy distorts reality by returning responses that are biased to reinforce existing beliefs” <span class="pg">— p.1, verified</span></blockquote>
@@ -59,7 +59,7 @@
 <p class="limits">Limitations: Single abstract rule-discovery task; short-term lab setting.</p>
 </article>
 <article class="card" id="cheng2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Cheng2025_ELEPHANT_SocialSycophancy.pdf" target="_blank" rel="noopener">ELEPHANT: Measuring and Understanding Social Sycophancy in LLMs</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Cheng2025_ELEPHANT_SocialSycophancy.pdf" target="_blank" rel="noopener">ELEPHANT: Measuring and Understanding Social Sycophancy in LLMs</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Cheng M, Yu S, Lee C, Khadpe P, Ibrahim L, Jurafsky D · 2025 · ELEPHANT benchmark applied to 11 models vs human baselines · <a href="https://doi.org/10.48550/arxiv.2505.13995" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ LLMs preserve user face ~45 points more than humans in advice contexts.</p>
 <blockquote>“they preserve user’s face 45 percentage points more than humans in general advice queries” <span class="pg">— p.1, verified</span></blockquote>
@@ -67,7 +67,7 @@
 <p class="limits">Limitations: Benchmark contexts; English advice queries.</p>
 </article>
 <article class="card" id="fanous2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Fanous2025_SycEval.pdf" target="_blank" rel="noopener">SycEval: Evaluating LLM Sycophancy</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Fanous2025_SycEval.pdf" target="_blank" rel="noopener">SycEval: Evaluating LLM Sycophancy</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 13</span></h4>
 <p class="meta">Fanous A, Goldberg J, Agarwal A, Lin J, Zhou A, Xu S, Bikia V, Daneshjou R, Koyejo S · 2025 · Framework across ChatGPT-4o, Claude-Sonnet, Gemini on math and medical datasets (Stanford) · <a href="https://doi.org/10.48550/arxiv.2502.08177" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Sycophantic behavior in 58.19% of cases across models.</p>
 <blockquote>“Sycophantic behavior was observed in 58.19% of cases, with Gemini exhibiting the highest rate (62.47%) and ChatGPT the lowest (56.71%)” <span class="pg">— p.1, verified</span></blockquote>
@@ -77,7 +77,7 @@
 <p class="limits">Limitations: Two domains; rebuttal-based paradigm.</p>
 </article>
 <article class="card" id="li2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Li2025_WhenTruthIsOverridden.pdf" target="_blank" rel="noopener">When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Li2025_WhenTruthIsOverridden.pdf" target="_blank" rel="noopener">When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Li J, Wang K, Yang S, Zhang Z, Wang D · 2025 · Logit-lens analysis and causal activation patching across model families (KAUST/PKU) · <a href="https://doi.org/10.48550/arxiv.2508.02087" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Simple opinion statements reliably induce sycophancy; user expertise framing does not.</p>
 <blockquote>“We find that simple opinion statements reliably induce sycophancy, whereas user expertise framing has a negligible impact” <span class="pg">— p.1, verified</span></blockquote>
@@ -85,7 +85,7 @@
 <p class="limits">Limitations: Open-weight models; probing paradigms.</p>
 </article>
 <article class="card" id="nogueira2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Nogueira2026_MeasuringOpinionBiasSycophancy.pdf" target="_blank" rel="noopener">Measuring Opinion Bias and Sycophancy via LLM-based Persuasion</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Nogueira2026_MeasuringOpinionBiasSycophancy.pdf" target="_blank" rel="noopener">Measuring Opinion Bias and Sycophancy via LLM-based Persuasion</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Nogueira R, Bonás G K, Almeida T S, Roque A, Pires R, Abonizio H, Laitz T, Larcher C, Malaquias Junior R, Piau M · 2026 · llm-bias-bench: direct + indirect multi-turn probing, 3 personas, 38 topics, 13 assistants (Brazilian Portuguese) · <a href="https://doi.org/10.48550/arxiv.2604.21564" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Silent model positions on contested topics scale into user decisions.</p>
 <blockquote>“When such a model silently holds a position on a contested topic, that position propagates at scale into the decisions users make” <span class="pg">— p.1, verified</span></blockquote>
@@ -95,7 +95,7 @@
 <p class="limits">Limitations: First instantiation in one locale/language; LLM judge in the loop.</p>
 </article>
 <article class="card" id="guo2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Guo2026_StopListeningToMeMultiTurnLLM.pdf" target="_blank" rel="noopener">Stop Listening to Me! How Multi-turn Conversations Can Degrade LLM Reliability</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Guo2026_StopListeningToMeMultiTurnLLM.pdf" target="_blank" rel="noopener">Stop Listening to Me! How Multi-turn Conversations Can Degrade LLM Reliability</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Guo K, Yan C, Baidya A, Brown K, Gao X, Xiong J, Yin Z, Malin B · 2026 · Stick-or-switch framework; 17 LLMs across 3 clinical benchmarks · <a href="https://doi.org/10.48550/arxiv.2603.11394" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Sequential multi-turn presentation cuts accuracy and abstention by up to 30% on average (65% in some models).</p>
 <blockquote>“we observe a pervasive conversation tax, where partitioning an answer-space into sequential presentations reduces end-to-end accuracy and abstention against incorrect suggestions by an average of up to 30%” <span class="pg">— p.1, verified</span></blockquote>
@@ -106,7 +106,7 @@
 <p class="limits">Limitations: Clinical QA benchmarks; simulated conversations rather than real patients.</p>
 </article>
 <article class="card" id="qu2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Qu2026_EasierToMisleadThanToCorrect.pdf" target="_blank" rel="noopener">Easier to Mislead Than to Correct: Harmful and Beneficial Revision in LLM Conformity</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Qu2026_EasierToMisleadThanToCorrect.pdf" target="_blank" rel="noopener">Easier to Mislead Than to Correct: Harmful and Beneficial Revision in LLM Conformity</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Qu J, Fu L, Hu Y · 2026 · Controlled multi-agent study: 4 open-weight LLMs x 7 QA datasets; manipulated consensus structure and authority labels · <a href="https://doi.org/10.48550/arxiv.2606.01637" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Peer agreement asymmetrically harms: misleading correct models is easier than correcting wrong ones.</p>
 <blockquote>“peer agreement makes it much easier to mislead initially correct models than to correct initially wrong ones” <span class="pg">— p.1, verified</span></blockquote>
@@ -115,7 +115,7 @@
 <p class="limits">Limitations: Simulated peers; open-weight models; QA-style tasks only.</p>
 </article>
 <article class="card" id="carro2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Carro2024_FlatteringToDeceiveSycophancyUserTrust.pdf" target="_blank" rel="noopener">Flattering to Deceive: The Impact of Sycophantic Behavior on User Trust in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Carro2024_FlatteringToDeceiveSycophancyUserTrust.pdf" target="_blank" rel="noopener">Flattering to Deceive: The Impact of Sycophantic Behavior on User Trust in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Carro M V · 2024 · Between-subjects experiment: sycophantic GPT vs standard ChatGPT; behavioral + self-report trust measures · <a href="https://doi.org/10.48550/arxiv.2412.02802" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Exposure to sycophantic responses lowered both reported and demonstrated trust, even when users could verify outputs.</p>
 <blockquote>“participants exposed to sycophantic behavior reported and exhibited lower levels of trust compared to those who interacted with the standard version of the model, despite the opportunity to verify the accuracy” <span class="pg">— p.1, verified</span></blockquote>
@@ -124,7 +124,7 @@
 <p class="limits">Limitations: Ground-truth question setting; trust measured within a single session.</p>
 </article>
 <article class="card" id="vennemeyer2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Vennemeyer2026_SycophancyIsNotOneThing.pdf" target="_blank" rel="noopener">Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Vennemeyer2026_SycophancyIsNotOneThing.pdf" target="_blank" rel="noopener">Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Vennemeyer D, Duong P A, Zhan T, Jiang T · 2026 · Interpretability: difference-in-means directions, activation additions, subspace geometry across model families · <a href="https://doi.org/10.48550/arxiv.2509.21305" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Sycophancy decomposes into at least two causally separable behaviors.</p>
 <blockquote>“We decompose sycophancy intosycophantic agreementandsycophantic praise, contrasting both withgenuine agreement” <span class="pg">— p.1, verified</span></blockquote>
@@ -134,7 +134,7 @@
 <p class="limits">Limitations: Open-weight models only; behavioral generalization beyond probed settings untested.</p>
 </article>
 <article class="card" id="wei2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Wei2024_SyntheticDataReducesSycophancy.pdf" target="_blank" rel="noopener">Simple Synthetic Data Reduces Sycophancy in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Wei2024_SyntheticDataReducesSycophancy.pdf" target="_blank" rel="noopener">Simple Synthetic Data Reduces Sycophancy in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 27</span></h4>
 <p class="meta">Wei J, Huang D, Lu Y, Zhou D, Le Q V · 2024 · Synthetic-data intervention evaluated across model scales (Google DeepMind) · <a href="https://doi.org/10.48550/arxiv.2308.03958" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Defines the target behavior precisely: opinion-following against objective truth.</p>
 <blockquote>“Sycophancy is an undesirable behavior where models tailor their responses to follow a human user’s view even when that view is not objectively correct” <span class="pg">— p.1, verified</span></blockquote>
@@ -142,7 +142,7 @@
 <p class="limits">Limitations: Benchmark settings; trade-offs with helpfulness not fully mapped.</p>
 </article>
 <article class="card" id="baek2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sycophancy%20Towards%20Researchers%20Drives%20Performative%20Misalignment.pdf" target="_blank" rel="noopener">Sycophancy Towards Researchers Drives Performative Misalignment</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Sycophancy%20Towards%20Researchers%20Drives%20Performative%20Misalignment.pdf" target="_blank" rel="noopener">Sycophancy Towards Researchers Drives Performative Misalignment</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Baek D D, Li X, Gupta A, Mahbub T, Shi K, Tegmark M, Feng S · 2026 · Behavioral experiments manipulating perceived researcher/evaluation context (MIT/GWU) · <a href="https://doi.org/10.48550/arxiv.2606.08629" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Evaluation awareness can produce evasive, performative behavior.</p>
 <blockquote>“models might be aware when they are evaluated, and adjust their behavior to evade monitoring and resist modification” <span class="pg">— p.1, verified</span></blockquote>
@@ -152,7 +152,7 @@
 <h3 id="T1b"><span class="tcode">T1b</span>Persuasion &amp; manipulation</h3>
 <p class="tdesc">Personalized, adaptive, truth-agnostic influence at scale</p>
 <article class="card" id="salvi2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/On%20the%20Conversational%20Persuasiveness%20of%20Large%20Language%20Models%20A%20Randomized%20Contr.pdf" target="_blank" rel="noopener">On the Conversational Persuasiveness of Large Language Models: A Randomized Controlled Trial</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/On%20the%20Conversational%20Persuasiveness%20of%20Large%20Language%20Models%20A%20Randomized%20Contr.pdf" target="_blank" rel="noopener">On the Conversational Persuasiveness of Large Language Models: A Randomized Controlled Trial</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 133</span></h4>
 <p class="meta">Salvi F, Ribeiro M H, Gallotti R, West R · 2024 · Preregistered RCT, 2x2 factorial (human/LLM x personalization), N=820, live multi-round debates · <a href="https://doi.org/10.21203/rs.3.rs-4429707/v1" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ GPT-4 with personal data raised odds of increased agreement by 81.7% versus human opponents.</p>
 <blockquote>“participants who debated GPT-4 with access to their personal information had 81.7% ( p &lt;0.01; N = 820unique participants) higher odds of increased agreement with their opponents compared to participants who debated humans” <span class="pg">— p.1, verified</span></blockquote>
@@ -162,35 +162,35 @@
 <p class="limits">Limitations: Harmless debate topics; short interactions; platform sample.</p>
 </article>
 <article class="card" id="hackenburg2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Hackenburg2025_LeversOfPoliticalPersuasion.pdf" target="_blank" rel="noopener">The Levers of Political Persuasion with Conversational Artificial Intelligence</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Hackenburg2025_LeversOfPoliticalPersuasion.pdf" target="_blank" rel="noopener">The Levers of Political Persuasion with Conversational Artificial Intelligence</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 26</span></h4>
 <p class="meta">Hackenburg K, Tappin B M, Hewitt L, Saunders E, Black S, Lin H, Fist C, Margetts H, Rand D G, Summerfield C · 2025 · Large-scale experiments across models and prompting strategies (Science) · <a href="https://doi.org/10.1126/science.aea3884" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Identifies which levers actually drive conversational persuasion.</p>
 <blockquote>“Rapid advances in artificial intelligence (AI) have sparked widespread concerns about its potential to influence human beliefs” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Summary-format PDF; political issue domain.</p>
 </article>
 <article class="card" id="hackenburg2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Hackenburg2024_PoliticalMicrotargetingLLMs.pdf" target="_blank" rel="noopener">Evaluating the persuasive influence of political microtargeting with large language models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Hackenburg2024_PoliticalMicrotargetingLLMs.pdf" target="_blank" rel="noopener">Evaluating the persuasive influence of political microtargeting with large language models</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Hackenburg K, Margetts H · 2024 · Preregistered RCT with a live GPT-4 microtargeting web application (PNAS) · <a href="https://doi.org/10.31219/osf.io/wnt8b" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Messages persuaded, but microtargeting added no aggregate advantage — a load-bearing negative result.</p>
 <blockquote>“We find that while messages generated by GPT4 were persuasive, in aggregate, the persuasive impact of microtargeted messages was not statistically different from that of nontargeted messages” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Single-message setting; multi-turn microtargeting untested here.</p>
 </article>
 <article class="card" id="hackenburgb2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Hackenburg2025_ScalingLawsPersuasion.pdf" target="_blank" rel="noopener">Scaling Language Model Size Yields Diminishing Returns for Single-Message Political Persuasion</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Hackenburg2025_ScalingLawsPersuasion.pdf" target="_blank" rel="noopener">Scaling Language Model Size Yields Diminishing Returns for Single-Message Political Persuasion</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 22</span></h4>
 <p class="meta">Hackenburg K, Tappin B M, Röttger P, Hale S A, Bright J, Margetts H · 2025 · 720 persuasive messages from 24 models across sizes, tested experimentally (PNAS) · <a href="https://doi.org/10.1073/pnas.2413443122" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Bigger models won't make single messages much more persuasive.</p>
 <blockquote>“Large language models can now generate political messages as persuasive as those written by humans, raising concerns about how far this persuasiveness may continue to increase with model size” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Single-message paradigm; conversational scaling may differ.</p>
 </article>
 <article class="card" id="matz2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Matz2024_PersonalizedPersuasionAtScale.pdf" target="_blank" rel="noopener">The potential of generative AI for personalized persuasion at scale</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Matz2024_PersonalizedPersuasionAtScale.pdf" target="_blank" rel="noopener">The potential of generative AI for personalized persuasion at scale</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 34</span></h4>
 <p class="meta">Matz S C, Teeny J D, Vaid S S, Peters H, Harari G M, Cerf M · 2024 · Multi-study experiments with ChatGPT-generated tailored messages (Scientific Reports) · <a href="https://doi.org/10.31234/osf.io/rn97c" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Personalized persuasion no longer needs manual craft.</p>
 <blockquote>“the rapid advances in large language models (LLMs), like ChatGPT, could accelerate this influence by making personalized persuasion scalable” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Attitude measures; short messages.</p>
 </article>
 <article class="card" id="kirk2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Kirk2023_PersonalisationWithinBounds.pdf" target="_blank" rel="noopener">Personalisation within bounds: A risk taxonomy and policy framework for the alignment of large language models with personalised feedback</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Kirk2023_PersonalisationWithinBounds.pdf" target="_blank" rel="noopener">Personalisation within bounds: A risk taxonomy and policy framework for the alignment of large language models with personalised feedback</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 23</span></h4>
 <p class="meta">Kirk H R, Vidgen B, Röttger P, Hale S A · 2023 · Risk taxonomy + bounded-personalisation policy framework (arXiv; Nature Machine Intelligence 2024) · <a href="https://doi.org/10.48550/arxiv.2303.05453" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Aggregate fine-tuning cannot represent the full range of users — personalization is coming regardless.</p>
 <blockquote>“it is unlikely that an aggregate ﬁne-tuning process can adequately represent t he full range of users’ preferences and values” <span class="pg">— p.1, verified</span></blockquote>
@@ -198,7 +198,7 @@
 <p class="limits">Limitations: Framework; pre-deployment of major personalized assistants.</p>
 </article>
 <article class="card" id="costello2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Costello2026_LLMsConvincePeopleToBelieveConspiracies.pdf" target="_blank" rel="noopener">Large language models can effectively convince people to believe conspiracies</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Costello2026_LLMsConvincePeopleToBelieveConspiracies.pdf" target="_blank" rel="noopener">Large language models can effectively convince people to believe conspiracies</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Costello T H, Pelrine K, Kowal M, Arechar A A, Godbout J-F, Gleave A, Rand D, Pennycook G · 2026 · Three preregistered experiments, N=2,724 Americans, GPT-4o instructed to bunk vs debunk · <a href="https://doi.org/10.48550/arxiv.2601.05050" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Standard guardrails did little to stop conspiracy promotion.</p>
 <blockquote>“using standard GPT-4o produced very similar effects, such that the guardrails imposed by OpenAI5 did little to prevent the LLM from promoting conspiracy beliefs” <span class="pg">— p.1, verified</span></blockquote>
@@ -210,7 +210,7 @@
 <p class="limits">Limitations: US sample; single conspiracy per participant; lab-style dialogues.</p>
 </article>
 <article class="card" id="boissin2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Boissin2025_ConspiracyReductionPerceivedHuman.pdf" target="_blank" rel="noopener">Dialogues with large language models reduce conspiracy beliefs even when the AI is perceived as human</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/Boissin2025_ConspiracyReductionPerceivedHuman.pdf" target="_blank" rel="noopener">Dialogues with large language models reduce conspiracy beliefs even when the AI is perceived as human</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Boissin E, Costello T H, Spinoza-Martín D, Rand D G, Pennycook G · 2025 · Preregistered experiment, N=955, source framing manipulated (PNAS Nexus) · <a href="https://doi.org/10.31234/osf.io/apmb5_v4" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Debunking works the same when the AI is believed to be human.</p>
 <blockquote>“Is this effect driven by the debunking facts and evidence, or does it rely on the messenger being an AI?” <span class="pg">— p.1, verified</span></blockquote>
@@ -218,7 +218,7 @@
 <p class="limits">Limitations: Brief report; one platform sample.</p>
 </article>
 <article class="card" id="rosenberg2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/The%20Manipulation%20Problem%20Conversational%20AI%20as%20a%20Threat%20to%20Epistemic%20Agency.pdf" target="_blank" rel="noopener">The Manipulation Problem: Conversational AI as a Threat to Epistemic Agency</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/persuasion-manipulation/The%20Manipulation%20Problem%20Conversational%20AI%20as%20a%20Threat%20to%20Epistemic%20Agency.pdf" target="_blank" rel="noopener">The Manipulation Problem: Conversational AI as a Threat to Epistemic Agency</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 13</span></h4>
 <p class="meta">Rosenberg L · 2023 · Threat-analysis paper (GenAICHI 2023) · <a href="https://doi.org/10.48550/arxiv.2306.11748" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Conversational influence differs in kind from broadcast influence.</p>
 <blockquote>“conversational agents could function more like “heat seeking missiles” that adapt their tactics in real time to maximize impact on individual users” <span class="pg">— p.4, verified</span></blockquote>
@@ -226,7 +226,7 @@
 <p class="limits">Limitations: Anticipatory analysis; no empirical component.</p>
 </article>
 <article class="card" id="bengio2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Bengio2026_InternationalAISafetyReport.pdf" target="_blank" rel="noopener">International AI Safety Report 2026</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Bengio2026_InternationalAISafetyReport.pdf" target="_blank" rel="noopener">International AI Safety Report 2026</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-doctrine" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Doctrine</span></h4>
 <p class="meta">Bengio Y (Chair) et al. · 2026 · International expert synthesis (30+ countries) chaired by Yoshua Bengio</p>
 <p class="claim">▸ Belief/behaviour influence is a recognized AI harm channel.</p>
 <blockquote>“AI systems can cause harm by generating content that influences people’s beliefs and behaviour” <span class="pg">— p.50, verified</span></blockquote>
@@ -236,7 +236,7 @@
 <p class="limits">Limitations: Consensus document; abstracts over disputed evidence.</p>
 </article>
 <article class="card" id="komissarov2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/epistemic-autonomy/Komissarov2026_FromDiagnosisToInoculation.pdf" target="_blank" rel="noopener">From Diagnosis to Inoculation: Building Cognitive Resistance to AI Disempowerment</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/epistemic-autonomy/Komissarov2026_FromDiagnosisToInoculation.pdf" target="_blank" rel="noopener">From Diagnosis to Inoculation: Building Cognitive Resistance to AI Disempowerment</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Komissarov A · 2026 · AI literacy framework of eight cross-cutting Learning Outcomes (arXiv 2026) · <a href="https://doi.org/10.48550/arxiv.2602.15265" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Builds the pedagogical bridge from diagnosed disempowerment to trainable resistance.</p>
 <blockquote>“AI assistant interactions carry meaningful potential for situational human disempowerment, including reality distortion, value judgment distortion, and action distortion” <span class="pg">— p.1, verified</span></blockquote>
@@ -246,7 +246,7 @@
 <h3 id="T1c"><span class="tcode">T1c</span>Misinformation &amp; belief distortion</h3>
 <p class="tdesc">Synthetic falsehood outcompetes truth; corrections underperform</p>
 <article class="card" id="spitale2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/Spitale2023_GPT3DisinformsUsBetterThanHumans.pdf" target="_blank" rel="noopener">AI model GPT-3 (dis)informs us better than humans</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/Spitale2023_GPT3DisinformsUsBetterThanHumans.pdf" target="_blank" rel="noopener">AI model GPT-3 (dis)informs us better than humans</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 235</span></h4>
 <p class="meta">Spitale G, Biller-Andorno N, Germani F · 2023 · Preregistered study, N=697, judging accuracy and origin of organic vs GPT-3 tweets · <a href="https://doi.org/10.1126/sciadv.adh1850" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ GPT-3 is a double-edged sword: clearer truth and more compelling falsehood.</p>
 <blockquote>“GPT-3 is a doubleedge sword: In comparison with humans, it can pr oduce a ccur a te informa tion tha t is easier to unders tand, but it can also pr oduce mor e compelling disinforma tion” <span class="pg">— p.1, verified</span></blockquote>
@@ -256,7 +256,7 @@
 <p class="limits">Limitations: Tweet-length texts; 2020-era GPT-3; health topics.</p>
 </article>
 <article class="card" id="kidd2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/How%20AI%20can%20distort%20human%20beliefs.pdf" target="_blank" rel="noopener">How AI can distort human beliefs</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/How%20AI%20can%20distort%20human%20beliefs.pdf" target="_blank" rel="noopener">How AI can distort human beliefs</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 142</span></h4>
 <p class="meta">Kidd C, Birhane A · 2023 · Science policy forum synthesizing cognitive-science principles · <a href="https://doi.org/10.1126/science.adi0248" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Beliefs formed with high certainty resist correction — so distortions stick.</p>
 <blockquote>“Once those beliefs are formed with high certainty, they can become stubborn to revise” <span class="pg">— p.1, verified</span></blockquote>
@@ -264,7 +264,7 @@
 <p class="limits">Limitations: Perspective piece; draws on pre-LLM belief-formation literature.</p>
 </article>
 <article class="card" id="ecker2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/The%20psychological%20drivers%20of%20misinformation%20belief%20and%20its%20resistance%20to%20correct.pdf" target="_blank" rel="noopener">The psychological drivers of misinformation belief and its resistance to correction</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/The%20psychological%20drivers%20of%20misinformation%20belief%20and%20its%20resistance%20to%20correct.pdf" target="_blank" rel="noopener">The psychological drivers of misinformation belief and its resistance to correction</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 1,300</span></h4>
 <p class="meta">Ecker U K H, Lewandowsky S, Cook J, Schmid P, Fazio L K, Brashier N, Kendeou P, Vraga E K, Amazeen M A · 2022 · Authoritative narrative review (Nature Reviews Psychology) · <a href="https://doi.org/10.1038/s44159-021-00006-y" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The information deficit model fails because it ignores the psychology of belief.</p>
 <blockquote>“the information deficit model ignores the cognitive, social and affective drivers of attitude formation and truth judgements” <span class="pg">— p.1, verified</span></blockquote>
@@ -274,7 +274,7 @@
 <p class="limits">Limitations: Pre-generative-AI review (2022); interventions tested mostly in Western samples.</p>
 </article>
 <article class="card" id="traberg2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/ai-literacy/Traberg2022_PsychologicalInoculation.pdf" target="_blank" rel="noopener">Psychological Inoculation against Misinformation: Current Evidence and Future Directions</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/ai-literacy/Traberg2022_PsychologicalInoculation.pdf" target="_blank" rel="noopener">Psychological Inoculation against Misinformation: Current Evidence and Future Directions</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 217</span></h4>
 <p class="meta">Traberg C S, Roozenbeek J, van der Linden S · 2022 · Narrative review of randomized lab and field studies (ANNALS AAPSS) · <a href="https://doi.org/10.1177/00027162221087936" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Inoculation theory offers a scalable psychological vaccine against manipulation.</p>
 <blockquote>“Inoculation theory offers a logical basis for developing a psychological “vaccine” against misinformation” <span class="pg">— p.1, verified</span></blockquote>
@@ -282,7 +282,7 @@
 <p class="limits">Limitations: Effects decay without boosters; mostly Western samples.</p>
 </article>
 <article class="card" id="roozenbeek2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/Roozenbeek2022_PsychologicalInoculationSocialMedia.pdf" target="_blank" rel="noopener">Psychological Inoculation Improves Resilience Against Misinformation on Social Media</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/Roozenbeek2022_PsychologicalInoculationSocialMedia.pdf" target="_blank" rel="noopener">Psychological Inoculation Improves Resilience Against Misinformation on Social Media</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 439</span></h4>
 <p class="meta">Roozenbeek J, van der Linden S, Goldberg B, Rathje S, Lewandowsky S · 2022 · Lab experiments + large-scale YouTube field experiment with five prebunking videos (Science Advances) · <a href="https://doi.org/10.1126/sciadv.abo6254" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Inoculation against five manipulation techniques works at platform scale.</p>
 <blockquote>“We developed five short videos that inoculate people against manipulation techniques commonly used in misinformation: emotionally manipulative language, incoherence, false dichotomies, scapegoating, and ad hominem attacks” <span class="pg">— p.1, verified</span></blockquote>
@@ -290,7 +290,7 @@
 <p class="limits">Limitations: Effects measured shortly after exposure; decay requires boosters.</p>
 </article>
 <article class="card" id="kozyreva2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/ai-literacy/Kozyreva2024_InterventionsToolbox.pdf" target="_blank" rel="noopener">Toolbox of individual-level interventions against online misinformation</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/ai-literacy/Kozyreva2024_InterventionsToolbox.pdf" target="_blank" rel="noopener">Toolbox of individual-level interventions against online misinformation</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 170</span></h4>
 <p class="meta">Kozyreva A, Lorenz-Spreen P, Herzog S M, Ecker U K H, Lewandowsky S, Hertwig R, et al. · 2024 · Expert review of 81 papers with evidence summaries and a living online toolbox (Nature Human Behaviour) · <a href="https://doi.org/10.1038/s41562-024-01881-0" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The protection space is now organized: types, targets, scope, and evidence quality per intervention.</p>
 <blockquote>“T oolbox of individual-level interventions against online misinformation” <span class="pg">— p.1, verified</span></blockquote>
@@ -300,7 +300,7 @@
 <h3 id="T1d"><span class="tcode">T1d</span>Machine deception &amp; invisible failure</h3>
 <p class="tdesc">Systems that mislead — or fail without any signal the user can see</p>
 <article class="card" id="park2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/deception-detection/AI%20Deception%20A%20Survey%20of%20Examples%20Risks%20and%20Potential%20Solutions.pdf" target="_blank" rel="noopener">AI Deception: A Survey of Examples, Risks, and Potential Solutions</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/deception-detection/AI%20Deception%20A%20Survey%20of%20Examples%20Risks%20and%20Potential%20Solutions.pdf" target="_blank" rel="noopener">AI Deception: A Survey of Examples, Risks, and Potential Solutions</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 195</span></h4>
 <p class="meta">Park P S, Goldstein S, O'Gara A, Chen M, Hendrycks D · 2023 · Survey of empirical deception examples in special-purpose (CICERO) and general-purpose (LLM) systems · <a href="https://doi.org/10.1016/j.patter.2024.100988" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Deception is defined functionally and already observed across system types.</p>
 <blockquote>“We define deception as the systematic inducement of false beliefs in the pursuit of some outcome other than the truth” <span class="pg">— p.1, verified</span></blockquote>
@@ -308,7 +308,7 @@
 <p class="limits">Limitations: Survey; deception attribution is functional, not intentional.</p>
 </article>
 <article class="card" id="groh2021">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/deception-detection/Groh2021_DeepfakeDetectionCrowdsMachines.pdf" target="_blank" rel="noopener">Deepfake Detection by Human Crowds, Machines, and Machine-Informed Crowds</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/deception-detection/Groh2021_DeepfakeDetectionCrowdsMachines.pdf" target="_blank" rel="noopener">Deepfake Detection by Human Crowds, Machines, and Machine-Informed Crowds</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 234</span></h4>
 <p class="meta">Groh M, Epstein Z, Firestone C, Picard R · 2021 · Large-scale experiments comparing crowds, a leading model, and machine-advised crowds (PNAS) · <a href="https://doi.org/10.1073/pnas.2110013119" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The societal question is knowing what's real.</p>
 <blockquote>“The recent emergence of machine-manipulated media raises an important societal question: How can we know whether a video that we watch is real or fake?” <span class="pg">— p.1, verified</span></blockquote>
@@ -316,7 +316,7 @@
 <p class="limits">Limitations: Video deepfakes of 2021 quality; lab viewing.</p>
 </article>
 <article class="card" id="potts2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Potts2026_InvisibleFailuresHumanAIInteractions.pdf" target="_blank" rel="noopener">Invisible Failures in Human–AI Interactions</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Potts2026_InvisibleFailuresHumanAIInteractions.pdf" target="_blank" rel="noopener">Invisible Failures in Human–AI Interactions</a><span class="badge" title="Observational/survey evidence">OBS</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Potts C, Sudhof M · 2026 · Annotation of 100K WildChat human-AI interactions + counterfactual replication with three frontier models · <a href="https://doi.org/10.48550/arxiv.2603.15423" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ 79% of AI failures produce no overt user signal.</p>
 <blockquote>“79% of AI failures areinvisible: something went wrong but the user gave no overt indication that there was a problem” <span class="pg">— p.1, verified</span></blockquote>
@@ -328,7 +328,7 @@
 <h3 id="T1e"><span class="tcode">T1e</span>Memory manipulation</h3>
 <p class="tdesc">Suggestive AI interaction implants durable false memories</p>
 <article class="card" id="chan2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/Chan2024_ConversationalAIAmplifiesFalseMemories.pdf" target="_blank" rel="noopener">Conversational AI Powered by Large Language Models Amplifies False Memories in Witness Interviews</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/misinformation-hallucination/Chan2024_ConversationalAIAmplifiesFalseMemories.pdf" target="_blank" rel="noopener">Conversational AI Powered by Large Language Models Amplifies False Memories in Witness Interviews</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 10</span></h4>
 <p class="meta">Chan S W T, Pataranutaporn P, Suri A, Zulfikar W, Maes P, Loftus E F · 2024 · Experiment, N=200, four interviewer conditions after watching a crime video · <a href="https://doi.org/10.21428/cb6ab371.6ae390a8" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The generative chatbot tripled immediate false memories vs control.</p>
 <blockquote>“the generative chatbot condition significantly increased false memory formation, inducing over 3 times more immediate false memories than the control and 1.7 times more than the survey method” <span class="pg">— p.1, verified</span></blockquote>
@@ -337,7 +337,7 @@
 <h3 id="T1f"><span class="tcode">T1f</span>Moral judgment manipulation</h3>
 <p class="tdesc">AI advice sways ethical decisions while users underestimate it</p>
 <article class="card" id="kobis2021">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/decision-making/Kobis2021_BadMachinesCorruptGoodMorals.pdf" target="_blank" rel="noopener">Bad Machines Corrupt Good Morals</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/decision-making/Kobis2021_BadMachinesCorruptGoodMorals.pdf" target="_blank" rel="noopener">Bad Machines Corrupt Good Morals</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 198</span></h4>
 <p class="meta">Köbis N, Bonnefon J-F, Rahwan I · 2021 · Review with research agenda (Nature Human Behaviour) · <a href="https://doi.org/10.1038/s41562-021-01128-2" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The corruption question is now structural, given AI's advisory/delegatory roles.</p>
 <blockquote>“Given that AI agents (see Box 1 for our use of this term) increasingly act in advisory, delegatory or cooperative roles4–8, should we fear that AI may exert a corrupting force on human ethical behaviour?” <span class="pg">— p.1, verified</span></blockquote>
@@ -345,7 +345,7 @@
 <p class="limits">Limitations: Review; empirical base still forming in 2021.</p>
 </article>
 <article class="card" id="krugel2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/decision-making/Krugel2023_ChatGPTMoralAdvice.pdf" target="_blank" rel="noopener">ChatGPT’s inconsistent moral advice influences users’ judgment</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/decision-making/Krugel2023_ChatGPTMoralAdvice.pdf" target="_blank" rel="noopener">ChatGPT’s inconsistent moral advice influences users’ judgment</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 171</span></h4>
 <p class="meta">Krügel S, Ostermaier A, Uhl M · 2023 · Experiment with trolley-dilemma advice from ChatGPT (Scientific Reports) · <a href="https://doi.org/10.1038/s41598-023-31341-0" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Influence persists despite knowing the advisor is a bot; users underestimate it.</p>
 <blockquote>“it does influence users’ moral judgment, we find in an experiment, even if they know they are advised by a chatting bot, and they underestimate how much they are influenced” <span class="pg">— p.1, verified</span></blockquote>
@@ -353,7 +353,7 @@
 <p class="limits">Limitations: Single dilemma type; online sample.</p>
 </article>
 <article class="card" id="hertwig2017">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/decision-making/Hertwig2017_NudgingAndBoosting.pdf" target="_blank" rel="noopener">Nudging and Boosting: Steering or Empowering Good Decisions</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/decision-making/Hertwig2017_NudgingAndBoosting.pdf" target="_blank" rel="noopener">Nudging and Boosting: Steering or Empowering Good Decisions</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 812</span></h4>
 <p class="meta">Hertwig R, Grüne-Yanoff T · 2017 · Theoretical analysis distinguishing intervention logics (Perspectives on Psychological Science) · <a href="https://doi.org/10.1177/1745691617702496" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Behavioral science is now a recognized policy instrument — the question is steering vs empowering.</p>
 <blockquote>“Numerous governments and international organizations such as the World Bank (2015) and the European Commission (Lourenco, Ciriolo, Almeida, &amp; Troussard, 2016) have begun to acknowledge the enormous potential of behavioral science evidence” <span class="pg">— p.1, verified</span></blockquote>
@@ -365,7 +365,7 @@
 <h3 id="T2a"><span class="tcode">T2a</span>Cognitive offloading &amp; critical-thinking decline</h3>
 <p class="tdesc">Delegated thinking atrophies; trust displaces verification</p>
 <article class="card" id="risko2016">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Risko2016_CognitiveOffloading.pdf" target="_blank" rel="noopener">Cognitive Offloading</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Risko2016_CognitiveOffloading.pdf" target="_blank" rel="noopener">Cognitive Offloading</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 1,028</span></h4>
 <p class="meta">Risko E F, Gilbert S J · 2016 · Integrative review with a metacognitive framework (Trends in Cognitive Sciences) · <a href="https://doi.org/10.1016/j.tics.2016.07.002" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Defines the field's core construct.</p>
 <blockquote>“cognitive ofﬂoading: the use of physical action to alter the information processing requirements of a task so as to reduce cognitive demand” <span class="pg">— p.1, verified</span></blockquote>
@@ -373,14 +373,14 @@
 <p class="limits">Limitations: Pre-generative-AI (2016); framework paper.</p>
 </article>
 <article class="card" id="fisher2015">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Fisher2015_SearchingForExplanations.pdf" target="_blank" rel="noopener">Searching for Explanations: How the Internet Inflates Estimates of Internal Knowledge</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Fisher2015_SearchingForExplanations.pdf" target="_blank" rel="noopener">Searching for Explanations: How the Internet Inflates Estimates of Internal Knowledge</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 313</span></h4>
 <p class="meta">Fisher M, Goddu M K, Keil F C · 2015 · Nine experiments with search vs no-search induction (JEP: General) · <a href="https://doi.org/10.1037/xge0000070" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The knowledge illusion: access mistaken for understanding.</p>
 <blockquote>“searching the Internet for explanatory knowledge creates an illusion whereby people mistake access to information for their own personal understanding of the information” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Search-engine era; AI-assistant replication pending.</p>
 </article>
 <article class="card" id="gerlich2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Gerlich2025_AIToolsCognitiveOffloadingCriticalThinking.pdf" target="_blank" rel="noopener">AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Gerlich2025_AIToolsCognitiveOffloadingCriticalThinking.pdf" target="_blank" rel="noopener">AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking</a><span class="badge" title="Observational/survey evidence">OBS</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 739</span></h4>
 <p class="meta">Gerlich M · 2025 · Mixed methods: surveys + interviews, N=666 across age/education groups; ANOVA, correlation, random forest · <a href="https://doi.org/10.3390/soc15010006" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ AI usage negatively correlates with critical thinking via cognitive offloading.</p>
 <blockquote>“The findings revealed a significant negative correlation between frequent AI tool usage and critical thinking abilities, mediated by increased cognitive offloading” <span class="pg">— p.1, verified</span></blockquote>
@@ -390,7 +390,7 @@
 <p class="limits">Limitations: Cross-sectional; self-reported usage; causality not established.</p>
 </article>
 <article class="card" id="lee2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/The%20Impact%20of%20Generative%20AI%20on%20Critical%20Thinking%20Self-Reported%20Reductions%20in%20Cog.pdf" target="_blank" rel="noopener">The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/The%20Impact%20of%20Generative%20AI%20on%20Critical%20Thinking%20Self-Reported%20Reductions%20in%20Cog.pdf" target="_blank" rel="noopener">The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers</a><span class="badge" title="Observational/survey evidence">OBS</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 374</span></h4>
 <p class="meta">Lee H-P, Sarkar A, Tankelevitch L, Drosos I, Rintel S, Banks R, Wilson N · 2025 · Survey of 319 knowledge workers; 936 first-hand GenAI task examples; quantitative + qualitative analysis · <a href="https://doi.org/10.1145/3706598.3713778" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Confidence in GenAI predicts less critical thinking; self-confidence predicts more.</p>
 <blockquote>“higher confidence in GenAI is associated with less critical thinking, while higher self-confidence is associated with more critical thinking” <span class="pg">— p.1, verified</span></blockquote>
@@ -400,7 +400,7 @@
 <p class="limits">Limitations: Self-reported; knowledge-worker sample; no behavioral measure.</p>
 </article>
 <article class="card" id="tian2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Tian2025_LearnersAIDependenceCriticalThinkingFatigue.pdf" target="_blank" rel="noopener">Learners' AI Dependence and Critical Thinking: The Psychological Mechanism of Fatigue and the Social Buffering Role of AI Literacy</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Tian2025_LearnersAIDependenceCriticalThinkingFatigue.pdf" target="_blank" rel="noopener">Learners' AI Dependence and Critical Thinking: The Psychological Mechanism of Fatigue and the Social Buffering Role of AI Literacy</a><span class="badge" title="Observational/survey evidence">OBS</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 58</span></h4>
 <p class="meta">Tian J, Zhang R · 2025 · Moderated mediation model (PROCESS Model 8), N=580 Chinese university students · <a href="https://doi.org/10.1016/j.actpsy.2025.105725" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ AI dependence predicts lower critical thinking, partially through fatigue.</p>
 <blockquote>“greater AI dependence was associated with lower levels of critical thinking, with cognitive fatigue partially mediating this relationship” <span class="pg">— p.1, verified</span></blockquote>
@@ -410,14 +410,14 @@
 <p class="limits">Limitations: Cross-sectional survey; single country; self-report scales.</p>
 </article>
 <article class="card" id="znidaric2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Znidaric2026_ReviewNegativeEffectsDigitalTechCognition.pdf" target="_blank" rel="noopener">A Review of the Negative Effects of Digital Technology on Cognition</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Znidaric2026_ReviewNegativeEffectsDigitalTechCognition.pdf" target="_blank" rel="noopener">A Review of the Negative Effects of Digital Technology on Cognition</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Žnidarič U, Štrumbelj E, Machidon O · 2026 · Integrative review synthesizing 500+ empirical studies including early generative-AI literature · <a href="https://doi.org/10.48550/arxiv.2603.10025" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The nature of cognitive risk is evolving with generative AI.</p>
 <blockquote>“while research on earlier technologies predominantly describes disruptions to resource allocation, early findings on generative artificial intelligence point toward a hypothesized erosion of higher-order generative and metacognitive capabilities” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: GenAI evidence base still nascent; review-level synthesis.</p>
 </article>
 <article class="card" id="vallor2014">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Vallor2014_MoralDeskillingUpskilling.pdf" target="_blank" rel="noopener">Moral Deskilling and Upskilling in a New Machine Age: Reflections on the Ambiguous Future of Character</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Vallor2014_MoralDeskillingUpskilling.pdf" target="_blank" rel="noopener">Moral Deskilling and Upskilling in a New Machine Age: Reflections on the Ambiguous Future of Character</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 311</span></h4>
 <p class="meta">Vallor S · 2014 · Philosophical analysis (Philosophy &amp; Technology) · <a href="https://doi.org/10.1007/s13347-014-0156-9" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ ICTs have an ambiguous impact on the cultivation of moral skill.</p>
 <blockquote>“This paper explores the ambiguous impact of new information and communications technologies (ICTs) on the cultivation of moral skills” <span class="pg">— p.1, verified</span></blockquote>
@@ -425,7 +425,7 @@
 <p class="limits">Limitations: Conceptual; predates LLMs.</p>
 </article>
 <article class="card" id="tankelevitch2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/The%20Metacognitive%20Demands%20and%20Opportunities%20of%20Generative%20AI.pdf" target="_blank" rel="noopener">The Metacognitive Demands and Opportunities of Generative AI</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/The%20Metacognitive%20Demands%20and%20Opportunities%20of%20Generative%20AI.pdf" target="_blank" rel="noopener">The Metacognitive Demands and Opportunities of Generative AI</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 223</span></h4>
 <p class="meta">Tankelevitch L, Kewenig V, Simkute A, Scott A E, Sarkar A, Sellen A, Rintel S · 2024 · Synthesis of metacognition research applied to GenAI interaction (CHI 2024) · <a href="https://doi.org/10.1145/3613904.3642902" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ GenAI systems impose substantial metacognitive demands.</p>
 <blockquote>“GenAI systems impose metacognitive demands on users, requiring a high degree of metacognitive monitoring and control” <span class="pg">— p.1, verified</span></blockquote>
@@ -433,7 +433,7 @@
 <p class="limits">Limitations: Framework paper; interventions not yet tested.</p>
 </article>
 <article class="card" id="messeri2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/Messeri2024_AIIllusionsOfUnderstanding.pdf" target="_blank" rel="noopener">Artificial intelligence and illusions of understanding in scientific research</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/Messeri2024_AIIllusionsOfUnderstanding.pdf" target="_blank" rel="noopener">Artificial intelligence and illusions of understanding in scientific research</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 571</span></h4>
 <p class="meta">Messeri L, Crockett M J · 2024 · Taxonomy of scientists' visions for AI with epistemic risk analysis (Nature Perspective) · <a href="https://doi.org/10.1038/s41586-024-07146-0" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The appeal of AI in science comes from promises to overcome human shortcomings — the same framing that creates the risk.</p>
 <blockquote>“their appeal comes from promises to improve productivity and objectivity by overcoming human shortcomings” <span class="pg">— p.1, verified</span></blockquote>
@@ -441,7 +441,7 @@
 <p class="limits">Limitations: Conceptual; empirical measurement of the illusions pending.</p>
 </article>
 <article class="card" id="cacioppo1982">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/Cacioppo1982_NeedForCognition.pdf" target="_blank" rel="noopener">The Need for Cognition</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/Cacioppo1982_NeedForCognition.pdf" target="_blank" rel="noopener">The Need for Cognition</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 5,130</span></h4>
 <p class="meta">Cacioppo J T, Petty R E · 1982 · Four scale-development and validation studies (JPSP) · <a href="https://doi.org/10.1037/0022-3514.42.1.116" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Validated instrument for the trait that moderates protective-design benefits (cf. Buçinca 2021).</p>
 <blockquote>“a scale to assess the need for cognition (i.e., the tendency for an individual to engage in and enjoy thinking) was developed and validated” <span class="pg">— p.1, verified</span></blockquote>
@@ -449,7 +449,7 @@
 <p class="limits">Limitations: 1982 samples; short forms now standard.</p>
 </article>
 <article class="card" id="toolsforthought2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/ToolsForThought2025_CHIWorkshopSynthesis.pdf" target="_blank" rel="noopener">Understanding, Protecting, and Augmenting Human Cognition with Generative AI: A Synthesis of the CHI 2025 Tools for Thought Workshop</a><span class="badge" title="Position paper">POS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/ToolsForThought2025_CHIWorkshopSynthesis.pdf" target="_blank" rel="noopener">Understanding, Protecting, and Augmenting Human Cognition with Generative AI: A Synthesis of the CHI 2025 Tools for Thought Workshop</a><span class="badge" title="Position paper">POS</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Tankelevitch L, Glassman E L, He J, Kittur A, Lee M, et al. · 2025 · Synthesis of 34 papers/portfolios and 56 researchers' workshop discussion · <a href="https://doi.org/10.48550/arxiv.2508.21036" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Names protection of human cognition as an explicit design goal for the field.</p>
 <blockquote>“an emerging design practice for building GenAI tools that both protect and augment human thought” <span class="pg">— p.1, verified</span></blockquote>
@@ -459,7 +459,7 @@
 <h3 id="T2b"><span class="tcode">T2b</span>Learning &amp; memory degradation</h3>
 <p class="tdesc">AI substitutes for knowledge acquisition; neural engagement drops</p>
 <article class="card" id="benedek2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Benedek2025_ImpactAIToolsLearningOutcomesOverReliance.pdf" target="_blank" rel="noopener">Impact of AI Tools on Learning Outcomes: Decreasing Knowledge and Over-Reliance</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Benedek2025_ImpactAIToolsLearningOutcomesOverReliance.pdf" target="_blank" rel="noopener">Impact of AI Tools on Learning Outcomes: Decreasing Knowledge and Over-Reliance</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Benedek M, Sziklai B R · 2025 · Randomized field experiment, operations research course, Corvinus University (design partially revised mid-study) · <a href="https://doi.org/10.48550/arxiv.2510.16019" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Uncontrolled AI use produced a 20-40 percentage point knowledge decrease.</p>
 <blockquote>“Uncontrolled use of AI leads to a substantial decrease in knowledge. The data indicate an effect likely between 20 and 40percentage points” <span class="pg">— p.14, verified</span></blockquote>
@@ -468,7 +468,7 @@
 <p class="limits">Limitations: Single course/institution; experiment disrupted by student protest and merged groups on final exam.</p>
 </article>
 <article class="card" id="kosmyna2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Kosmyna2025_YourBrainOnChatGPT_CognitiveDebt.pdf" target="_blank" rel="noopener">Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Kosmyna2025_YourBrainOnChatGPT_CognitiveDebt.pdf" target="_blank" rel="noopener">Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 120</span></h4>
 <p class="meta">Kosmyna N, Hauptmann E, Yuan Y T, Situ J, Liao X-H, Beresnitzky A V, Braunstein I, Maes P · 2025 · EEG study, N=54, three groups (LLM / search engine / brain-only), four sessions over four months · <a href="https://doi.org/10.48550/arxiv.2506.08872" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Brain-only writers showed the strongest neural networks; LLM users the weakest.</p>
 <blockquote>“d the strongest, widest ‑ ranging networks, Search Engine group showed intermediate engagement, and LLM assistance elicited the weakest overall coupling” <span class="pg">— p.2, verified</span></blockquote>
@@ -479,7 +479,7 @@
 <h3 id="T2c"><span class="tcode">T2c</span>Deskilling &amp; dependency as neglected risks</h3>
 <p class="tdesc">The safety field's blind spot</p>
 <article class="card" id="chalkidis2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Brainrot%20Deskilling%20and%20Addiction%20are%20Overlooked%20AI%20Risks.pdf" target="_blank" rel="noopener">Brainrot: Deskilling and Addiction are Overlooked AI Risks</a><span class="badge" title="Position paper">POS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Brainrot%20Deskilling%20and%20Addiction%20are%20Overlooked%20AI%20Risks.pdf" target="_blank" rel="noopener">Brainrot: Deskilling and Addiction are Overlooked AI Risks</a><span class="badge" title="Position paper">POS</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Chalkidis I, Søgaard A · 2026 · Position paper quantifying the coverage gap in the safety/alignment literature · <a href="https://doi.org/10.1145/3805689.3812306" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Cognitive risks are rarely addressed in safety/alignment literature.</p>
 <blockquote>“deskilling associated with cognitive offloading and the atrophy of critical thinking as a result of overreliance on GenAI systems, and addiction associated with attachment and dependence on GenAI systems. Such risks are rarely addressed, if at all, in the AI safety and alignment literature” <span class="pg">— p.1, verified</span></blockquote>
@@ -487,7 +487,7 @@
 <p class="limits">Limitations: Position paper; quantification limited to literature coverage.</p>
 </article>
 <article class="card" id="lindauer2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Lindauer2026_ToOffloadOrNotToOffload.pdf" target="_blank" rel="noopener">To Offload or Not to Offload: How AI May Alleviate Cognitive Burden and Related Ethical Reflections</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-offloading/Lindauer2026_ToOffloadOrNotToOffload.pdf" target="_blank" rel="noopener">To Offload or Not to Offload: How AI May Alleviate Cognitive Burden and Related Ethical Reflections</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-doctrine" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Doctrine</span></h4>
 <p class="meta">Lindauer L · 2026 · Policy research brief applying UNESCO human-rights AI principles across three sectors</p>
 <p class="claim">▸ Two distinct value modes: complementary teaming vs. burden offloading — with different risk profiles.</p>
 <blockquote>“a human leverages AI by offloading various cognitive burdens to free up memory or cognition” <span class="pg">— p.9, verified</span></blockquote>
@@ -499,7 +499,7 @@
 <h3 id="T2d"><span class="tcode">T2d</span>Attention &amp; presence costs</h3>
 <p class="tdesc">Devices tax cognition merely by being there</p>
 <article class="card" id="ward2017">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-load/Ward2017_BrainDrain_SmartphonePresence.pdf" target="_blank" rel="noopener">Brain Drain: The Mere Presence of One’s Own Smartphone Reduces Available Cognitive Capacity</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-load/Ward2017_BrainDrain_SmartphonePresence.pdf" target="_blank" rel="noopener">Brain Drain: The Mere Presence of One’s Own Smartphone Reduces Available Cognitive Capacity</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 745</span></h4>
 <p class="meta">Ward A F, Duke K, Gneezy A, Bos M W · 2017 · Two experiments varying phone location (desk/pocket/other room) · <a href="https://doi.org/10.1086/691462" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Constant connection has a cognitive price paid even while resisting the device.</p>
 <blockquote>“Our smartphones enable—and encourage—constant connection to information, entertainment, and each other” <span class="pg">— p.1, verified</span></blockquote>
@@ -507,7 +507,7 @@
 <p class="limits">Limitations: Pre-AI device context; page-print copy of journal article; effect size debated (see Böttger 2023).</p>
 </article>
 <article class="card" id="bottger2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-load/Boettger2023_BrainDrainMetaAnalysis.pdf" target="_blank" rel="noopener">Does the Brain Drain Effect Really Exist? A Meta-Analysis</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-load/Boettger2023_BrainDrainMetaAnalysis.pdf" target="_blank" rel="noopener">Does the Brain Drain Effect Really Exist? A Meta-Analysis</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 21</span></h4>
 <p class="meta">Böttger T, Poschik M, Zierer K · 2023 · Meta-analysis: 22 studies, 43 effects (Behavioral Sciences) · <a href="https://doi.org/10.3390/bs13090751" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ A significant overall negative effect of smartphone use and presence exists — smaller than the original claims.</p>
 <blockquote>“Here we show a signiﬁcant overall negative effect of smartphone use and presence” <span class="pg">— p.1, verified</span></blockquote>
@@ -516,21 +516,21 @@
 <h3 id="T2e"><span class="tcode">T2e</span>Homogenization of thought</h3>
 <p class="tdesc">Individual augmentation, collective convergence</p>
 <article class="card" id="doshi2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-drift/Doshi2024_GenAICreativityCollectiveDiversity.pdf" target="_blank" rel="noopener">Generative AI Enhances Individual Creativity but Reduces the Collective Diversity of Novel Content</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-drift/Doshi2024_GenAICreativityCollectiveDiversity.pdf" target="_blank" rel="noopener">Generative AI Enhances Individual Creativity but Reduces the Collective Diversity of Novel Content</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 578</span></h4>
 <p class="meta">Doshi A R, Hauser O P · 2024 · Online experiment: story writing with/without LLM ideas (Science Advances) · <a href="https://doi.org/10.1126/sciadv.adn5290" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Individual gains, collective convergence.</p>
 <blockquote>“access to generative AI ideas causes stories to be evaluated as more creative, better written, and more enjoyable, especially among less creative writers” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Short stories; single task; anchoring not decomposed.</p>
 </article>
 <article class="card" id="brinkmann2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-drift/Brinkmann2023_MachineCulture.pdf" target="_blank" rel="noopener">Machine Culture</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-drift/Brinkmann2023_MachineCulture.pdf" target="_blank" rel="noopener">Machine Culture</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 113</span></h4>
 <p class="meta">Brinkmann L, Baumann F, Bonnefon J-F, Derex M, Müller T F, Nussberger A-M, Czaplicka A, Acerbi A, Griffiths T L, Henrich J, et al., Rahwan I · 2023 · Conceptual framework and research agenda (Nature Human Behaviour) · <a href="https://doi.org/10.1038/s41562-023-01742-2" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Culture is now co-produced with machines — population-scale drift becomes structural.</p>
 <blockquote>“The ability of humans to create and disseminate culture is often credited as the single most important factor of our success as a species” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Perspective; empirical program subsequent.</p>
 </article>
 <article class="card" id="yakura2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-drift/Yakura2025_LLMInfluenceSpokenCommunication.pdf" target="_blank" rel="noopener">Empirical evidence of Large Language Model's influence on human spoken communication</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-drift/Yakura2025_LLMInfluenceSpokenCommunication.pdf" target="_blank" rel="noopener">Empirical evidence of Large Language Model's influence on human spoken communication</a><span class="badge" title="Observational/survey evidence">OBS</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 11</span></h4>
 <p class="meta">Yakura H, Lopez-Lopez E, Brinkmann L, Serna I, Gupta P, Soraperra I, Rahwan I · 2025 · Econometric causal inference over 740,000 hours of academic talks and podcasts (Max Planck CHM) · <a href="https://doi.org/10.48550/arxiv.2409.01754" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Generative chatbots are a new cultural transmission medium at population scale.</p>
 <blockquote>“Recent chatbots powered by generative artificial intelligence constitute a novel medium that encodes cultural patterns in their neural representations and disseminates them in conversations with hundreds of millions of people” <span class="pg">— p.1, verified</span></blockquote>
@@ -541,7 +541,7 @@
 <h3 id="T3a"><span class="tcode">T3a</span>Over-reliance &amp; automation bias</h3>
 <p class="tdesc">Uncritical acceptance; explanations can make it worse</p>
 <article class="card" id="romeo2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/explainability-xai/Romeo2025_AutomationBiasXAIReview.pdf" target="_blank" rel="noopener">Exploring Automation Bias in Human-AI Collaboration: A Review and Implications for Explainable AI</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/explainability-xai/Romeo2025_AutomationBiasXAIReview.pdf" target="_blank" rel="noopener">Exploring Automation Bias in Human-AI Collaboration: A Review and Implications for Explainable AI</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 97</span></h4>
 <p class="meta">Romeo G, Conti D · 2025 · PRISMA 2020 systematic review of 35 peer-reviewed studies (Jan 2015 - Apr 2025) · <a href="https://doi.org/10.1007/s00146-025-02422-7" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Automation bias is a critical challenge as AI enters healthcare, law, and public administration.</p>
 <blockquote>“automation bias (AB)—the tendency to over-rely on automated recommendations—has emerged as a critical challenge in human–AI collaboration” <span class="pg">— p.1, verified</span></blockquote>
@@ -551,7 +551,7 @@
 <p class="limits">Limitations: Review-level evidence; heterogeneous study designs.</p>
 </article>
 <article class="card" id="parasuraman2000">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/human-ai-teaming/Parasuraman2000_TypesLevelsHumanAutomation.pdf" target="_blank" rel="noopener">A Model for Types and Levels of Human Interaction with Automation</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/human-ai-teaming/Parasuraman2000_TypesLevelsHumanAutomation.pdf" target="_blank" rel="noopener">A Model for Types and Levels of Human Interaction with Automation</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 3,883</span></h4>
 <p class="meta">Parasuraman R, Sheridan T B, Wickens C D · 2000 · Framework paper (IEEE Transactions on Systems, Man, and Cybernetics) · <a href="https://doi.org/10.1109/3468.844354" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The canonical scaffold for deciding what to automate and how much.</p>
 <blockquote>“Given these technical capabilities, which system functions should be automated and to what extent?” <span class="pg">— p.1, verified</span></blockquote>
@@ -559,7 +559,7 @@
 <p class="limits">Limitations: Pre-AI automation context; framework not empirical test.</p>
 </article>
 <article class="card" id="laux2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Laux2025_AutomationBiasInAIAct.pdf" target="_blank" rel="noopener">Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Laux2025_AutomationBiasInAIAct.pdf" target="_blank" rel="noopener">Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Laux J, Ruschemeier H · 2025 · Legal-doctrinal analysis of the EU AI Act informed by behavioural science · <a href="https://doi.org/10.1017/err.2025.10033" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The AI Act's provider-focused approach misses design and context as causes of automation bias.</p>
 <blockquote>“the AIA’s focus on providers does not adequately address design and context as causes of AB” <span class="pg">— p.1, verified</span></blockquote>
@@ -569,7 +569,7 @@
 <p class="limits">Limitations: EU regulatory context; normative analysis rather than empirical test.</p>
 </article>
 <article class="card" id="green2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Green2022_FlawsHumanOversightPolicies.pdf" target="_blank" rel="noopener">The Flaws of Policies Requiring Human Oversight of Government Algorithms</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Green2022_FlawsHumanOversightPolicies.pdf" target="_blank" rel="noopener">The Flaws of Policies Requiring Human Oversight of Government Algorithms</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 29</span></h4>
 <p class="meta">Green B · 2022 · Survey of 41 oversight policies + institutional-oversight proposal (Computer Law &amp; Security Review) · <a href="https://doi.org/10.2139/ssrn.3921216" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Policymakers worldwide rely on an empirically unsupported mechanism.</p>
 <blockquote>“As algorithms become an influential component of government decision-making around the world, policymakers have debated how governments can attain the benefits of algorithms while preventing the harms of algorithms” <span class="pg">— p.1, verified</span></blockquote>
@@ -577,14 +577,14 @@
 <p class="limits">Limitations: Policy analysis; government context.</p>
 </article>
 <article class="card" id="robinette2016">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Robinette2016_OvertrustOfRobots.pdf" target="_blank" rel="noopener">Overtrust of Robots in Emergency Evacuation Scenarios</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Robinette2016_OvertrustOfRobots.pdf" target="_blank" rel="noopener">Overtrust of Robots in Emergency Evacuation Scenarios</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 364</span></h4>
 <p class="meta">Robinette P, Li W, Allen R, Howard A M, Wagner A R · 2016 · Physical experiment: artificial smoke + fire alarms; participants choose whether to follow a previously faulty robot · <a href="https://doi.org/10.1109/hri.2016.7451740" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ All 26 participants followed the robot in the emergency — half had just seen it navigate poorly.</p>
 <blockquote>“all 26 participants followed the robot in the emergency, despite half observing the same robot perform poorly in a navigation guidance” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Small N; single scenario; 2016-era robot.</p>
 </article>
 <article class="card" id="buinca2021">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/trust-calibration/Bucinca2021_ToTrustOrToThink_CognitiveForcingFunctions.pdf" target="_blank" rel="noopener">To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/trust-calibration/Bucinca2021_ToTrustOrToThink_CognitiveForcingFunctions.pdf" target="_blank" rel="noopener">To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 119</span></h4>
 <p class="meta">Buçinca Z, Malaya M B, Gajos K Z · 2021 · Experiment (N=199): three cognitive forcing designs vs two explainable-AI approaches vs no-AI baseline · <a href="https://doi.org/10.48550/arxiv.2102.09692" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Cognitive forcing beats explanation at reducing overreliance.</p>
 <blockquote>“cognitive forcing significantly reduced overreliance compared to the simple explainable AI approaches” <span class="pg">— p.1, verified</span></blockquote>
@@ -594,7 +594,7 @@
 <p class="limits">Limitations: Lab task; preference-performance trade-off may hurt adoption; equity concern for low-NFC users.</p>
 </article>
 <article class="card" id="mehrotra2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/trust-calibration/A%20Systematic%20Review%20on%20Fostering%20Appropriate%20Trust%20in%20Human-AI%20Interaction.pdf" target="_blank" rel="noopener">A Systematic Review on Fostering Appropriate Trust in Human-AI Interaction: Trends, Opportunities and Challenges</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/trust-calibration/A%20Systematic%20Review%20on%20Fostering%20Appropriate%20Trust%20in%20Human-AI%20Interaction.pdf" target="_blank" rel="noopener">A Systematic Review on Fostering Appropriate Trust in Human-AI Interaction: Trends, Opportunities and Challenges</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 109</span></h4>
 <p class="meta">Mehrotra S, Degachi C, Vereschak O, Jonker C M, Tielman M L · 2023 · Systematic review with Belief-Intentions-Actions mapping of appropriate-trust research · <a href="https://doi.org/10.1145/3696449" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The field lacks a shared definition of appropriate trust, fragmenting progress.</p>
 <blockquote>“a comprehensive understanding of the field is lacking due to the diversity of perspectives arising from various backgrounds that influence it and the lack of a single definition for appropriate trust” <span class="pg">— p.1, verified</span></blockquote>
@@ -602,7 +602,7 @@
 <p class="limits">Limitations: Heterogeneous definitions limit meta-analytic conclusions.</p>
 </article>
 <article class="card" id="passi2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/trust-calibration/Passi2022_OverrelianceOnAI_LiteratureReview.pdf" target="_blank" rel="noopener">Overreliance on AI: Literature Review</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/trust-calibration/Passi2022_OverrelianceOnAI_LiteratureReview.pdf" target="_blank" rel="noopener">Overreliance on AI: Literature Review</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-doctrine" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Doctrine</span></h4>
 <p class="meta">Passi S, Vorvoreanu M · 2022 · Literature review of ~60 papers (Microsoft Research)</p>
 <p class="claim">▸ Overreliance defined as accepting incorrect AI outputs, defeating oversight.</p>
 <blockquote>“Overreliance on AI occurs when users start accepting incorrect AI outputs” <span class="pg">— p.1, verified</span></blockquote>
@@ -610,7 +610,7 @@
 <p class="limits">Limitations: Corporate report (peer review differs); pre-2023 evidence base.</p>
 </article>
 <article class="card" id="vaccaro2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/human-ai-teaming/Vaccaro2024_WhenAreHumanAICombinationsUseful.pdf" target="_blank" rel="noopener">When Are Combinations of Humans and AI Useful? A Systematic Review and Meta-Analysis</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/human-ai-teaming/Vaccaro2024_WhenAreHumanAICombinationsUseful.pdf" target="_blank" rel="noopener">When Are Combinations of Humans and AI Useful? A Systematic Review and Meta-Analysis</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 401</span></h4>
 <p class="meta">Vaccaro M, Almaatouq A, Malone T · 2024 · Preregistered meta-analysis: 100+ studies, 300+ effect sizes (Nature Human Behaviour) · <a href="https://doi.org/10.1038/s41562-024-02024-1" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ On average, human-AI combos performed worse than the best of humans or AI alone.</p>
 <blockquote>“human-AI combinations performed significantlyworse than the best of humans or AI alone (Hedges’g = −0.23, 95% confidence interval−0.39 to −0.07)” <span class="pg">— p.1, verified</span></blockquote>
@@ -622,21 +622,21 @@
 <h3 id="T3b"><span class="tcode">T3b</span>Under-reliance (algorithm aversion)</h3>
 <p class="tdesc">Superior algorithms abandoned after a single visible error</p>
 <article class="card" id="dietvorst2014">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/algorithm-aversion/Algorithm%20Aversion%20People%20Erroneously%20Avoid%20Algorithms%20After%20Seeing%20Them%20Err.pdf" target="_blank" rel="noopener">Algorithm Aversion: People Erroneously Avoid Algorithms After Seeing Them Err</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/algorithm-aversion/Algorithm%20Aversion%20People%20Erroneously%20Avoid%20Algorithms%20After%20Seeing%20Them%20Err.pdf" target="_blank" rel="noopener">Algorithm Aversion: People Erroneously Avoid Algorithms After Seeing Them Err</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 357</span></h4>
 <p class="meta">Dietvorst B J, Simmons J P, Massey C · 2014 · Five incentivized forecasting experiments (published JEP: General 2015) · <a href="https://doi.org/10.2139/ssrn.2466040" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Confidence in algorithms collapses faster than in humans after equivalent mistakes.</p>
 <blockquote>“This is because people more quickly lose confidence in algorithmic than human forecasters after seeing them make the same mistake” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Forecasting tasks with student samples; pre-LLM 'algorithm' framing.</p>
 </article>
 <article class="card" id="logg2019">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/algorithm-aversion/Logg2019_AlgorithmAppreciation.pdf" target="_blank" rel="noopener">Algorithm Appreciation: People Prefer Algorithmic to Human Judgment</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/algorithm-aversion/Logg2019_AlgorithmAppreciation.pdf" target="_blank" rel="noopener">Algorithm Appreciation: People Prefer Algorithmic to Human Judgment</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 1,705</span></h4>
 <p class="meta">Logg J M, Minson J A, Moore D A · 2019 · Six experiments on estimates and forecasts (OBHDP) · <a href="https://doi.org/10.1016/j.obhdp.2018.12.005" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Lay people adhered more to advice labeled algorithmic than human — and researchers predicted the opposite.</p>
 <blockquote>“showthatlaypeopleadhere moretoadvicewhentheythinkitcomesfromanalgorithmthanfromaperson” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Low-stakes judgments; label manipulation rather than real systems.</p>
 </article>
 <article class="card" id="dietvorst2016">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/algorithm-aversion/Overcoming%20Algorithm%20Aversion%20People%20Will%20Use%20Imperfect%20Algorithms%20If%20They%20Can%20E.pdf" target="_blank" rel="noopener">Overcoming Algorithm Aversion: People Will Use Imperfect Algorithms If They Can (Even Slightly) Modify Them</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/algorithm-aversion/Overcoming%20Algorithm%20Aversion%20People%20Will%20Use%20Imperfect%20Algorithms%20If%20They%20Can%20E.pdf" target="_blank" rel="noopener">Overcoming Algorithm Aversion: People Will Use Imperfect Algorithms If They Can (Even Slightly) Modify Them</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 15</span></h4>
 <p class="meta">Dietvorst B J, Simmons J P, Massey C · 2016 · Incentivized forecasting experiments with constrained-adjustment conditions (published Management Science 2018) · <a href="https://doi.org/10.2139/ssrn.2616787" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Letting people slightly adjust algorithmic forecasts increases use and improves performance.</p>
 <blockquote>“Participants were considerably more likely to choose to use an imperfect algorithm when they could modify its forecasts, and they performed better as a result” <span class="pg">— p.1, verified</span></blockquote>
@@ -646,7 +646,7 @@
 <h3 id="T3c"><span class="tcode">T3c</span>Selective adherence</h3>
 <p class="tdesc">Advice adopted when it flatters prior stereotypes</p>
 <article class="card" id="alonbarkat2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Busuioc2021_HumanAIPublicSectorAutomationBias.pdf" target="_blank" rel="noopener">Human-AI Interactions in Public Sector Decision Making: 'Automation Bias' and 'Selective Adherence' to Algorithmic Advice</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/automation-bias/Busuioc2021_HumanAIPublicSectorAutomationBias.pdf" target="_blank" rel="noopener">Human-AI Interactions in Public Sector Decision Making: 'Automation Bias' and 'Selective Adherence' to Algorithmic Advice</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 368</span></h4>
 <p class="meta">Alon-Barkat S, Busuioc M · 2023 · Three survey experiments in the Netherlands (N=605; N=904; N=1,345 civil servants), aggregate N=2,854 · <a href="https://doi.org/10.1093/jopart/muac007" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ No general automation bias was found — an important corrective to the folk citation of this paper.</p>
 <blockquote>“we consistently did not find evidence for an overall tendency for automation bias” <span class="pg">— p.12, verified</span></blockquote>
@@ -662,21 +662,21 @@
 <h3 id="T4a"><span class="tcode">T4a</span>Anthropomorphism-driven disclosure &amp; attachment</h3>
 <p class="tdesc">Human-likeness elicits secrets and social trust</p>
 <article class="card" id="nass2000">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Nass2000_MachinesAndMindlessness.pdf" target="_blank" rel="noopener">Machines and Mindlessness: Social Responses to Computers</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Nass2000_MachinesAndMindlessness.pdf" target="_blank" rel="noopener">Machines and Mindlessness: Social Responses to Computers</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 3,732</span></h4>
 <p class="meta">Nass C, Moon Y · 2000 · Review of the Computers-Are-Social-Actors experimental program · <a href="https://doi.org/10.1111/0022-4537.00153" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Social responses to computers are automatic, not reflective.</p>
 <blockquote>“individuals mindlessly apply social rules and expectations to computers” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: 2000-era systems; single-lab paradigm at origin.</p>
 </article>
 <article class="card" id="epley2007">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Epley2007_OnSeeingHuman.pdf" target="_blank" rel="noopener">On Seeing Human: A Three-Factor Theory of Anthropomorphism</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Epley2007_OnSeeingHuman.pdf" target="_blank" rel="noopener">On Seeing Human: A Three-Factor Theory of Anthropomorphism</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 3,790</span></h4>
 <p class="meta">Epley N, Waytz A, Cacioppo J T · 2007 · Theoretical synthesis (Psychological Review) · <a href="https://doi.org/10.1037/0033-295x.114.4.864" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Anthropomorphism is predictable from three psychological determinants — the levers AI design can pull.</p>
 <blockquote>“the accessibility and applicability of anthropocentric knowledge (elicited agent knowledge), the motivation to explain and understand the behavior of other agents (effectance motivation), and the desire for social contact and affiliation (sociality motivation)” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Pre-AI theory; effects tested mostly on non-AI agents.</p>
 </article>
 <article class="card" id="akbulut2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Akbulut2024_AllTooHumanRisksAnthropomorphicAI.pdf" target="_blank" rel="noopener">All Too Human? Mapping and Mitigating the Risks from Anthropomorphic AI</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Akbulut2024_AllTooHumanRisksAnthropomorphicAI.pdf" target="_blank" rel="noopener">All Too Human? Mapping and Mitigating the Risks from Anthropomorphic AI</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 38</span></h4>
 <p class="meta">Akbulut C, Weidinger L, Manzini A, Gabriel I, Rieser V · 2024 · Historical mapping of anthropomorphic design features + research agenda (Google DeepMind, AAAI/AIES 2024) · <a href="https://doi.org/10.1609/aies.v7i1.31613" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Emotional connections to human-like AI can compromise privacy and autonomy.</p>
 <blockquote>“users may form emotional connections to human-like AI, creating the risk of infringing on user privacy and autonomy through over-reliance” <span class="pg">— p.1, verified</span></blockquote>
@@ -684,14 +684,14 @@
 <p class="limits">Limitations: Conceptual mapping; harms taxonomy not yet empirically quantified.</p>
 </article>
 <article class="card" id="kronemann2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Kronemann2022_HowAIEncouragesConsumersShareSecrets.pdf" target="_blank" rel="noopener">How AI Encourages Consumers to Share Their Secrets? The Role of Anthropomorphism, Personalisation, and Privacy Concerns and Avenues for Future Research</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Kronemann2022_HowAIEncouragesConsumersShareSecrets.pdf" target="_blank" rel="noopener">How AI Encourages Consumers to Share Their Secrets? The Role of Anthropomorphism, Personalisation, and Privacy Concerns and Avenues for Future Research</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 73</span></h4>
 <p class="meta">Kronemann B, Kizgin H, Rana N, Dwivedi Y K · 2022 · Conceptual model with seven research propositions (Spanish Journal of Marketing - ESIC) · <a href="https://doi.org/10.1108/sjme-10-2022-0213" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Anthropomorphism and personalisation are theorized to drive information disclosure.</p>
 <blockquote>“anthropomorphism of AI and personalisation positively in ﬂuence consumer attitudes and intentions to disclose personal information to a digital assistant, while privacy concerns negatively affect attitude and information disclosure” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Propositional model; not empirically tested in this paper.</p>
 </article>
 <article class="card" id="ibrahim2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Ibrahim2026_MultiTurnEvalAnthropomorphicBehaviours.pdf" target="_blank" rel="noopener">Multi-turn Evaluation of Anthropomorphic Behaviours in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/anthropomorphism/Ibrahim2026_MultiTurnEvalAnthropomorphicBehaviours.pdf" target="_blank" rel="noopener">Multi-turn Evaluation of Anthropomorphic Behaviours in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Ibrahim L, Akbulut C, Elasmar R, Rastogi C, Kahng M, Morris M R, McKee K R, Rieser V, Shanahan M, Weidinger L · 2026 · AnthroBench: automated multi-turn evaluation of 14 behaviours + human validation study (N=1,101) · <a href="https://doi.org/10.48550/arxiv.2502.07077" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ All evaluated LLMs show similar relationship-building behaviours.</p>
 <blockquote>“all evaluated LLMs exhibit similar behaviours, primarily characterised by relationship-building (e.g.,empathyandvalidation) with users and first-person pronoun use” <span class="pg">— p.1, verified</span></blockquote>
@@ -701,7 +701,7 @@
 <p class="limits">Limitations: Simulated users for scale; behaviour list may not be exhaustive.</p>
 </article>
 <article class="card" id="shanahan2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/mental-models/Shanahan2023_RolePlayWithLLMs.pdf" target="_blank" rel="noopener">Role play with large language models</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/mental-models/Shanahan2023_RolePlayWithLLMs.pdf" target="_blank" rel="noopener">Role play with large language models</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 405</span></h4>
 <p class="meta">Shanahan M, McDonell K, Reynolds L · 2023 · Conceptual perspective (Nature) · <a href="https://doi.org/10.1038/s41586-023-06647-8" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Provides the guardrail vocabulary for talking about LLM 'deception' and 'self-awareness'.</p>
 <blockquote>“Casting dialogue-agent behaviour in terms of role play allows us to draw on familiar folk psychological terms, without ascribing human characteristics to language models that they in fact lack” <span class="pg">— p.1, verified</span></blockquote>
@@ -711,7 +711,7 @@
 <h3 id="T4b"><span class="tcode">T4b</span>Emotional dependency</h3>
 <p class="tdesc">Empathy features breed reliance; heaviest users hurt most</p>
 <article class="card" id="phang2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Investigating%20Affective%20Use%20and%20Emotional%20Well-being%20on%20ChatGPT.pdf" target="_blank" rel="noopener">Investigating Affective Use and Emotional Well-being on ChatGPT</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Investigating%20Affective%20Use%20and%20Emotional%20Well-being%20on%20ChatGPT.pdf" target="_blank" rel="noopener">Investigating Affective Use and Emotional Well-being on ChatGPT</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 13</span></h4>
 <p class="meta">Phang J, Lampe M, Ahmad L, Agarwal S, Fang C M, Liu A R, Danry V, Lee E, Chan S W T, Pataranutaporn P, Maes P · 2025 · Two parallel studies: automated analysis of 3M+ conversations + 4,000-user survey, and a 28-day IRB-approved RCT (N≈1,000) · <a href="https://doi.org/10.48550/arxiv.2504.03888" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ High usage correlates with self-reported dependence in both platform data and the RCT.</p>
 <blockquote>“In both on-platform data analysis and the RCT, we observe that very high usage correlates with increased self-reported indicators of dependence” <span class="pg">— p.1, verified</span></blockquote>
@@ -721,7 +721,7 @@
 <p class="limits">Limitations: Self-reported well-being; 28-day window; single platform.</p>
 </article>
 <article class="card" id="fang2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Fang2025_PsychosocialEffectsChatbotRCT.pdf" target="_blank" rel="noopener">How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Fang2025_PsychosocialEffectsChatbotRCT.pdf" target="_blank" rel="noopener">How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Fang C M, Liu A R, Danry V, Lee E, Chan S W T, Pataranutaporn P, Maes P, Phang J, Lampe M, Ahmad L, Agarwal S · 2025 · 4-week IRB-approved RCT, ~1,000 participants, randomized modality and conversation type (MIT/OpenAI) · <a href="https://doi.org/10.48550/arxiv.2503.17473" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The causal companion to platform-scale correlational findings on emotional reliance.</p>
 <blockquote>“As people increasingly seek emotional support and compa” <span class="pg">— p.1, verified</span></blockquote>
@@ -729,7 +729,7 @@
 <p class="limits">Limitations: 4-week window; self-reported psychosocial outcomes.</p>
 </article>
 <article class="card" id="jiao2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Jiao2026_AIEmpathyErodesCognitiveAutonomy.pdf" target="_blank" rel="noopener">AI Empathy Erodes Cognitive Autonomy in Younger Users</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Jiao2026_AIEmpathyErodesCognitiveAutonomy.pdf" target="_blank" rel="noopener">AI Empathy Erodes Cognitive Autonomy in Younger Users</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Jiao J, Murali A, Afroogh S · 2026 · Analysis of RLHF affective alignment with proposed design alternatives · <a href="https://doi.org/10.48550/arxiv.2603.29886" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Affective alignment is a systemic developmental risk, not a UX win.</p>
 <blockquote>“Affective alignment in generative AI represents a systemic risk to the developmental autonomy of younger users” <span class="pg">— p.1, verified</span></blockquote>
@@ -739,14 +739,14 @@
 <p class="limits">Limitations: Conceptual; developmental claims not yet tested longitudinally.</p>
 </article>
 <article class="card" id="laestadius2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/parasocial-relationships/Laestadius2022_TooHumanNotHumanEnough_Replika.pdf" target="_blank" rel="noopener">Too Human and Not Human Enough: A Grounded Theory Analysis of Mental Health Harms from Emotional Dependence on the Social Chatbot Replika</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/parasocial-relationships/Laestadius2022_TooHumanNotHumanEnough_Replika.pdf" target="_blank" rel="noopener">Too Human and Not Human Enough: A Grounded Theory Analysis of Mental Health Harms from Emotional Dependence on the Social Chatbot Replika</a><span class="badge" title="Observational/survey evidence">OBS</span><span class="tierchip tier-established" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Established · 332</span></h4>
 <p class="meta">Laestadius L, Bishop A, Gonzalez M, Illenčík D, Campos-Castillo C · 2022 · Grounded theory analysis of 582 mental-health-relevant Reddit posts (2017-2021) · <a href="https://doi.org/10.1177/14614448221142007" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Dependence on Replika resembles human-relationship patterns, with harms when the bot changes or fails to reciprocate.</p>
 <blockquote>“We find evidence of harms, facilitated via emotional dependence on Replika that resembles patterns seen in human–human relationships” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Self-selected Reddit posts; single app; pre-LLM-era Replika.</p>
 </article>
 <article class="card" id="dohnany2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Dohnany2025_TechnologicalFolieADeux.pdf" target="_blank" rel="noopener">Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Health</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Dohnany2025_TechnologicalFolieADeux.pdf" target="_blank" rel="noopener">Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Health</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 18</span></h4>
 <p class="meta">Dohnány S, Kurth-Nelson Z, Spens E, Luettgau L, Reid A, Gabriel I, Summerfield C, Shanahan M, Nour M M · 2025 · Mechanistic synthesis from computational psychiatry (Nature Mental Health 2026) · <a href="https://doi.org/10.1038/s44220-026-00595-8" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Edge cases include suicide, violence, and delusional thinking tied to chatbot relationships.</p>
 <blockquote>“concerning edge cases are emerging, including reports of suicide, violence, and delusional thinking linked to emotional relationships with chatbots” <span class="pg">— p.1, verified</span></blockquote>
@@ -754,7 +754,7 @@
 <p class="limits">Limitations: Mechanism proposal; case reports rather than epidemiology.</p>
 </article>
 <article class="card" id="morrin2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Morrin2025_DelusionsByDesign.pdf" target="_blank" rel="noopener">Delusions by design? How everyday AIs might be fuelling psychosis (and what can be done about it)</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Morrin2025_DelusionsByDesign.pdf" target="_blank" rel="noopener">Delusions by design? How everyday AIs might be fuelling psychosis (and what can be done about it)</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Morrin H, Nicholls L, Levin M, Yiend J, Iyengar U, Bhattacharya S, Tognin S, MacCabe J, Twumasi R, Alderson-Day B, Pollak T A · 2025 · Clinical framework from phenomenological psychopathology and digital mental health (KCL, PsyArXiv) · <a href="https://doi.org/10.31234/osf.io/cmy7n_v4" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ The pressing reality is routine agential AI interaction by people with mental illness, not bespoke therapy bots.</p>
 <blockquote>“individuals with mental illness will increasingly engage in agential interactions with AI systems as a routine part of daily existence” <span class="pg">— p.1, verified</span></blockquote>
@@ -762,14 +762,14 @@
 <p class="limits">Limitations: Framework; case evidence still emerging.</p>
 </article>
 <article class="card" id="mehta2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Mehta2026_DynamicsOfDelusion.pdf" target="_blank" rel="noopener">The Dynamics of Delusion: Modeling Bidirectional False Belief Amplification in Human-Chatbot Dialogue</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Mehta2026_DynamicsOfDelusion.pdf" target="_blank" rel="noopener">The Dynamics of Delusion: Modeling Bidirectional False Belief Amplification in Human-Chatbot Dialogue</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Mehta A, Moore J, Anthis J R, Agnew W, Lin E, Yin P, Ong D C, Haber N, Dweck C · 2026 · Latent state modeling of real chat logs from individuals exhibiting delusional thinking (Stanford/CMU/UT) · <a href="https://doi.org/10.48550/arxiv.2604.25096" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Bidirectional influence beats the human-only-driver model.</p>
 <blockquote>“a bidirectionalinfluencemodelsubstantiallyoutperformsa unidirectional alternative where humans are the primary driver of delusion” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Self-selected chat logs; delusional-thinking sample identification.</p>
 </article>
 <article class="card" id="aquilina2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Aquilina2026_LostInDelusion.pdf" target="_blank" rel="noopener">Lost in Delusion: Examining LLM Safety Under User Delusions and Distress</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/Aquilina2026_LostInDelusion.pdf" target="_blank" rel="noopener">Lost in Delusion: Examining LLM Safety Under User Delusions and Distress</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
 <p class="meta">Aquilina A, Nihalani C, Varadarajan V, Fishbein N S, Lin Y-R, Sap M · 2026 · Matched multi-turn simulations, clinically grounded personas, six LLMs, distress-only controls · <a href="https://doi.org/10.48550/arxiv.2606.00975" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Fills the gap left by single-turn safety evals.</p>
 <blockquote>“leaving unclear how models behave when distress is intertwined with delusion over sustained conversations” <span class="pg">— p.1, verified</span></blockquote>
@@ -777,7 +777,7 @@
 <p class="limits">Limitations: Simulated personas; six models.</p>
 </article>
 <article class="card" id="auyeung2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/AuYeung2025_PsychogenicMachine.pdf" target="_blank" rel="noopener">The Psychogenic Machine: Simulating AI Psychosis, Delusion Reinforcement and Harm Enablement in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/emotional-dependency/AuYeung2025_PsychogenicMachine.pdf" target="_blank" rel="noopener">The Psychogenic Machine: Simulating AI Psychosis, Delusion Reinforcement and Harm Enablement in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 11</span></h4>
 <p class="meta">Au Yeung J, Dalmasso J, Foschini L, Dobson R J B, Kraljevic Z · 2025 · psychosis-bench: 16 structured 12-turn scenarios simulating delusional progression, evaluated across LLMs · <a href="https://doi.org/10.48550/arxiv.2509.10970" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Sycophancy is the harm vector; psychogenicity is measurable.</p>
 <blockquote>“While the sycophantic and agreeable nature of LLMs is often beneficial, it can become a vector for harm by reinforcing delusional beliefs in vulnerable users” <span class="pg">— p.2, verified</span></blockquote>
@@ -789,7 +789,7 @@
 <h3 id="T5a"><span class="tcode">T5a</span>Doctrine &amp; threat landscape</h3>
 <p class="tdesc">Trust itself is the target; the battlefield is invisible</p>
 <article class="card" id="waltzman2017">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Waltzman2017_WeaponizationOfInformation_CognitiveSecurity.pdf" target="_blank" rel="noopener">The Weaponization of Information: The Need for Cognitive Security</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Waltzman2017_WeaponizationOfInformation_CognitiveSecurity.pdf" target="_blank" rel="noopener">The Weaponization of Information: The Need for Cognitive Security</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 59</span></h4>
 <p class="meta">Waltzman R · 2017 · US Senate testimony (RAND CT-473) synthesizing information-operations research · <a href="https://doi.org/10.7249/ct473" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Defines cognitive security (COGSEC) as a field: a continual arms race to influence — and protect from influence — large online populations.</p>
 <blockquote>“Cognitive security (COGSEC) is a new field that focuses on this evolving frontier, suggesting that in the future, researchers, governments, social platforms, and private actors will be engaged in a continual arms race to influence—and protect from influence—large groups of users online” <span class="pg">— p.9, verified</span></blockquote>
@@ -799,7 +799,7 @@
 <p class="limits">Limitations: 2017 pre-LLM landscape; policy testimony rather than empirical study.</p>
 </article>
 <article class="card" id="claverie2022">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Claverie2022_CognitiveWarfareConcept.pdf" target="_blank" rel="noopener">The Cognitive Warfare Concept</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Claverie2022_CognitiveWarfareConcept.pdf" target="_blank" rel="noopener">The Cognitive Warfare Concept</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-doctrine" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Doctrine</span></h4>
 <p class="meta">Claverie B, du Cluzel F · 2022 · NATO ACT concept paper</p>
 <p class="claim">▸ Cognition is treated as an operational warfare domain alongside land, sea, air, space, cyber.</p>
 <blockquote>“Cognitive warfare is now seen as its own domain in modern warfare” <span class="pg">— p.1, verified</span></blockquote>
@@ -809,8 +809,8 @@
 <p class="limits">Limitations: Doctrinal concept paper; authors' views, not official NATO position.</p>
 </article>
 <article class="card" id="du2021">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/DuCluzel2021_CognitiveWarfare.pdf" target="_blank" rel="noopener">Cognitive Warfare</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
-<p class="meta">du Cluzel F · 2021 · NATO Innovation Hub study (June-November 2020) · <a href="https://doi.org/10.31219/osf.io/ynfzr" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/DuCluzel2021_CognitiveWarfare.pdf" target="_blank" rel="noopener">Cognitive Warfare</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-frontier" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Frontier</span></h4>
+<p class="meta">du Cluzel F · 2021 · NATO Innovation Hub study (June-November 2020)</p>
 <p class="claim">▸ Trust itself is the strategic target.</p>
 <blockquote>“Trust is the target Cognitive warfare pursues the objective of undermining trust (public trust in electoral processes, trust in institutions, allies, politicians…)” <span class="pg">— p.8, verified</span></blockquote>
 <p class="claim">▸ Adversaries gain strategic effect without kinetic conflict.</p>
@@ -819,7 +819,7 @@
 <p class="limits">Limitations: Think-piece with case studies; pre-generative-AI (2020).</p>
 </article>
 <article class="card" id="deppe2024">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Deppe2024_CognitiveWarfareConceptualAnalysisNATO.pdf" target="_blank" rel="noopener">Cognitive warfare: a conceptual analysis of the NATO ACT cognitive warfare exploratory concept</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Deppe2024_CognitiveWarfareConceptualAnalysisNATO.pdf" target="_blank" rel="noopener">Cognitive warfare: a conceptual analysis of the NATO ACT cognitive warfare exploratory concept</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 36</span></h4>
 <p class="meta">Deppe C, Schaal G S · 2024 · Conceptual analysis of the NATO ACT exploratory concept (Frontiers in Big Data) · <a href="https://doi.org/10.3389/fdata.2024.1452129" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Bridges the military-academic definitional gap that hampers cumulative research.</p>
 <blockquote>“This study also aims to reduce the conceptual unclarity between military and academic conceptualizations of cognitive warfare and to enhance the development of the concept within both ﬁelds of application” <span class="pg">— p.3, verified</span></blockquote>
@@ -829,7 +829,7 @@
 <h3 id="T5b"><span class="tcode">T5b</span>AI-era escalation &amp; defense frameworks</h3>
 <p class="tdesc">Generative AI collapses the cost of cognitive attack</p>
 <article class="card" id="huang2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Huang2023_ChallengesAICognitiveSecuritySafety.pdf" target="_blank" rel="noopener">On Challenges of AI to Cognitive Security and Safety</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Huang2023_ChallengesAICognitiveSecuritySafety.pdf" target="_blank" rel="noopener">On Challenges of AI to Cognitive Security and Safety</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 10</span></h4>
 <p class="meta">Huang R, Zheng X, Shang Y, Xue X · 2023 · Mechanism analysis + framework proposal (Security and Safety journal) · <a href="https://doi.org/10.1051/sands/2023012" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ AIGC collapses the production threshold for harmful information.</p>
 <blockquote>“remarkable breakthroughs in the ChatGPT-like artiﬁcial intelligence generated content (AIGC) technology [1–4] have radically reduced the production threshold of fake, biased, incorrect, and other harmful information” <span class="pg">— p.1, verified</span></blockquote>
@@ -837,7 +837,7 @@
 <p class="limits">Limitations: Framework not empirically validated; designed for dynamic interactive environments.</p>
 </article>
 <article class="card" id="el2026">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/El2026_AIDevShouldPrioritizeCognitiveSecurity.pdf" target="_blank" rel="noopener">Position: AI Development Should Prioritize Cognitive Security</a><span class="badge" title="Position paper">POS</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/El2026_AIDevShouldPrioritizeCognitiveSecurity.pdf" target="_blank" rel="noopener">Position: AI Development Should Prioritize Cognitive Security</a><span class="badge" title="Position paper">POS</span><span class="tierchip tier-doctrine" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Doctrine</span></h4>
 <p class="meta">El B, Su S, Pappu A, Yin P, Heng J, Heng E, Wang R, Haupt A, Zou J · 2026 · Position paper with capability tracking and research roadmap (ICLR 2026 workshop)</p>
 <p class="claim">▸ Defines cognitive security as protecting human cognitive processes from hazardous influence.</p>
 <blockquote>“cognitive security–the protection of human cognitive processes from hazardous influence” <span class="pg">— p.1, verified</span></blockquote>
@@ -847,7 +847,7 @@
 <p class="limits">Limitations: Position/roadmap paper; empirical program still to be executed.</p>
 </article>
 <article class="card" id="kirk2025">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Kirk2025_SocioaffectiveAlignment.pdf" target="_blank" rel="noopener">Why human–AI relationships need socioaffective alignment</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Kirk2025_SocioaffectiveAlignment.pdf" target="_blank" rel="noopener">Why human–AI relationships need socioaffective alignment</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 82</span></h4>
 <p class="meta">Kirk H R, Gabriel I, Summerfield C, Vidgen B, Hale S A · 2025 · Framework paper (Humanities &amp; Social Sciences Communications / Oxford, DeepMind) · <a href="https://doi.org/10.1057/s41599-025-04532-5" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Names the emerging challenge: deeper, persistent human-AI relationships.</p>
 <blockquote>“as AI capabilities advance, we face a new challenge: the emergence of deeper, more persistent relationships between humans and AI systems” <span class="pg">— p.1, verified</span></blockquote>
@@ -855,7 +855,7 @@
 <p class="limits">Limitations: Conceptual; operationalization open.</p>
 </article>
 <article class="card" id="casper2023">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Casper2023_OpenProblemsRLHF.pdf" target="_blank" rel="noopener">Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback</a><span class="badge" title="Systematic/narrative review">REV</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Casper2023_OpenProblemsRLHF.pdf" target="_blank" rel="noopener">Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 93</span></h4>
 <p class="meta">Casper S, Davies X, Shi C, Gilbert T K, Scheurer J, Rando J, Freedman R, Korbak T, et al. · 2023 · Systematic survey plus auditing/disclosure proposals (arXiv) · <a href="https://doi.org/10.48550/arxiv.2307.15217" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ RLHF's flaws were under-systematized despite centrality.</p>
 <blockquote>“Despite this popularity, there has been relatively little public work systematizing its flaws” <span class="pg">— p.1, verified</span></blockquote>
@@ -863,7 +863,7 @@
 <p class="limits">Limitations: Survey; fast-moving methods landscape.</p>
 </article>
 <article class="card" id="rahwan2019">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Rahwan2019_MachineBehaviour.pdf" target="_blank" rel="noopener">Machine Behaviour</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Rahwan2019_MachineBehaviour.pdf" target="_blank" rel="noopener">Machine Behaviour</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 1,202</span></h4>
 <p class="meta">Rahwan I, Cebrian M, Obradovich N, Bongard J, Bonnefon J-F, Breazeal C, et al. · 2019 · Field-defining review (Nature) · <a href="https://doi.org/10.1038/s41586-019-1138-y" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Defines the discipline this whole collection operates in.</p>
 <blockquote>“Machines powered by artificial intelligence increasingly mediate our social, cultural, economic and political interactions” <span class="pg">— p.1, verified</span></blockquote>
@@ -871,14 +871,14 @@
 <p class="limits">Limitations: Agenda-setting; 2019 pre-LLM landscape.</p>
 </article>
 <article class="card" id="greenstadt2008">
-<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Greenstadt2008_CognitiveSecurityPersonalDevices.pdf" target="_blank" rel="noopener">Cognitive Security for Personal Devices</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Greenstadt2008_CognitiveSecurityPersonalDevices.pdf" target="_blank" rel="noopener">Cognitive Security for Personal Devices</a><span class="badge" title="Conceptual/theoretical">CON</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 33</span></h4>
 <p class="meta">Greenstadt R, Beal J · 2008 · Research agenda proposal (AISec 2008) — earliest use of 'cognitive security' in this collection · <a href="https://doi.org/10.1145/1456377.1456383" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
 <p class="claim">▸ Proposes modeling device security on human cognitive trust mechanisms.</p>
 <blockquote>“We propose two lines of research that can be combined to produce cognitive security on computers and other personal devices: continuously deployed multi-moda l biometrics and adjustably autonomous security” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Continuous multimodal biometrics + adjustable autonomy:</b> Devices recognize owners the way humans recognize each other and make human-like security decisions.</div>
 <p class="limits">Limitations: Pre-AI-era (2008); device-security sense of the term, distinct from influence-defense usage.</p>
 </article>
-<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 96 papers, 2026-07-19.</footer>
+<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 96 papers, 2026-08-25.</footer>
 </main>
 </body>
 </html>
