@@ -13,7 +13,7 @@
 <main>
 <nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a><a href="ask.html">Ask the Evidence</a><a href="about.html">About</a></nav>
 <h1>Cognitive Security Threat Map</h1>
-<p class="sub">Five threat classes against human cognition, built from 96 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
+<p class="sub">Five threat classes against human cognition, built from 102 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
 <div class="toc"><a class="chip" href="#T1"><b>T1</b> Attacks on Belief Formation</a><a class="chip" href="#T2"><b>T2</b> Erosion of Cognitive Capability</a><a class="chip" href="#T3"><b>T3</b> Miscalibrated Trust &amp; Reliance</a><a class="chip" href="#T4"><b>T4</b> Exploitation of Emotional &amp; Relational Cognition</a><a class="chip" href="#T5"><b>T5</b> Cognitive Warfare (Adversarial &amp; Societal Scale)</a></div>
 <h2 id="T1"><span class="tcode">T1</span>Attacks on Belief Formation</h2>
 <p class="tdesc">Threats that corrupt what people come to believe — not by breaking the machine, but by exploiting how human belief updating works.</p>
@@ -132,6 +132,28 @@
 <blockquote>“each behavior can be independently amplified or suppressed without affecting the others” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Targeted activation steering:</b> Suppress sycophantic agreement or praise independently without damaging genuine agreement — a model-side mitigation lever.</div>
 <p class="limits">Limitations: Open-weight models only; behavioral generalization beyond probed settings untested.</p>
+</article>
+<article class="card" id="liu2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Liu2025_TruthDecay.pdf" target="_blank" rel="noopener">TRUTH DECAY: Quantifying Multi-Turn Sycophancy in Language Models</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Liu J, Jain A, Takuri S, Vege S, Akalin A, Zhu K, O'Brien S, Sharma V · 2025 · Multi-turn benchmark across model families (arXiv) · <a href="https://doi.org/10.48550/arxiv.2503.11656" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Names the core multi-turn hazard.</p>
+<blockquote>“sycophancy refers to the tendency of models to excessively agree with or flatter users” <span class="pg">— p.1, verified</span></blockquote>
+<p class="limits">Limitations: Benchmark settings; student-led research collective.</p>
+</article>
+<article class="card" id="kim2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Kim2025_ChallengingTheEvaluator.pdf" target="_blank" rel="noopener">Challenging the Evaluator: LLM Sycophancy Under User Rebuttal</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Kim S, Khashabi D · 2025 · Controlled rebuttal experiments on evaluator LLMs (Johns Hopkins, arXiv) · <a href="https://doi.org/10.48550/arxiv.2509.16533" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Agreement with counterarguments undermines evaluation reliability.</p>
+<blockquote>“Large Language Models (LLMs) often exhibit sycophancy, distorting responses to align with user beliefs, notably by readily agreeing with user counterarguments” <span class="pg">— p.1, verified</span></blockquote>
+<p class="limits">Limitations: Evaluator settings; specific rebuttal formats.</p>
+</article>
+<article class="card" id="xiao2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Xiao2026_WhenCorrectBeliefsCollapse.pdf" target="_blank" rel="noopener">When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Xiao B, Tian X, Song X, Wang H, Song G, Zhao S, Qin B · 2026 · Epistemic-resilience benchmark under clinical pressure scenarios (HIT, arXiv) · <a href="https://doi.org/10.48550/arxiv.2605.23932" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Static medical accuracy does not survive conversational pressure.</p>
+<blockquote>“When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Resilience benchmarking:</b> Pre-deployment stress-testing of belief stability for clinical LLMs.</div>
+<p class="limits">Limitations: Simulated pressure; Chinese/English clinical items.</p>
 </article>
 <article class="card" id="wei2024">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Wei2024_SyntheticDataReducesSycophancy.pdf" target="_blank" rel="noopener">Simple Synthetic Data Reduces Sycophancy in Large Language Models</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 27</span></h4>
@@ -439,6 +461,14 @@
 <blockquote>“their appeal comes from promises to improve productivity and objectivity by overcoming human shortcomings” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Epistemic risk awareness in research design:</b> Names the illusion types (explanatory depth, exploratory breadth, objectivity) so research communities can guard against them.</div>
 <p class="limits">Limitations: Conceptual; empirical measurement of the illusions pending.</p>
+</article>
+<article class="card" id="ayodele2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/Ayodele2026_AugmentedCognitionFramework.pdf" target="_blank" rel="noopener">Revising Bloom's Taxonomy for Dual-Mode Cognition in Human-AI Systems: The Augmented Cognition Framework</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Ayodele K P, Obayiuwana E, Lawal A R, Bamimore A, Offiong F B, Peter E A · 2026 · Taxonomy revision with design principles (arXiv)</p>
+<p class="claim">▸ Provides an assessment scaffold for cognition under AI assistance.</p>
+<blockquote>“Revising Bloom’s Taxonomy for Dual-Mode Cognition in HumanAI Systems: The Augmented Cognition Framework” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Augmented Cognition Framework:</b> Dual-mode taxonomy for designing and assessing tasks that keep humans cognitively engaged.</div>
+<p class="limits">Limitations: Framework; classroom validation pending.</p>
 </article>
 <article class="card" id="cacioppo1982">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/metacognition/Cacioppo1982_NeedForCognition.pdf" target="_blank" rel="noopener">The Need for Cognition</a><span class="badge" title="Experimental evidence">EXP</span><span class="tierchip tier-classic" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Classic · 5,130</span></h4>
@@ -836,6 +866,14 @@
 <div class="prot"><b>Protection — Cognitive immune system (Mimicry Intelligence):</b> Bio-inspired defense triad — Mimicry Computing, Mimicry Defense, Mimicry Intelligence — for endogenous cognitive-domain security.</div>
 <p class="limits">Limitations: Framework not empirically validated; designed for dynamic interactive environments.</p>
 </article>
+<article class="card" id="huang2023b">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Huang2023_SystemScientificCognitiveSecurity.pdf" target="_blank" rel="noopener">An Introduction of System-Scientific Approaches to Cognitive Security</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Huang L, Zhu Q · 2023 · Framework chapter (Springer; NYU systems-security group) · <a href="https://doi.org/10.48550/arxiv.2301.05920" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Positions cognitive security within human-cyber-physical systems engineering.</p>
+<blockquote>“Human cognitive capacities and the needs of human-centric solutions for “Industry5.0”makehumansanindispensablecomponentinCyber-PhysicalSystems” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — System-scientific defense design:</b> Quantitative modeling tools (game theory, control) for designing cognitive defenses.</div>
+<p class="limits">Limitations: Pre-generative-AI framing (2023); formal models awaiting empirical grounding.</p>
+</article>
 <article class="card" id="el2026">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/El2026_AIDevShouldPrioritizeCognitiveSecurity.pdf" target="_blank" rel="noopener">Position: AI Development Should Prioritize Cognitive Security</a><span class="badge" title="Position paper">POS</span><span class="tierchip tier-doctrine" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Doctrine</span></h4>
 <p class="meta">El B, Su S, Pappu A, Yin P, Heng J, Heng E, Wang R, Haupt A, Zou J · 2026 · Position paper with capability tracking and research roadmap (ICLR 2026 workshop)</p>
@@ -853,6 +891,14 @@
 <blockquote>“as AI capabilities advance, we face a new challenge: the emergence of deeper, more persistent relationships between humans and AI systems” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Socioaffective alignment:</b> Align AI behavior within the co-created social-psychological ecosystem — support human relationships rather than substitute for them.</div>
 <p class="limits">Limitations: Conceptual; operationalization open.</p>
+</article>
+<article class="card" id="singh2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Singh2025_ProtectingHumanCognition.pdf" target="_blank" rel="noopener">Protecting Human Cognition in the Age of AI</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Singh A, Taneja K, Guan Z, Ghosh A · 2025 · Framework paper grounded in educational psychology (arXiv) · <a href="https://doi.org/10.48550/arxiv.2502.12447" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Frames cognitive protection through established learning theory.</p>
+<blockquote>“The rapid adoption of Generative AI (GenAI) is significantly reshaping hum” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Education-grounded protection design:</b> Interventions targeted at the taxonomy levels GenAI most displaces.</div>
+<p class="limits">Limitations: Conceptual; educational focus.</p>
 </article>
 <article class="card" id="casper2023">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Casper2023_OpenProblemsRLHF.pdf" target="_blank" rel="noopener">Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback</a><span class="badge" title="Systematic/narrative review">REV</span><span class="tierchip tier-cited" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Cited · 93</span></h4>
@@ -878,7 +924,7 @@
 <div class="prot"><b>Protection — Continuous multimodal biometrics + adjustable autonomy:</b> Devices recognize owners the way humans recognize each other and make human-like security decisions.</div>
 <p class="limits">Limitations: Pre-AI-era (2008); device-security sense of the term, distinct from influence-defense usage.</p>
 </article>
-<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 96 papers, 2026-08-25.</footer>
+<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 102 papers, 2026-08-27.</footer>
 </main>
 </body>
 </html>
