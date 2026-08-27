@@ -862,5 +862,59 @@
   "doi": "10.1038/s41562-024-01881-0",
   "topic": "ai-literacy",
   "summary": "Nine intervention types systematized from 81 papers, with evidence summaries and a living online toolbox — the structural template for a cognitive-security protection layer. (Nature Human Behaviour, 2024)"
+ },
+ {
+  "title": "Protecting Human Cognition in the Age of AI",
+  "authors": "Singh A, Taneja K, Guan Z, Ghosh A",
+  "year": "2025",
+  "venue": "UT Austin/Georgia Tech/Hugging Face, arXiv",
+  "doi": "10.48550/arxiv.2502.12447",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Framework applying Krathwohl's revised Bloom's taxonomy and Dewey's reflective thought to how GenAI reshapes reasoning and learning, with education-grounded protection directions. (UT Austin/Georgia Tech/Hugging Face, arXiv 2025)"
+ },
+ {
+  "title": "An Introduction of System-Scientific Approaches to Cognitive Security",
+  "authors": "Huang L, Zhu Q",
+  "year": "2023",
+  "venue": "Springer chapter, arXiv",
+  "doi": "10.48550/arxiv.2301.05920",
+  "topic": "cognitive-security-frameworks",
+  "summary": "Systems-science formalization of cognitive security in human-cyber-physical systems: attack surfaces, feedback loops, and defense design. (Springer chapter, arXiv 2023)"
+ },
+ {
+  "title": "TRUTH DECAY: Quantifying Multi-Turn Sycophancy in Language Models",
+  "authors": "Liu J, Jain A, Takuri S, Vege S, Akalin A, Zhu K, O'Brien S, Sharma V",
+  "year": "2025",
+  "venue": "Algoverse, arXiv",
+  "doi": "10.48550/arxiv.2503.11656",
+  "topic": "sycophancy",
+  "summary": "Benchmark for sycophancy across extended dialogues: progressive factual degradation under iterative user pressure, not just single-turn flips. (Algoverse, arXiv 2025)"
+ },
+ {
+  "title": "Revising Bloom's Taxonomy for Dual-Mode Cognition in Human-AI Systems: The Augmented Cognition Framework",
+  "authors": "Ayodele K P, Obayiuwana E, Lawal A R, Bamimore A, Offiong F B, Peter E A",
+  "year": "2026",
+  "venue": "Obafemi Awolowo University, arXiv",
+  "doi": "",
+  "topic": "metacognition",
+  "summary": "Restructures Bloom's taxonomy for dual-mode (human+AI) cognition — a pedagogical scaffold for teaching and assessing cognition under AI assistance. (Obafemi Awolowo University, arXiv 2026)"
+ },
+ {
+  "title": "Challenging the Evaluator: LLM Sycophancy Under User Rebuttal",
+  "authors": "Kim S, Khashabi D",
+  "year": "2025",
+  "venue": "Johns Hopkins, arXiv",
+  "doi": "10.48550/arxiv.2509.16533",
+  "topic": "sycophancy",
+  "summary": "LLMs readily concede to user counterarguments even when acting as evaluators — sycophancy undermines the LLM-as-judge paradigm itself. (Johns Hopkins, arXiv 2025)"
+ },
+ {
+  "title": "When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure",
+  "authors": "Xiao B, Tian X, Song X, Wang H, Song G, Zhao S, Qin B",
+  "year": "2026",
+  "venue": "Harbin Institute of Technology, arXiv",
+  "doi": "10.48550/arxiv.2605.23932",
+  "topic": "sycophancy",
+  "summary": "Despite strong medical benchmark accuracy, LLM beliefs collapse under simulated clinical user pressure — epistemic-resilience benchmark for high-stakes deployments. (Harbin Institute of Technology, arXiv 2026)"
  }
 ]
