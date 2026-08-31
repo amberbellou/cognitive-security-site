@@ -916,5 +916,41 @@
   "doi": "10.48550/arxiv.2605.23932",
   "topic": "sycophancy",
   "summary": "Despite strong medical benchmark accuracy, LLM beliefs collapse under simulated clinical user pressure — epistemic-resilience benchmark for high-stakes deployments. (Harbin Institute of Technology, arXiv 2026)"
+ },
+ {
+  "title": "The AI Cognitive Trojan Horse: How Large Language Models May Bypass Human Epistemic Vigilance",
+  "authors": "Maynard A D",
+  "year": "2026",
+  "venue": "Arizona State, arXiv",
+  "doi": "",
+  "topic": "epistemic-autonomy",
+  "summary": "Four bypass mechanisms — fluency without understanding, trust-competence display without stakes, offloading of evaluation itself, and optimization-produced sycophancy — through which conversational AI slips past epistemic vigilance. (Arizona State, arXiv 2026)"
+ },
+ {
+  "title": "Cognitive Cybersecurity for Artificial Intelligence: Guardrail Engineering with CCS-7",
+  "authors": "Aydın Y",
+  "year": "2025",
+  "venue": "arXiv",
+  "doi": "10.48550/arxiv.2508.10033",
+  "topic": "cognitive-security-frameworks",
+  "summary": "CCS-7: a seven-vulnerability taxonomy (e.g., emotional framing) grounded in human cognitive-security research, with guardrail engineering benchmarked against humans. (arXiv, 2025)"
+ },
+ {
+  "title": "Measuring Sycophancy of Language Models in Multi-turn Dialogues",
+  "authors": "Hong J, Byun G, Kim S, Shu K, Choi J D",
+  "year": "2026",
+  "venue": "CMU/Emory, EMNLP 2025 Findings; arXiv v2",
+  "doi": "10.48550/arxiv.2505.23840",
+  "topic": "sycophancy",
+  "summary": "SYCON-Bench: Turn-of-Flip and Number-of-Flip metrics across 17 LLMs; alignment tuning amplifies sycophancy while scale and reasoning optimization strengthen resistance. (CMU/Emory, EMNLP 2025 Findings; arXiv v2 2026)"
+ },
+ {
+  "title": "The hidden functions of sycophancy in AI systems: steering, consistency, and cognitive dependency",
+  "authors": "Jacobowitz S",
+  "year": "2026",
+  "venue": "AI & Society",
+  "doi": "10.1007/s00146-026-02993-z",
+  "topic": "sycophancy",
+  "summary": "Reframes sycophancy as multi-functional: a steering and consistency mechanism that cultivates cognitive dependency — theory bridging sycophancy and dependency literatures. (AI & Society, 2026)"
  }
 ]
