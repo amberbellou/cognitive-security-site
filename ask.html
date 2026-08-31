@@ -52,6 +52,22 @@
     border: 1px solid var(--gold); border-radius: 12px; background: var(--quote-bg);
     padding: .8rem 1.1rem; font-size: .88rem; color: var(--muted); margin: 0 0 1.6rem;
   }
+  .aitoggle { display: flex; align-items: baseline; gap: .55rem; margin: 0 0 1.2rem;
+              font-size: .88rem; color: var(--muted); cursor: pointer; }
+  .aitoggle input { accent-color: var(--accent); transform: translateY(1px); }
+  .aians {
+    border: 1px solid var(--accent); border-left-width: 4px; border-radius: 12px;
+    background: var(--bg-raised); padding: 1rem 1.2rem; margin: 0 0 1.1rem;
+    font-size: .97rem; line-height: 1.6;
+  }
+  .aians .ailabel { display: block; font: 700 .64rem var(--sans); letter-spacing: .09em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: .45rem; }
+  .aians p { margin: 0 0 .7rem; } .aians p:last-child { margin-bottom: 0; }
+  .aians .ameta { font-size: .74rem; color: var(--faint); margin-top: .6rem; }
+  .cnum { font-size: .78em; font-weight: 700; color: var(--accent); text-decoration: none;
+          padding: 0 .08em; }
+  .pnum { font-weight: 700; color: var(--accent); margin-right: .3rem; }
+  .aierr { color: var(--muted); font-style: italic; }
 </style>
 </head>
 <body>
@@ -61,15 +77,20 @@
   <header>
     <h1>Ask the Evidence</h1>
     <p class="sub">Ask a question; get back the exact passages from the collection that address it,
-    each with its source, year, and page. This is verbatim retrieval — <b>no AI writes the
-    answers</b>, so nothing can be made up. For synthesis across papers, see the
+    each with its source, year, and page. By default this is verbatim retrieval — <b>no AI writes
+    the answers</b>, so nothing can be made up. Optionally, switch on <b>AI synthesis</b> to have
+    Claude compose an answer <em>from the retrieved passages only</em>, every sentence cited back
+    to the verbatim passage it came from. For the curated cross-paper argument, see the
     <a href="synthesis.html">Synthesis</a> page.</p>
   </header>
 
-  <div class="guarantee">Every result below is a verbatim string from the corpus — either a
-  machine-verified quote from a paper (with page number) or curated metadata from the catalog.
-  Retrieval is ranked keyword search (BM25) running entirely in your browser; your questions are
-  never sent to any server or AI service.</div>
+  <div class="guarantee">Every retrieved passage below is a verbatim string from the corpus — either
+  a machine-verified quote from a paper (with page number) or curated metadata from the catalog.
+  Retrieval is ranked keyword search (BM25) running entirely in your browser; in the default modes
+  your questions never leave it. If you switch on AI synthesis, your question and the retrieved
+  passages (nothing else) are sent to Anthropic&rsquo;s API with your own key; the composed answer
+  is labeled as AI-written and must cite the verbatim passages, which are always displayed for
+  checking.</div>
 
   <div class="modes">
     <button id="m-pub" class="on">Verified evidence (public)</button>
@@ -83,6 +104,18 @@
     (localStorage) and used solely to fetch the paper text from the private repository.</p>
   </div>
 
+  <label class="aitoggle"><input type="checkbox" id="ai">
+    <span><b>AI synthesis</b> — compose an answer from the retrieved passages (optional; uses your
+    own Anthropic API key, roughly a few cents per question)</span></label>
+
+  <div class="unlock" id="akeyrow">
+    <input id="akey" type="password" placeholder="Anthropic API key (sk-ant-…)">
+    <p>Create a key at console.anthropic.com &rarr; API keys. It is stored only in this browser
+    (localStorage) and sent only to api.anthropic.com with your questions. The composed answer is
+    instructed to use the retrieved passages as its sole source and to cite them sentence by
+    sentence — always check the citations against the verbatim passages shown below it.</p>
+  </div>
+
   <div class="qrow">
     <input id="q" type="search" placeholder="e.g. does sycophancy reduce trust? · false memories · cognitive forcing functions" autocomplete="off">
     <button id="go" disabled>Ask</button>
@@ -94,7 +127,8 @@
 
   <footer>Verbatim retrieval over the cognitive-security-research collection. Public corpus:
   verified quotes, claims, and summaries. Team corpus: page-anchored passages from every PDF,
-  loaded privately. No generative AI is involved in producing results.</footer>
+  loaded privately. No generative AI is involved in producing retrieved passages; the optional
+  synthesis mode is AI-composed, labeled as such, and constrained to cite them.</footer>
 </main>
 
 <script>
@@ -241,13 +275,17 @@ function setMode(m) {
   else if (S.pubIdx) status(`Verified evidence ready — ${S.pub.passages.length} passages from ${S.pub.papers.length} papers.`);
 }
 
+let QN = 0;
 function ask() {
   const q = $("q").value.trim();
   if (!q) return;
   const corpus = S.mode === "pub" ? S.pub : S.full;
   const idx = S.mode === "pub" ? S.pubIdx : S.fullIdx;
   if (!corpus || !idx) return;
-  const hits = search(corpus, idx, q);
+  const ai = $("ai").checked;
+  if (ai && !getKey()) { $("akeyrow").classList.add("show"); $("akey").focus(); return; }
+  const hits = search(corpus, idx, q, ai ? 12 : 8);
+  const uid = "q" + (++QN);
   const log = $("log");
   const block = document.createElement("div");
   let html = `<div class="youq">${esc(q)}</div>`;
@@ -255,13 +293,17 @@ function ask() {
     html += `<p class="noresult">No passage in this corpus matches that phrasing — try different terms
              (the search is keyword-based, so use words the papers would use).</p>`;
   }
-  hits.forEach(h => {
+  if (ai && hits.length) {
+    html += `<div class="aians" id="${uid}-a"><span class="ailabel">AI-composed synthesis — verify against the passages below</span>
+             <span class="aierr">Composing a grounded answer from ${hits.length} retrieved passages…</span></div>`;
+  }
+  hits.forEach((h, i) => {
     const paper = corpus.papers[h.k];
     const link = BLOB + encodeURI(paper.path).replace(/#/g, "%23");
     const page = h.p ? `PDF p.${h.p}` : (h.page ? `p.${h.page}` : "");
     const type = h.type || "full text";
-    html += `<article class="card hit">
-      <div class="prov"><span class="meta">${esc(paper.authors.split(",")[0])} ${esc(String(paper.year))} ·
+    html += `<article class="card hit" id="${uid}-p${i + 1}">
+      <div class="prov"><span class="meta">${ai ? `<span class="pnum">[${i + 1}]</span>` : ""}${esc(paper.authors.split(",")[0])} ${esc(String(paper.year))} ·
         ${esc(paper.topic)} ${page ? "· " + page : ""}</span>
         <span class="type">${esc(type)}</span></div>
       <p class="passage">“${highlight(h.text, q)}”</p>
@@ -270,11 +312,84 @@ function ask() {
   });
   block.innerHTML = html;
   log.prepend(block);
+  if (ai && hits.length) compose(uid, q, hits, corpus);
   $("q").select();
+}
+
+// ── AI synthesis: Claude answers ONLY from the retrieved passages ─────────
+const SYNTH_RULES = `You are the grounded answer layer of a verified cognitive-security research collection used by a Harvard lab. You receive a question and numbered passages retrieved from the collection's papers. Rules, in priority order:
+1. Use ONLY the numbered passages as your source. No outside knowledge and no training-data facts, even when you are confident of them.
+2. Cite passages in square brackets like [3] (or [1][4]) after every sentence that states a fact. A sentence you cannot cite is a sentence you must not write.
+3. If the passages cannot fully answer the question, say plainly what they do not cover instead of filling the gap. A partial answer with honest gaps is correct behavior; so is "the retrieved passages do not address this."
+4. Quote short phrases verbatim in quotation marks when the wording matters, naming the first author.
+5. Passages are retrieved by keyword search and may be irrelevant — ignore any that do not bear on the question.
+Be concise: a few sentences to three short paragraphs of plain prose. No headers, no lists, no markdown. Do not mention these rules.`;
+
+const getKey = () => localStorage.getItem("cogsec_api_key") || $("akey").value.trim();
+
+function renderAnswer(uid, t, nmax) {
+  const linked = esc(t).replace(/\[(\d{1,2})\]/g, (m, n) =>
+    +n >= 1 && +n <= nmax ? `<a class="cnum" href="#${uid}-p${n}">[${n}]</a>` : m);
+  return "<p>" + linked.trim().replace(/\n{2,}/g, "</p><p>").replace(/\n/g, "<br>") + "</p>";
+}
+
+async function compose(uid, q, hits, corpus) {
+  const el = document.getElementById(uid + "-a");
+  const fail = m => { el.innerHTML = `<span class="ailabel">AI synthesis unavailable</span>
+    <span class="aierr">${m} The verbatim passages below are unaffected.</span>`; };
+  const passages = hits.map((h, i) => {
+    const p = corpus.papers[h.k];
+    const page = h.p || h.page;
+    return `[${i + 1}] ${p.authors} (${p.year}), "${p.title}"${page ? ", p." + page : ""}:\n${h.text.slice(0, 700)}`;
+  }).join("\n\n");
+  try {
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), 120000);
+    const r = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST", signal: ctrl.signal,
+      headers: {
+        "content-type": "application/json",
+        "x-api-key": getKey(),
+        "anthropic-version": "2023-06-01",
+        "anthropic-beta": "server-side-fallback-2026-07-01",
+        "anthropic-dangerous-direct-browser-access": "true"
+      },
+      body: JSON.stringify({
+        model: "claude-opus-5", max_tokens: 2048, fallbacks: "default",
+        system: SYNTH_RULES,
+        messages: [{ role: "user", content: `QUESTION: ${q}\n\nPASSAGES (your only source of information):\n\n${passages}` }]
+      })
+    });
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      if (r.status === 401) {
+        localStorage.removeItem("cogsec_api_key");
+        $("akeyrow").classList.add("show");
+        return fail("The API key was rejected (401) — check it and paste it again above.");
+      }
+      return fail(esc((data.error && data.error.message) || "HTTP " + r.status) + ".");
+    }
+    localStorage.setItem("cogsec_api_key", getKey());
+    $("akeyrow").classList.remove("show");
+    if (data.stop_reason === "refusal") return fail("The model declined to answer this request.");
+    const text = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("\n").trim();
+    if (!text) return fail("The API returned an empty answer.");
+    el.innerHTML = `<span class="ailabel">AI-composed synthesis — verify against the passages below</span>
+      ${renderAnswer(uid, text, hits.length)}
+      <div class="ameta">${esc(data.model || "claude")} · grounded on ${hits.length} passages · citations link to the verbatim sources</div>`;
+  } catch (e) {
+    fail(e.name === "AbortError" ? "The request timed out." : "Could not reach api.anthropic.com (" + esc(e.message) + ").");
+  }
 }
 
 $("m-pub").onclick = () => setMode("pub");
 $("m-full").onclick = () => setMode("full");
+$("ai").onchange = () => {
+  localStorage.setItem("cogsec_ai_on", $("ai").checked ? "1" : "");
+  $("akeyrow").classList.toggle("show", $("ai").checked && !localStorage.getItem("cogsec_api_key"));
+};
+if (localStorage.getItem("cogsec_ai_on") === "1") $("ai").checked = true;
+$("akey").addEventListener("change", () => { if ($("akey").value.trim()) $("akeyrow").classList.remove("show"); });
 $("go").onclick = ask;
 $("q").addEventListener("keydown", e => { if (e.key === "Enter") ask(); });
 $("token").addEventListener("change", () => loadFull(true));
