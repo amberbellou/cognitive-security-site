@@ -433,3 +433,23 @@ footer code {
 }
 .stats span { font-size: .74rem; font-weight: 600; letter-spacing: .05em;
               text-transform: uppercase; color: var(--faint); }
+
+/* ── Research Framework page ─────────────────────────────────────────── */
+.fwhow {
+  border: 1px solid var(--gold); border-radius: 12px; background: var(--quote-bg);
+  padding: .9rem 1.2rem; font-size: .9rem; color: var(--muted);
+  margin: 0 0 1.8rem; line-height: 1.7;
+}
+.fwh {
+  font: 700 .72rem var(--sans); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent); margin: 1.35rem 0 .5rem;
+}
+.fwlist { list-style: none; margin: 0 0 1.1rem; padding: 0; }
+.fwlist li {
+  font-size: .92rem; line-height: 1.55; padding: .38rem 0 .38rem 1rem;
+  border-left: 2px solid var(--hairline); margin: 0 0 .4rem;
+}
+.fwcount {
+  font: 600 .68rem var(--sans); letter-spacing: .06em; color: var(--faint);
+  text-transform: uppercase; margin-left: .65rem;
+}
