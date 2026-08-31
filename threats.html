@@ -13,7 +13,7 @@
 <main>
 <nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis &amp; Framework</a><a href="ask.html">Ask the Evidence</a><a href="about.html">About</a></nav>
 <h1>Cognitive Security Threat Map</h1>
-<p class="sub">Five threat classes against human cognition, built from 102 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
+<p class="sub">Five threat classes against human cognition, built from 106 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
 <div class="toc"><a class="chip" href="#T1"><b>T1</b> Attacks on Belief Formation</a><a class="chip" href="#T2"><b>T2</b> Erosion of Cognitive Capability</a><a class="chip" href="#T3"><b>T3</b> Miscalibrated Trust &amp; Reliance</a><a class="chip" href="#T4"><b>T4</b> Exploitation of Emotional &amp; Relational Cognition</a><a class="chip" href="#T5"><b>T5</b> Cognitive Warfare (Adversarial &amp; Societal Scale)</a></div>
 <h2 id="T1"><span class="tcode">T1</span>Attacks on Belief Formation</h2>
 <p class="tdesc">Threats that corrupt what people come to believe — not by breaking the machine, but by exploiting how human belief updating works.</p>
@@ -147,6 +147,21 @@
 <blockquote>“Large Language Models (LLMs) often exhibit sycophancy, distorting responses to align with user beliefs, notably by readily agreeing with user counterarguments” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Evaluator settings; specific rebuttal formats.</p>
 </article>
+<article class="card" id="hong2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Hong2026_SYCONBench.pdf" target="_blank" rel="noopener">Measuring Sycophancy of Language Models in Multi-turn Dialogues</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Hong J, Byun G, Kim S, Shu K, Choi J D · 2026 · SYCON-Bench: 17 LLMs, six families, three scenarios (CMU/Emory, EMNLP Findings) · <a href="https://doi.org/10.48550/arxiv.2505.23840" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Defines sycophancy as conformity against factuality.</p>
+<blockquote>“they often exhibit sycophancy—conforming to user beliefs regardless of factual” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Flip-based measurement:</b> Turn-of-Flip/Number-of-Flip give protection research precise conformity metrics; reasoning optimization strengthens resistance.</div>
+<p class="limits">Limitations: Three scenario types; open models predominate.</p>
+</article>
+<article class="card" id="jacobowitz2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Jacobowitz2026_HiddenFunctionsOfSycophancy.pdf" target="_blank" rel="noopener">The hidden functions of sycophancy in AI systems: steering, consistency, and cognitive dependency</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Jacobowitz S · 2026 · Theoretical analysis (AI &amp; Society, Open Forum) · <a href="https://doi.org/10.1007/s00146-026-02993-z" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Reframes sycophancy from engagement flaw to multi-functional mechanism.</p>
+<blockquote>“This paper reframes sycophancy from a problematic form of engagement to a multi-functional me” <span class="pg">— p.1, verified</span></blockquote>
+<p class="limits">Limitations: Theory; empirical operationalization open.</p>
+</article>
 <article class="card" id="xiao2026">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Xiao2026_WhenCorrectBeliefsCollapse.pdf" target="_blank" rel="noopener">When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure</a><span class="badge" title="Experimental evidence">EXP</span></h4>
 <p class="meta">Xiao B, Tian X, Song X, Wang H, Song G, Zhao S, Qin B · 2026 · Epistemic-resilience benchmark under clinical pressure scenarios (HIT, arXiv) · <a href="https://doi.org/10.48550/arxiv.2605.23932" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
@@ -264,6 +279,14 @@
 <blockquote>“AI assistant interactions carry meaningful potential for situational human disempowerment, including reality distortion, value judgment distortion, and action distortion” <span class="pg">— p.1, verified</span></blockquote>
 <div class="prot"><b>Protection — Inoculation-based AI literacy curriculum:</b> Eight Learning Outcomes teaching cognitive resistance to AI disempowerment before exposure.</div>
 <p class="limits">Limitations: Framework proposal; learning outcomes not yet evaluated experimentally.</p>
+</article>
+<article class="card" id="maynard2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/epistemic-autonomy/Maynard2026_AICognitiveTrojanHorse.pdf" target="_blank" rel="noopener">The AI Cognitive Trojan Horse: How Large Language Models May Bypass Human Epistemic Vigilance</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Maynard A D · 2026 · Framework paper (Arizona State, arXiv)</p>
+<p class="claim">▸ Existing misinformation/persuasion frames don't cover the LLM challenge.</p>
+<blockquote>“Large language model (LLM)-based conversational AI systems present a challenge to human cognition that current frameworks for understanding misinformation, manipulation, and persuasion do not adequately addres” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Vigilance-aware design:</b> Naming the four bypass routes gives protection design concrete targets.</div>
+<p class="limits">Limitations: Conceptual; mechanisms await direct empirical tests.</p>
 </article>
 <h3 id="T1c"><span class="tcode">T1c</span>Misinformation &amp; belief distortion</h3>
 <p class="tdesc">Synthetic falsehood outcompetes truth; corrections underperform</p>
@@ -874,6 +897,14 @@
 <div class="prot"><b>Protection — System-scientific defense design:</b> Quantitative modeling tools (game theory, control) for designing cognitive defenses.</div>
 <p class="limits">Limitations: Pre-generative-AI framing (2023); formal models awaiting empirical grounding.</p>
 </article>
+<article class="card" id="aydin2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/Aydin2025_CCS7GuardrailEngineering.pdf" target="_blank" rel="noopener">Cognitive Cybersecurity for Artificial Intelligence: Guardrail Engineering with CCS-7</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Aydın Y · 2025 · Taxonomy + guardrail experiments benchmarked against human baselines (arXiv) · <a href="https://doi.org/10.48550/arxiv.2508.10033" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Models share exploitable cognitive patterns with humans.</p>
+<blockquote>“Language models exhibit human-like cognitive vulnerabilities, such as emotional framing, that escape traditional behavioral alignment” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — CCS-7 guardrails:</b> Vulnerability-specific guardrail engineering rather than generic alignment.</div>
+<p class="limits">Limitations: Independent-researcher preprint; benchmark scope.</p>
+</article>
 <article class="card" id="el2026">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/cognitive-security-frameworks/El2026_AIDevShouldPrioritizeCognitiveSecurity.pdf" target="_blank" rel="noopener">Position: AI Development Should Prioritize Cognitive Security</a><span class="badge" title="Position paper">POS</span><span class="tierchip tier-doctrine" title="Evidence tier from the OpenAlex citation audit; Frontier = too recent to accrue citations">Doctrine</span></h4>
 <p class="meta">El B, Su S, Pappu A, Yin P, Heng J, Heng E, Wang R, Haupt A, Zou J · 2026 · Position paper with capability tracking and research roadmap (ICLR 2026 workshop)</p>
@@ -924,7 +955,7 @@
 <div class="prot"><b>Protection — Continuous multimodal biometrics + adjustable autonomy:</b> Devices recognize owners the way humans recognize each other and make human-like security decisions.</div>
 <p class="limits">Limitations: Pre-AI-era (2008); device-security sense of the term, distinct from influence-defense usage.</p>
 </article>
-<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 102 papers, 2026-08-27.</footer>
+<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 106 papers, 2026-08-31.</footer>
 </main>
 </body>
 </html>
