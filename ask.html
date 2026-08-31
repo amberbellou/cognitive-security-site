@@ -68,6 +68,16 @@
           padding: 0 .08em; }
   .pnum { font-weight: 700; color: var(--accent); margin-right: .3rem; }
   .aierr { color: var(--muted); font-style: italic; }
+  .qok { background: color-mix(in srgb, #2e7d32 11%, transparent); border-radius: 3px; }
+  .qok::after { content: "✓"; font-size: .68em; vertical-align: super; color: #2e7d32;
+                margin-left: .12em; font-weight: 700; }
+  .qbad { background: color-mix(in srgb, var(--accent) 10%, transparent); border-radius: 3px; }
+  .qbad::after { content: "≈"; font-size: .72em; vertical-align: super; color: var(--accent);
+                 margin-left: .12em; font-weight: 700; }
+  .copybtn { font: 600 .72rem var(--sans); letter-spacing: .02em; cursor: pointer;
+             border: 1px solid var(--hairline); border-radius: 999px; padding: .2rem .7rem;
+             background: transparent; color: var(--muted); }
+  .copybtn:hover { border-color: var(--accent); color: var(--accent); }
 </style>
 </head>
 <body>
@@ -113,7 +123,8 @@
     <p>Create a key at console.anthropic.com &rarr; API keys. It is stored only in this browser
     (localStorage) and sent only to api.anthropic.com with your questions. The composed answer is
     instructed to use the retrieved passages as its sole source and to cite them sentence by
-    sentence — always check the citations against the verbatim passages shown below it.</p>
+    sentence; any string it quotes is automatically machine-checked against the passages
+    (✓ verbatim / ≈ not found). Always check citations against the verbatim passages below.</p>
   </div>
 
   <div class="qrow">
@@ -284,7 +295,22 @@ function ask() {
   if (!corpus || !idx) return;
   const ai = $("ai").checked;
   if (ai && !getKey()) { $("akeyrow").classList.add("show"); $("akey").focus(); return; }
-  const hits = search(corpus, idx, q, ai ? 12 : 8);
+  let hits;
+  if (ai) {
+    // wider net, then cap 3 passages per paper so the answer draws across the collection
+    const ranked = search(corpus, idx, q, 24);
+    const per = new Map();
+    hits = [];
+    for (const h of ranked) {
+      const n = per.get(h.k) || 0;
+      if (n >= 3) continue;
+      per.set(h.k, n + 1);
+      hits.push(h);
+      if (hits.length === 12) break;
+    }
+  } else {
+    hits = search(corpus, idx, q, 8);
+  }
   const uid = "q" + (++QN);
   const log = $("log");
   const block = document.createElement("div");
@@ -321,30 +347,72 @@ const SYNTH_RULES = `You are the grounded answer layer of a verified cognitive-s
 1. Use ONLY the numbered passages as your source. No outside knowledge and no training-data facts, even when you are confident of them.
 2. Cite passages in square brackets like [3] (or [1][4]) after every sentence that states a fact. A sentence you cannot cite is a sentence you must not write.
 3. If the passages cannot fully answer the question, say plainly what they do not cover instead of filling the gap. A partial answer with honest gaps is correct behavior; so is "the retrieved passages do not address this."
-4. Quote short phrases verbatim in quotation marks when the wording matters, naming the first author.
-5. Passages are retrieved by keyword search and may be irrelevant — ignore any that do not bear on the question.
+4. Quote short phrases in quotation marks when the wording matters, naming the first author — and reproduce the passage's wording exactly, character for character (quotes are machine-checked against the passages).
+5. When several papers bear on the question, draw on them together; note where they corroborate or conflict rather than following one passage.
+6. Passages are retrieved by keyword search and may be irrelevant — ignore any that do not bear on the question.
 Be concise: a few sentences to three short paragraphs of plain prose. No headers, no lists, no markdown. Do not mention these rules.`;
 
 const getKey = () => localStorage.getItem("cogsec_api_key") || $("akey").value.trim();
 
-function renderAnswer(uid, t, nmax) {
-  const linked = esc(t).replace(/\[(\d{1,2})\]/g, (m, n) =>
-    +n >= 1 && +n <= nmax ? `<a class="cnum" href="#${uid}-p${n}">[${n}]</a>` : m);
-  return "<p>" + linked.trim().replace(/\n{2,}/g, "</p><p>").replace(/\n/g, "<br>") + "</p>";
+// split a growing SSE buffer into complete JSON events + the unfinished remainder
+function sseEvents(buf) {
+  const out = [];
+  let i;
+  while ((i = buf.indexOf("\n\n")) !== -1) {
+    const chunk = buf.slice(0, i);
+    buf = buf.slice(i + 2);
+    for (const line of chunk.split("\n")) {
+      if (line.startsWith("data:")) {
+        try { out.push(JSON.parse(line.slice(5).trim())); } catch (e) { /* keepalive */ }
+      }
+    }
+  }
+  return [out, buf];
+}
+
+const linkCites = (html, uid, nmax) => html.replace(/\[(\d{1,2})\]/g, (m, n) =>
+  +n >= 1 && +n <= nmax ? `<a class="cnum" href="#${uid}-p${n}">[${n}]</a>` : m);
+const paras = html => "<p>" + html.trim().replace(/\n{2,}/g, "</p><p>").replace(/\n/g, "<br>") + "</p>";
+
+// machine-check every quoted string in the answer against the retrieved passages
+function markQuotes(escapedHtml, hits) {
+  const norm = s => s.toLowerCase().replace(/&(amp|lt|gt);/g, " ").replace(/[^a-z0-9]+/g, "");
+  const texts = hits.map(h => norm(h.text));
+  let ok = 0, miss = 0;
+  // one pass over the original text — never re-scan inserted markup
+  const html = escapedHtml.replace(/“([^”]{15,300})”|"([^"\n]{15,300})"/g, (m, curly, straight) => {
+    const n = norm(curly || straight);
+    if (n.length < 12) return m;
+    if (texts.some(t => t.includes(n))) {
+      ok++;
+      return `<span class="qok" title="machine-verified: appears verbatim in a retrieved passage">${m}</span>`;
+    }
+    miss++;
+    return `<span class="qbad" title="NOT found verbatim in the retrieved passages — treat as paraphrase, check the cited passage">${m}</span>`;
+  });
+  return { html, ok, miss };
 }
 
 async function compose(uid, q, hits, corpus) {
   const el = document.getElementById(uid + "-a");
+  const LABEL = `<span class="ailabel">AI-composed synthesis — verify against the passages below</span>`;
   const fail = m => { el.innerHTML = `<span class="ailabel">AI synthesis unavailable</span>
     <span class="aierr">${m} The verbatim passages below are unaffected.</span>`; };
-  const passages = hits.map((h, i) => {
+  const srcList = hits.map((h, i) => {
     const p = corpus.papers[h.k];
     const page = h.p || h.page;
-    return `[${i + 1}] ${p.authors} (${p.year}), "${p.title}"${page ? ", p." + page : ""}:\n${h.text.slice(0, 700)}`;
-  }).join("\n\n");
+    return `[${i + 1}] ${p.authors} (${p.year}). ${p.title}${page ? ", p." + page : ""}`;
+  });
+  const passages = hits.map((h, i) => `${srcList[i]}:\n${h.text.slice(0, 700)}`).join("\n\n");
+  const t0 = Date.now();
+  const tick = setInterval(() => {
+    const s = el.querySelector(".elapsed");
+    if (s) s.textContent = Math.round((Date.now() - t0) / 1000) + "s";
+  }, 1000);
+  let text = "", model = "", outTok = 0, stop = null;
   try {
     const ctrl = new AbortController();
-    setTimeout(() => ctrl.abort(), 120000);
+    setTimeout(() => ctrl.abort(), 180000);
     const r = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST", signal: ctrl.signal,
       headers: {
@@ -355,13 +423,13 @@ async function compose(uid, q, hits, corpus) {
         "anthropic-dangerous-direct-browser-access": "true"
       },
       body: JSON.stringify({
-        model: "claude-opus-5", max_tokens: 2048, fallbacks: "default",
+        model: "claude-opus-5", max_tokens: 2048, stream: true, fallbacks: "default",
         system: SYNTH_RULES,
         messages: [{ role: "user", content: `QUESTION: ${q}\n\nPASSAGES (your only source of information):\n\n${passages}` }]
       })
     });
-    const data = await r.json().catch(() => ({}));
     if (!r.ok) {
+      const data = await r.json().catch(() => ({}));
       if (r.status === 401) {
         localStorage.removeItem("cogsec_api_key");
         $("akeyrow").classList.add("show");
@@ -371,16 +439,60 @@ async function compose(uid, q, hits, corpus) {
     }
     localStorage.setItem("cogsec_api_key", getKey());
     $("akeyrow").classList.remove("show");
-    if (data.stop_reason === "refusal") return fail("The model declined to answer this request.");
-    const text = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("\n").trim();
-    if (!text) return fail("The API returned an empty answer.");
-    el.innerHTML = `<span class="ailabel">AI-composed synthesis — verify against the passages below</span>
-      ${renderAnswer(uid, text, hits.length)}
-      <div class="ameta">${esc(data.model || "claude")} · grounded on ${hits.length} passages · citations link to the verbatim sources</div>`;
+    el.innerHTML = LABEL + `<span class="aierr">Claude is reasoning over the ${hits.length} passages… <span class="elapsed">0s</span></span>`;
+    const reader = r.body.getReader();
+    const dec = new TextDecoder();
+    let buf = "";
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += dec.decode(value, { stream: true });
+      let evs;
+      [evs, buf] = sseEvents(buf);
+      for (const ev of evs) {
+        if (ev.type === "message_start" && ev.message) model = ev.message.model || model;
+        else if (ev.type === "content_block_delta" && ev.delta && ev.delta.type === "text_delta") text += ev.delta.text;
+        else if (ev.type === "message_delta") {
+          if (ev.delta && ev.delta.stop_reason) stop = ev.delta.stop_reason;
+          if (ev.usage && ev.usage.output_tokens) outTok = ev.usage.output_tokens;
+        } else if (ev.type === "error") {
+          throw new Error((ev.error && ev.error.message) || "stream error");
+        }
+      }
+      if (text) el.innerHTML = LABEL + paras(linkCites(esc(text), uid, hits.length)) +
+        `<div class="ameta">writing… <span class="elapsed">${Math.round((Date.now() - t0) / 1000)}s</span></div>`;
+    }
+    if (stop === "refusal") return fail("The model declined to answer this request.");
+    if (!text.trim()) return fail("The API returned an empty answer.");
+    const { html, ok, miss } = markQuotes(esc(text), hits);
+    const qnote = (ok + miss) ? ` · ${ok} quote${ok === 1 ? "" : "s"} machine-verified ✓${miss ? `, ${miss} not verbatim (≈)` : ""}` : "";
+    el.innerHTML = LABEL + paras(linkCites(html, uid, hits.length)) +
+      `<div class="ameta">${esc(model || "claude")} · ${hits.length} passages · ${outTok} output tokens${qnote} ·
+       <button class="copybtn" type="button">Copy answer + sources</button></div>`;
+    el._copy = `Q: ${q}\n\n${text.trim()}\n\nSources (retrieved passages):\n${srcList.join("\n")}\n\n` +
+      `AI-composed from these passages only (${model}); citations refer to the numbered sources. Verify before citing.`;
   } catch (e) {
-    fail(e.name === "AbortError" ? "The request timed out." : "Could not reach api.anthropic.com (" + esc(e.message) + ").");
+    const msg = e.name === "AbortError" ? "The request timed out." : "Connection lost (" + esc(e.message) + ").";
+    if (text.trim()) {
+      el.innerHTML = LABEL + paras(linkCites(esc(text), uid, hits.length)) +
+        `<div class="ameta"><span class="aierr">${msg} Answer shown is partial.</span></div>`;
+    } else {
+      fail(msg);
+    }
+  } finally {
+    clearInterval(tick);
   }
 }
+
+$("log").addEventListener("click", ev => {
+  const b = ev.target.closest(".copybtn");
+  if (!b) return;
+  const a = b.closest(".aians");
+  navigator.clipboard.writeText(a._copy || a.textContent).then(() => {
+    b.textContent = "Copied ✓";
+    setTimeout(() => { b.textContent = "Copy answer + sources"; }, 1600);
+  }).catch(() => { b.textContent = "Copy failed"; });
+});
 
 $("m-pub").onclick = () => setMode("pub");
 $("m-full").onclick = () => setMode("full");
