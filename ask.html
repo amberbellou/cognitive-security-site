@@ -152,8 +152,21 @@ const STOP = new Set(("a an and are as at be but by for from has have how in is 
  + "that the to was were what when where which who will with do does did not this these those "
  + "can could should would may might we you they i he she").split(" "));
 
+// Light stemmer: folds plurals/verb forms, then truncates long Latinate words
+// so families like sycophancy/sycophantic or anthropomorphism/anthropomorphic
+// share one index term. Applied identically at index time and query time.
+function stem(w) {
+  if (w.length > 5 && w.endsWith("ies")) w = w.slice(0, -3) + "y";
+  else if (w.length > 4 && w.endsWith("es") && !w.endsWith("sses")) w = w.slice(0, -2);
+  else if (w.length > 3 && w.endsWith("s") && !/(ss|us|is)$/.test(w)) w = w.slice(0, -1);
+  if (w.length > 6 && w.endsWith("ing")) w = w.slice(0, -3);
+  else if (w.length > 5 && w.endsWith("ed")) w = w.slice(0, -2);
+  else if (w.length > 5 && w.endsWith("ly")) w = w.slice(0, -2);
+  return w.length > 8 ? w.slice(0, 8) : w;
+}
 function tokenize(s) {
-  return s.toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length > 1 && !STOP.has(w));
+  return s.toLowerCase().split(/[^a-z0-9]+/)
+    .filter(w => w.length > 1 && !STOP.has(w)).map(stem);
 }
 
 function buildIndex(corpus) {
@@ -403,7 +416,13 @@ async function compose(uid, q, hits, corpus) {
     const page = h.p || h.page;
     return `[${i + 1}] ${p.authors} (${p.year}). ${p.title}${page ? ", p." + page : ""}`;
   });
-  const passages = hits.map((h, i) => `${srcList[i]}:\n${h.text.slice(0, 700)}`).join("\n\n");
+  const cut = t => {  // cut at a sentence boundary so quotes stay checkable
+    if (t.length <= 700) return t;
+    const s = t.slice(0, 700);
+    const i = Math.max(s.lastIndexOf(". "), s.lastIndexOf("? "), s.lastIndexOf("! "));
+    return i > 300 ? s.slice(0, i + 1) : s;
+  };
+  const passages = hits.map((h, i) => `${srcList[i]}:\n${cut(h.text)}`).join("\n\n");
   const t0 = Date.now();
   const tick = setInterval(() => {
     const s = el.querySelector(".elapsed");
