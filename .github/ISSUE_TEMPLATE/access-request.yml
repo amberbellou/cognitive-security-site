@@ -1,0 +1,33 @@
+name: Request access to the PDF collection
+description: Ask to be added as a read collaborator on the private cognitive-security-research repository (full papers + extraction records).
+title: "Access request: your-github-username"
+labels: [access-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Requests are reviewed by the maintainer, who adds approved requesters as
+        read collaborators on the private repository. **Note: issues are publicly
+        visible** — share only what you are comfortable posting.
+  - type: input
+    id: username
+    attributes:
+      label: GitHub username
+      description: The account to invite (also put it in the issue title)
+      placeholder: octocat
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Name and affiliation
+      placeholder: Jane Doe — Harvard University
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Intended use (optional)
+      placeholder: e.g., study design on sycophancy and trust calibration
+    validations:
+      required: false
