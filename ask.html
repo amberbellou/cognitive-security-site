@@ -52,6 +52,9 @@
     border: 1px solid var(--gold); border-radius: 12px; background: var(--quote-bg);
     padding: .8rem 1.1rem; font-size: .88rem; color: var(--muted); margin: 0 0 1.6rem;
   }
+  details summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+  details { margin-top: .3rem; }
+  details[open] summary { margin-bottom: .35rem; }
   .aitoggle { display: flex; align-items: baseline; gap: .55rem; margin: 0 0 1.2rem;
               font-size: .88rem; color: var(--muted); cursor: pointer; }
   .aitoggle input { accent-color: var(--accent); transform: translateY(1px); }
@@ -86,21 +89,19 @@
 
   <header>
     <h1>Ask the Evidence</h1>
-    <p class="sub">Ask a question; get back the exact passages from the collection that address it,
-    each with its source, year, and page. By default this is verbatim retrieval — <b>no AI writes
-    the answers</b>, so nothing can be made up. Optionally, switch on <b>AI synthesis</b> to have
-    Claude compose an answer <em>from the retrieved passages only</em>, every sentence cited back
-    to the verbatim passage it came from. For the curated cross-paper argument, see the
-    <a href="synthesis.html">Synthesis</a> page.</p>
+    <p class="sub">Type a question, get the exact passages from the collection that address it —
+    with source, year, and page. Optionally, let AI compose a cited answer from those passages.</p>
   </header>
 
-  <div class="guarantee">Every retrieved passage below is a verbatim string from the corpus — either
-  a machine-verified quote from a paper (with page number) or curated metadata from the catalog.
-  Retrieval is ranked keyword search (BM25) running entirely in your browser; in the default modes
-  your questions never leave it. If you switch on AI synthesis, your question and the retrieved
-  passages (nothing else) are sent to Anthropic&rsquo;s API with your own key; the composed answer
-  is labeled as AI-written and must cite the verbatim passages, which are always displayed for
-  checking.</div>
+  <div class="guarantee">Retrieved passages are verbatim from the papers — nothing here is made up.
+  <details><summary>Full guarantees</summary>Every retrieved passage is a verbatim string from the
+  corpus — either a machine-verified quote from a paper (with page number) or curated metadata from
+  the catalog. Retrieval is ranked keyword search running entirely in your browser; in the default
+  modes your questions never leave it. If you switch on AI synthesis, your question and the
+  retrieved passages (nothing else) are sent to Anthropic&rsquo;s API with your own key; the
+  composed answer is labeled as AI-written, must cite the verbatim passages (always displayed for
+  checking), and any string it quotes is machine-checked against them (✓ verbatim / ≈ not
+  found).</details></div>
 
   <div class="modes">
     <button id="m-pub" class="on">Verified evidence (public)</button>
@@ -115,16 +116,17 @@
   </div>
 
   <label class="aitoggle"><input type="checkbox" id="ai">
-    <span><b>AI synthesis</b> — compose an answer from the retrieved passages (optional; uses your
-    own Anthropic API key, roughly a few cents per question)</span></label>
+    <span><b>AI synthesis</b> — add a composed, citation-checked answer above the passages
+    (needs your own Anthropic API key)</span></label>
 
   <div class="unlock" id="akeyrow">
     <input id="akey" type="password" placeholder="Anthropic API key (sk-ant-…)">
-    <p>Create a key at console.anthropic.com &rarr; API keys. It is stored only in this browser
-    (localStorage) and sent only to api.anthropic.com with your questions. The composed answer is
-    instructed to use the retrieved passages as its sole source and to cite them sentence by
-    sentence; any string it quotes is automatically machine-checked against the passages
-    (✓ verbatim / ≈ not found). Always check citations against the verbatim passages below.</p>
+    <p>Stored only in this browser; sent only to api.anthropic.com. Answers cite the passages
+    sentence-by-sentence and quotes are machine-checked (✓&thinsp;/&thinsp;≈).
+    <details><summary>How to get a key &amp; details</summary>Create one at console.anthropic.com
+    &rarr; API keys (a question costs roughly a few cents on your account). The answer is
+    instructed to use the retrieved passages as its sole source; always check its citations
+    against the verbatim passages shown below it.</details></p>
   </div>
 
   <div class="qrow">
@@ -307,7 +309,8 @@ function ask() {
   const idx = S.mode === "pub" ? S.pubIdx : S.fullIdx;
   if (!corpus || !idx) return;
   const ai = $("ai").checked;
-  if (ai && !getKey()) { $("akeyrow").classList.add("show"); $("akey").focus(); return; }
+  const needKey = ai && !getKey();
+  if (needKey) $("akeyrow").classList.add("show");  // never block the search itself
   let hits;
   if (ai) {
     // wider net, then cap 3 passages per paper so the answer draws across the collection
@@ -333,8 +336,12 @@ function ask() {
              (the search is keyword-based, so use words the papers would use).</p>`;
   }
   if (ai && hits.length) {
-    html += `<div class="aians" id="${uid}-a"><span class="ailabel">AI-composed synthesis — verify against the passages below</span>
-             <span class="aierr">Composing a grounded answer from ${hits.length} retrieved passages…</span></div>`;
+    html += needKey
+      ? `<div class="aians" id="${uid}-a"><span class="ailabel">AI synthesis needs your API key</span>
+         <span class="aierr">Paste your Anthropic key above (or untick AI synthesis). Meanwhile, the
+         verbatim passages for your question are right below.</span></div>`
+      : `<div class="aians" id="${uid}-a"><span class="ailabel">AI-composed synthesis — verify against the passages below</span>
+         <span class="aierr">Composing a grounded answer from ${hits.length} retrieved passages…</span></div>`;
   }
   hits.forEach((h, i) => {
     const paper = corpus.papers[h.k];
@@ -351,7 +358,7 @@ function ask() {
   });
   block.innerHTML = html;
   log.prepend(block);
-  if (ai && hits.length) compose(uid, q, hits, corpus);
+  if (ai && hits.length && !needKey) compose(uid, q, hits, corpus);
   $("q").select();
 }
 
