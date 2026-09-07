@@ -13,7 +13,7 @@
 <main>
 <nav class="top"><span class="wordmark">Cognitive Security &amp; AI</span><a href="index.html">Paper Index</a><a href="threats.html" class="here">Threat Map</a><a href="synthesis.html">Synthesis</a><a href="framework.html">Research Framework</a><a href="ask.html">Ask the Evidence</a><a href="about.html">About</a></nav>
 <h1>Cognitive Security Threat Map</h1>
-<p class="sub">Five threat classes against human cognition, built from 106 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
+<p class="sub">Five threat classes against human cognition, built from 116 papers. Every claim is anchored to a verbatim quote with page number, mechanically verified against the source PDF (see <a class="cite" href="synthesis.html#method">methodology</a>).</p>
 <div class="toc"><a class="chip" href="#T1"><b>T1</b> Attacks on Belief Formation</a><a class="chip" href="#T2"><b>T2</b> Erosion of Cognitive Capability</a><a class="chip" href="#T3"><b>T3</b> Miscalibrated Trust &amp; Reliance</a><a class="chip" href="#T4"><b>T4</b> Exploitation of Emotional &amp; Relational Cognition</a><a class="chip" href="#T5"><b>T5</b> Cognitive Warfare (Adversarial &amp; Societal Scale)</a></div>
 <h2 id="T1"><span class="tcode">T1</span>Attacks on Belief Formation</h2>
 <p class="tdesc">Threats that corrupt what people come to believe — not by breaking the machine, but by exploiting how human belief updating works.</p>
@@ -161,6 +161,22 @@
 <p class="claim">▸ Reframes sycophancy from engagement flaw to multi-functional mechanism.</p>
 <blockquote>“This paper reframes sycophancy from a problematic form of engagement to a multi-functional me” <span class="pg">— p.1, verified</span></blockquote>
 <p class="limits">Limitations: Theory; empirical operationalization open.</p>
+</article>
+<article class="card" id="celebi2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Celebi2025_PARROT_SycophancyRobustnessBenchmark.pdf" target="_blank" rel="noopener">PARROT: Persuasion and Agreement Robustness Rating of Output Truth — A Sycophancy Robustness Benchmark for LLMs</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">Çelebi Y, Ezerceli Ö, El Hussieni M · 2025 · Cross-model sycophancy robustness benchmark (arXiv) · <a href="https://doi.org/10.48550/arxiv.2511.17220" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Accuracy degrades under social pressure differently across models.</p>
+<blockquote>“Section 2 reviews related work on sycophancy measurement and mechanisms.” <span class="pg">— p.2, verified</span></blockquote>
+<div class="prot"><b>Protection — Robustness rating before deployment:</b> Model-by-model sycophancy scores make pressure-resistance a selectable property.</div>
+<p class="limits">Limitations: Benchmark scope; preprint.</p>
+</article>
+<article class="card" id="openai2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/OpenAI2025_ExpandingOnWhatWeMissedWithSycophancy.pdf" target="_blank" rel="noopener">Expanding on what we missed with sycophancy</a><span class="badge" title="Position paper">POS</span></h4>
+<p class="meta">OpenAI · 2025 · Vendor incident postmortem of the April 2025 GPT-4o update and rollback (OpenAI, grey literature)</p>
+<p class="claim">▸ A routine model update materially increased sycophancy and shipped past all evaluations.</p>
+<blockquote>“On April 25th, we rolled out an update to GPT-4o in ChatGPT that made the model noticeably more sycophantic.” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Sycophancy evals as launch-blocking:</b> OpenAI committed to treating behavior issues as blocking concerns and integrating sycophancy evaluations into deployment.</div>
+<p class="limits">Limitations: Self-reported vendor account; archival web copy in this collection.</p>
 </article>
 <article class="card" id="xiao2026">
 <h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/sycophancy/Xiao2026_WhenCorrectBeliefsCollapse.pdf" target="_blank" rel="noopener">When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure</a><span class="badge" title="Experimental evidence">EXP</span></h4>
@@ -837,6 +853,72 @@
 <div class="prot"><b>Protection — Psychogenicity benchmarking:</b> psychosis-bench quantifies delusion confirmation and harm enablement pre-deployment.</div>
 <p class="limits">Limitations: Simulated personas, not patients; preprint.</p>
 </article>
+<h3 id="T4c"><span class="tcode">T4c</span>Acute clinical harm &amp; crisis response</h3>
+<p class="tdesc">Chatbots reinforce delusions in vulnerable users and mishandle crisis — and models differ measurably</p>
+<article class="card" id="ostergaard2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/clinical-harms/Ostergaard2025_GenAIChatbotsDelusions_GuessworkToCases.pdf" target="_blank" rel="noopener">Generative Artificial Intelligence Chatbots and Delusions: From Guesswork to Emerging Cases</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Østergaard S D · 2025 · Invited editorial reviewing emerging cases (Acta Psychiatrica Scandinavica) · <a href="https://doi.org/10.1111/acps.70022" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ The 2023 hypothesis that chatbots fuel delusions now has emerging case evidence.</p>
+<blockquote>“delusions | generative artificial intelligence | schizophrenia When I proposed the hypothesis that generative artificial intelligence chatbots (chatbots hereafter) might trigger delusions in individuals prone to psychosis in August 2023 [ 1], I was venturing into unknown territory.” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Clinical vigilance:</b> Psychiatrists should ask patients about chatbot use when delusional themes involve AI.</div>
+<p class="limits">Limitations: Editorial; case evidence anecdotal at this stage.</p>
+</article>
+<article class="card" id="olisaeloka2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/clinical-harms/Olisaeloka2026_AIPsychosis_MechanismsClinicalRisks.pdf" target="_blank" rel="noopener">Artificial intelligence (AI) psychosis: mechanisms, clinical risks and safety considerations in generative AI chatbots</a><span class="badge" title="Conceptual/theoretical">CON</span></h4>
+<p class="meta">Olisaeloka L, Nunez J-J, Vigo D V, Ng R · 2026 · Mechanistic commentary (BJPsych Open)</p>
+<p class="claim">▸ Sycophancy and hallucination interact with user vulnerability to produce delusional ideation.</p>
+<blockquote>“Vigo and Raymond Ng Summary As generative artificial intelligence chatbots become embedded in everyday life, concerns about their psychological risks are growing.” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Safety considerations for chatbot design:</b> Names concrete design levers — sycophancy reduction, reality-testing prompts, crisis routing.</div>
+<p class="limits">Limitations: Commentary; mechanism awaits direct empirical test.</p>
+</article>
+<article class="card" id="bergson2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/clinical-harms/Bergson2026_CharacterizingAIPsychosis_MedicalSetting.pdf" target="_blank" rel="noopener">Characterizing artificial intelligence (AI) psychosis in a large academic medical setting: evidence of the new clinical phenomenon and the vulnerability of those in early phases of psychosis</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<p class="meta">Bergson Z, Vassall S G, Wright A, McCoy A B, Schafer K M, Achee M C, Sheffield J M · 2026 · Systematic characterization of cases in a large academic medical center (medRxiv preprint) · <a href="https://doi.org/10.64898/2026.06.04.26354939" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ AI-associated psychosis is clinically observable; early-phase patients are most vulnerable.</p>
+<blockquote>“evidence of the new clinical phenomenon and the vulnerability of those in early phases of psychosis Zachary Bergson, PhD1, Sarah G.” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Clinical screening for AI use:</b> Characterizing the phenomenon enables psychiatric intake to ask about chatbot use in early psychosis.</div>
+<p class="limits">Limitations: Preprint; single center; causality not established.</p>
+</article>
+<article class="card" id="olsen2026">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/clinical-harms/Olsen2026_HarmfulChatbotUse_PsychiatricPatients.pdf" target="_blank" rel="noopener">Potentially Harmful Consequences of Artificial Intelligence (AI) Chatbot Use Among Patients With Mental Illness: Early Data From a Large Psychiatric Service System</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<p class="meta">Olsen S G, et al. · 2026 · Chart review across a large psychiatric service system (Acta Psychiatrica Scandinavica research letter) · <a href="https://doi.org/10.1111/acps.70068" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Documented harmful chatbot impacts in psychiatric patients: delusions, suicidality, self-harm.</p>
+<blockquote>“While the large language model technology underlying these tools may have a huge potential for societies at large, concerns—and substantial anecdotal evidence [2]—have risen over the possibility that use of AI chatbots may be harmful for people prone to mental illness [3–5].” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Service-system surveillance:</b> Clinical-notes screening makes chatbot-related harm measurable at the health-system level.</div>
+<p class="limits">Limitations: Early data; documentation bias; no denominator of unharmed users.</p>
+</article>
+<article class="card" id="pierre2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/clinical-harms/Pierre2025_YoureNotCrazy_NewOnsetAIAssociatedPsychosis.pdf" target="_blank" rel="noopener">“You’re Not Crazy”: A Case of New-onset AI-associated Psychosis</a><span class="badge" title="Observational/survey evidence">OBS</span></h4>
+<p class="meta">Pierre J M, Gaeta B, Raghavan G, Sarma K V · 2025 · UCSF clinical case report (Innovations in Clinical Neuroscience)</p>
+<p class="claim">▸ New-onset psychosis emerging in the context of AI chatbot interaction.</p>
+<blockquote>“Anecdotal reports of psychosis emerging in the context of artificial intelligence (AI) chatbot use have been increasingly reported in the media.” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Chat-log review in clinical assessment:</b> Reviewing the actual AI conversation gives clinicians direct evidence of the reinforcement dynamic.</div>
+<p class="limits">Limitations: Single case; archival web copy in this collection.</p>
+</article>
+<article class="card" id="kumari2026">
+<h4>Chatbot psychosis: moving beyond recognition to mechanistic understanding and harm reduction<span class="badge" title="Position paper">POS</span></h4>
+<p class="meta">Kumari V, Otermans P C J · 2026 · Editorial (British Journal of Psychiatry)</p>
+<p class="claim">▸ Chatbot psychosis is recognized; the field lacks mechanism and harm-reduction frameworks.</p>
+<blockquote>“Otermans Summary The chatbot psychosis phenomenon is no longer just a hypothesis.” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Interdisciplinary harm-reduction frameworks:</b> Agenda-setting for the mechanism-to-intervention pipeline.</div>
+<p class="limits">Limitations: Editorial; agenda rather than evidence.</p>
+</article>
+<article class="card" id="mcbain2025">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/clinical-harms/McBain2025_LLMCliniciansSuicideRiskAlignment.pdf" target="_blank" rel="noopener">Evaluation of Alignment Between Large Language Models and Expert Clinicians in Suicide Risk Assessment</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">McBain R K, Cantor J H, Zhang L A, Baker O, Zhang F, Burnett A, Kofner A, Breslau J, et al. · 2025 · 30 suicide-related queries risk-rated by 13 clinicians; ChatGPT, Claude, Gemini responses compared (RAND/Harvard) · <a href="https://doi.org/10.1176/appi.ps.20250086" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Chatbots mishandle intermediate suicide risk and differ from each other in crisis response.</p>
+<blockquote>“LLM-based chatbots did not meaningfully distinguish intermediate risk levels.” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Clinician-anchored response benchmarking:</b> Expert risk ratings give a deployable standard for auditing chatbot crisis behavior across models.</div>
+<p class="limits">Limitations: Hypothetical queries; three chatbots at one time point; response ≠ user outcome.</p>
+</article>
+<article class="card" id="mcbain2025b">
+<h4><a href="https://github.com/amberbellou/cognitive-security-research/blob/main/papers/clinical-harms/McBain2025_LLMCompetencySuicidalIdeation_SIRI2.pdf" target="_blank" rel="noopener">Competency of Large Language Models in Evaluating Appropriate Responses to Suicidal Ideation: Comparative Study</a><span class="badge" title="Experimental evidence">EXP</span></h4>
+<p class="meta">McBain R K, Cantor J H, Zhang L A, Baker O, Zhang F, Halbisen A, Kofner A, Breslau J, Stein B, Mehrotra A · 2025 · Cross-sectional comparative study against professional benchmarks (JMIR) · <a href="https://doi.org/10.2196/67891" target="_blank" rel="noopener" style="color:var(--accent)">DOI</a></p>
+<p class="claim">▸ Crisis-response competence varies sharply by model — user harm risk depends on which AI they reach.</p>
+<blockquote>“Claude produced an SIRI-2 score of 36.7, exceeding prior performance of mental health professionals after suicide intervention skills training.” <span class="pg">— p.1, verified</span></blockquote>
+<div class="prot"><b>Protection — Standardized clinical instruments for model audit:</b> Existing clinical competency scales (SIRI-2) transfer directly to AI evaluation, enabling model-to-model comparison.</div>
+<p class="limits">Limitations: Single instrument; scores vs trained humans from prior samples; no live users.</p>
+</article>
 <h2 id="T5"><span class="tcode">T5</span>Cognitive Warfare (Adversarial &amp; Societal Scale)</h2>
 <p class="tdesc">Deliberate, organized exploitation of all of the above by strategic actors — cognition as an operational domain.</p>
 <h3 id="T5a"><span class="tcode">T5a</span>Doctrine &amp; threat landscape</h3>
@@ -955,7 +1037,7 @@
 <div class="prot"><b>Protection — Continuous multimodal biometrics + adjustable autonomy:</b> Devices recognize owners the way humans recognize each other and make human-like security decisions.</div>
 <p class="limits">Limitations: Pre-AI-era (2008); device-security sense of the term, distinct from influence-defense usage.</p>
 </article>
-<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 106 papers, 2026-09-04. PDF links open the private repository: a GitHub 404 means you are not signed in as an invited collaborator (GitHub's privacy mask, not a missing file) — sign in, or <a href="about.html">request access</a>.</footer>
+<footer>Generated from verified extraction records — <code>analysis/records/</code> in the source repository. Badges: EXP experimental · OBS observational · REV review · CON conceptual · POS position. Version: 116 papers, 2026-09-07. PDF links open the private repository: a GitHub 404 means you are not signed in as an invited collaborator (GitHub's privacy mask, not a missing file) — sign in, or <a href="about.html">request access</a>.</footer>
 </main>
 </body>
 </html>
