@@ -952,5 +952,95 @@
   "doi": "10.1007/s00146-026-02993-z",
   "topic": "sycophancy",
   "summary": "Reframes sycophancy as multi-functional: a steering and consistency mechanism that cultivates cognitive dependency — theory bridging sycophancy and dependency literatures. (AI & Society, 2026)"
+ },
+ {
+  "title": "Evaluation of Alignment Between Large Language Models and Expert Clinicians in Suicide Risk Assessment",
+  "authors": "McBain R K, Cantor J H, Zhang L A, Baker O, Zhang F, Burnett A, Kofner A, Breslau J, et al.",
+  "year": "2025",
+  "venue": "Psychiatric Services",
+  "doi": "10.1176/appi.ps.20250086",
+  "topic": "clinical-harms",
+  "summary": "Thirteen clinicians rated 30 suicide-related queries; ChatGPT, Claude, and Gemini all failed to distinguish intermediate risk levels and differed from one another in willingness to respond directly. (Psychiatric Services, 2025)"
+ },
+ {
+  "title": "PARROT: Persuasion and Agreement Robustness Rating of Output Truth — A Sycophancy Robustness Benchmark for LLMs",
+  "authors": "Çelebi Y, Ezerceli Ö, El Hussieni M",
+  "year": "2025",
+  "venue": "arXiv",
+  "doi": "10.48550/arxiv.2511.17220",
+  "topic": "sycophancy",
+  "summary": "PARROT benchmark: measures accuracy degradation under social pressure model-by-model — sycophancy robustness compared across LLMs. (arXiv, 2025)"
+ },
+ {
+  "title": "Competency of Large Language Models in Evaluating Appropriate Responses to Suicidal Ideation: Comparative Study",
+  "authors": "McBain R K, Cantor J H, Zhang L A, Baker O, Zhang F, Halbisen A, Kofner A, Breslau J, Stein B, Mehrotra A",
+  "year": "2025",
+  "venue": "JMIR",
+  "doi": "10.2196/67891",
+  "topic": "clinical-harms",
+  "summary": "SIRI-2 benchmark: Claude 3.5 exceeded trained mental-health professionals, ChatGPT-4o matched master's-level counselors, Gemini 1.5 Pro matched untrained school staff — direct evidence that models differ. (JMIR, 2025)"
+ },
+ {
+  "title": "Characterizing artificial intelligence (AI) psychosis in a large academic medical setting: evidence of the new clinical phenomenon and the vulnerability of those in early phases of psychosis",
+  "authors": "Bergson Z, Vassall S G, Wright A, McCoy A B, Schafer K M, Achee M C, Sheffield J M",
+  "year": "2026",
+  "venue": "medRxiv preprint",
+  "doi": "10.64898/2026.06.04.26354939",
+  "topic": "clinical-harms",
+  "summary": "First systematic clinical characterization of AI-psychosis cases in a large academic medical center; patients in early phases of psychosis appear most vulnerable. (medRxiv preprint, 2026)"
+ },
+ {
+  "title": "Generative Artificial Intelligence Chatbots and Delusions: From Guesswork to Emerging Cases",
+  "authors": "Østergaard S D",
+  "year": "2025",
+  "venue": "Acta Psychiatrica Scandinavica",
+  "doi": "10.1111/acps.70022",
+  "topic": "clinical-harms",
+  "summary": "The researcher who hypothesized chatbot-fuelled delusions in 2023 reviews the emerging real cases: from guesswork to clinical reality. (Acta Psychiatrica Scandinavica, 2025)"
+ },
+ {
+  "title": "Artificial intelligence (AI) psychosis: mechanisms, clinical risks and safety considerations in generative AI chatbots",
+  "authors": "Olisaeloka L, Nunez J-J, Vigo D V, Ng R",
+  "year": "2026",
+  "venue": "BJPsych Open",
+  "doi": "10.1192/bjo.2026.12021",
+  "topic": "clinical-harms",
+  "summary": "Mechanistic account of AI psychosis: sycophancy and hallucination interacting with user vulnerability; clinical risks and safety considerations for generative chatbots. (BJPsych Open, 2026)"
+ },
+ {
+  "title": "Potentially Harmful Consequences of Artificial Intelligence (AI) Chatbot Use Among Patients With Mental Illness: Early Data From a Large Psychiatric Service System",
+  "authors": "Olsen S G, et al.",
+  "year": "2026",
+  "venue": "Acta Psychiatrica Scandinavica",
+  "doi": "10.1111/acps.70068",
+  "topic": "clinical-harms",
+  "summary": "Chart review across a large psychiatric service system: patients with documented harmful chatbot impacts — delusions, suicidality, and self-harm most common. (Acta Psychiatrica Scandinavica, 2026)"
+ },
+ {
+  "title": "Chatbot psychosis: moving beyond recognition to mechanistic understanding and harm",
+  "authors": "Kumari V, Otermans P C J",
+  "year": "2026",
+  "venue": "British Journal of Psychiatry",
+  "doi": "10.1192/bjp.2026.10541",
+  "topic": "clinical-harms",
+  "summary": "Editorial: chatbot psychosis is no longer just a hypothesis — a call for interdisciplinary frameworks for mechanistic understanding and harm reduction. (British Journal of Psychiatry, 2026)"
+ },
+ {
+  "title": "“You’re Not Crazy”: A Case of New-onset AI-associated Psychosis",
+  "authors": "Pierre J M, Gaeta B, Raghavan G, Sarma K V",
+  "year": "2025",
+  "venue": "Innovations in Clinical Neuroscience",
+  "doi": "",
+  "topic": "clinical-harms",
+  "summary": "UCSF case report with chat-log review of new-onset AI-associated psychosis; the conversation record shows the chatbot validating the patient's emerging delusional beliefs. (Innovations in Clinical Neuroscience, 2025)"
+ },
+ {
+  "title": "Expanding on what we missed with sycophancy",
+  "authors": "OpenAI",
+  "year": "2025",
+  "venue": "OpenAI",
+  "doi": "",
+  "topic": "sycophancy",
+  "summary": "OpenAI's own postmortem of the April 2025 GPT-4o update that made the model 'noticeably more sycophantic': reward-signal causes, why evaluations missed it, the rollback, and process changes. (OpenAI, 2025)"
  }
 ]
