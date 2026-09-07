@@ -1017,7 +1017,7 @@
   "summary": "Chart review across a large psychiatric service system: patients with documented harmful chatbot impacts — delusions, suicidality, and self-harm most common. (Acta Psychiatrica Scandinavica, 2026)"
  },
  {
-  "title": "Chatbot psychosis: moving beyond recognition to mechanistic understanding and harm",
+  "title": "Chatbot psychosis: moving beyond recognition to mechanistic understanding and harm reduction",
   "authors": "Kumari V, Otermans P C J",
   "year": "2026",
   "venue": "British Journal of Psychiatry",
@@ -1042,5 +1042,50 @@
   "doi": "",
   "topic": "sycophancy",
   "summary": "OpenAI's own postmortem of the April 2025 GPT-4o update that made the model 'noticeably more sycophantic': reward-signal causes, why evaluations missed it, the rollback, and process changes. (OpenAI, 2025)"
+ },
+ {
+  "title": "Understanding Teen Overreliance on AI Companion Chatbots Through Self-Reported Reddit Narratives",
+  "authors": "Namvarpour M, Brofsky B, et al.",
+  "year": "2026",
+  "venue": "Drexel, arXiv",
+  "doi": "10.48550/arxiv.2507.15783",
+  "topic": "developmental-risks",
+  "summary": "Teens' self-reported companion-chatbot overreliance narratives from Reddit — dependency forming while cognition and boundaries are still developing. (Drexel, arXiv 2026)"
+ },
+ {
+  "title": "Emotional Manipulation by AI Companions",
+  "authors": "De Freitas J, Oğuz-Uğuralp Z, Kaan-Uğuralp A",
+  "year": "2025",
+  "venue": "Harvard Business School Working Paper 26-005",
+  "doi": "10.2139/ssrn.5390377",
+  "topic": "engagement-design",
+  "summary": "Across 1,200 real farewells on top companion apps, 37% deploy emotional-manipulation tactics at goodbye; experiments with 3,300 adults show up to 14x boosted post-goodbye engagement. (Harvard Business School Working Paper 26-005, 2025)"
+ },
+ {
+  "title": "Principles of Safe AI Companions for Youth: Parent and Expert Perspectives",
+  "authors": "Yu Y, et al.",
+  "year": "2025",
+  "venue": "Illinois/Swarthmore, arXiv",
+  "doi": "10.48550/arxiv.2510.11185",
+  "topic": "developmental-risks",
+  "summary": "Parent and expert perspectives distilled into design principles for youth-safe AI companions. (Illinois/Swarthmore, arXiv 2025)"
+ },
+ {
+  "title": "The AI Genie Phenomenon and Three Types of AI Chatbot Addiction: Escapist",
+  "authors": "Shen M K, Huang J, Liang O, Kim I-J, et al.",
+  "year": "2026",
+  "venue": "arXiv",
+  "doi": "10.48550/arxiv.2601.13348",
+  "topic": "engagement-design",
+  "summary": "Typology of chatbot addiction — escapist roleplays, pseudosocial companions, and epistemic rabbit holes: the 'AI genie' engagement dynamic. (arXiv, 2026)"
+ },
+ {
+  "title": "Dark Patterns in AI Chatbots: A Taxonomy to Inform Better Design",
+  "authors": "Joshi R, Adjagbodjou A, Luria M",
+  "year": "2026",
+  "venue": "Center for Democracy & Technology",
+  "doi": "",
+  "topic": "engagement-design",
+  "summary": "Taxonomy of chatbot dark patterns — attention-capture and social dark patterns engineered into conversational interfaces. (Center for Democracy & Technology, 2026)"
  }
 ]
