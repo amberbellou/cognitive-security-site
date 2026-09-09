@@ -457,3 +457,5 @@ footer code {
 /* arrange toggle (index impact view) */
 .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 .chip.on b { color: #fff; }
+
+.tierchip.pending { background: var(--hairline); color: var(--muted); font-style: italic; }
