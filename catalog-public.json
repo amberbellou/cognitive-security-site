@@ -1071,7 +1071,7 @@
   "summary": "Parent and expert perspectives distilled into design principles for youth-safe AI companions. (Illinois/Swarthmore, arXiv 2025)"
  },
  {
-  "title": "The AI Genie Phenomenon and Three Types of AI Chatbot Addiction: Escapist",
+  "title": "The AI Genie Phenomenon and Three Types of AI Chatbot Addiction: Escapist Roleplays, Pseudosocial Companions, and Epistemic Rabbit Holes",
   "authors": "Shen M K, Huang J, Liang O, Kim I-J, et al.",
   "year": "2026",
   "venue": "arXiv",
@@ -1087,5 +1087,95 @@
   "doi": "",
   "topic": "engagement-design",
   "summary": "Taxonomy of chatbot dark patterns — attention-capture and social dark patterns engineered into conversational interfaces. (Center for Democracy & Technology, 2026)"
+ },
+ {
+  "title": "Testing English News Articles for Lexical Homogenization Due to Widespread Use of Large Language Models",
+  "authors": "Fitterer S, Gangl D, Ulbrich J",
+  "year": "2025",
+  "venue": "ACL SRW",
+  "doi": "10.18653/v1/2025.acl-srw.95",
+  "topic": "cognitive-drift",
+  "summary": "Corpus test of English news articles for lexical homogenization attributable to widespread LLM use. (ACL SRW, 2025)"
+ },
+ {
+  "title": "Does Writing with Language Models Reduce Content Diversity?",
+  "authors": "Padmakumar V, He H",
+  "year": "2024",
+  "venue": "ICLR",
+  "doi": "10.48550/arxiv.2309.05196",
+  "topic": "cognitive-drift",
+  "summary": "Co-writing with InstructGPT (but not base GPT-3) measurably reduces lexical and content diversity of essays — the key causal design. (ICLR, 2024)"
+ },
+ {
+  "title": "The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models",
+  "authors": "Sourati Z, Karimi-Malekabadi F, Ozcan M, McDaniel C, Ziabari A, Trager J, Tak A N, Chen M, Morstatter F, Dehghani M",
+  "year": "2026",
+  "venue": "Nature Human Behaviour / arXiv",
+  "doi": "10.48550/arxiv.2502.11266",
+  "topic": "cognitive-drift",
+  "summary": "Large-scale evidence that linguistic diversity shrinks in the age of LLMs — vocabulary narrowing at population scale. (Nature Human Behaviour / arXiv, 2026)"
+ },
+ {
+  "title": "Homogenization Effects of Large Language Models on Human Creative Ideation",
+  "authors": "Anderson B R, Shah J H, Kreminski M",
+  "year": "2024",
+  "venue": "ACM Creativity & Cognition",
+  "doi": "10.48550/arxiv.2402.01536",
+  "topic": "cognitive-drift",
+  "summary": "LLM-assisted ideation raises individual idea quality while making ideas more similar across people — experimental homogenization evidence. (ACM Creativity & Cognition, 2024)"
+ },
+ {
+  "title": "Does AI Homogenize Student Thinking? A Multi-Dimensional Analysis of Structural Convergence in AI-Augmented Essays",
+  "authors": "Inoshita K, Omura M, Yamanaka T, Maeda G, Tsuji K",
+  "year": "2026",
+  "venue": "arXiv",
+  "doi": "10.48550/arxiv.2603.21228",
+  "topic": "cognitive-drift",
+  "summary": "Multi-dimensional analysis of structural convergence in AI-augmented student essays — thinking, not just wording, converges. (arXiv, 2026)"
+ },
+ {
+  "title": "The impact of generative artificial intelligence (GenAI) usage patterns on employee creativity",
+  "authors": "Li, Li",
+  "year": "2026",
+  "venue": "Frontiers in Psychology",
+  "doi": "10.3389/fpsyg.2026.1827568",
+  "topic": "cognitive-offloading",
+  "summary": "Usage patterns determine direction: some GenAI use patterns enhance, others suppress, employee creativity. (Frontiers in Psychology, 2026)"
+ },
+ {
+  "title": "From Co-Design to Metacognitive Laziness: Evaluating Generative AI in Vocational Education",
+  "authors": "Yunus A, Gay P R, Lee O T",
+  "year": "2025",
+  "venue": "NTU Singapore, arXiv",
+  "doi": "",
+  "topic": "metacognition",
+  "summary": "GenAI deployment in vocational education slides from co-design toward metacognitive laziness — passive prompting displacing active thinking. (NTU Singapore, arXiv 2025)"
+ },
+ {
+  "title": "The Impact of Generative AI Dependence on University Students’ Creativity: The Mediating Role of Critical Thinking and the Moderating Role of Thinking Orientation",
+  "authors": "Yuan F, Liu C, Yang J",
+  "year": "2026",
+  "venue": "Behavioral Sciences, MDPI",
+  "doi": "10.3390/jintelligence14080168",
+  "topic": "cognitive-offloading",
+  "summary": "GenAI dependence lowers university students' creativity, mediated by critical thinking and moderated by thinking orientation. (Behavioral Sciences, MDPI, 2026)"
+ },
+ {
+  "title": "Chatbots and human-human relationships: the need for research on potential downstream harms from generative AI",
+  "authors": "Keeler J B, Murphy B A",
+  "year": "2026",
+  "venue": "Community, Work & Family",
+  "doi": "10.1080/13668803.2026.2623500",
+  "topic": "emotional-dependency",
+  "summary": "Agenda-setting review: chatbot relationships may displace and degrade human-human relationships — naming the downstream-harms research gap. (Community, Work & Family, 2026)"
+ },
+ {
+  "title": "Therapeutic Potential of Social Chatbots in Alleviating Loneliness and Social Anxiety: Quasi-Experimental Mixed Methods Study",
+  "authors": "Kim M, Lee S, Kim S, Heo J-i, Lee S, Shin Y-B, Cho C-H, Jung D",
+  "year": "2025",
+  "venue": "JMIR",
+  "doi": "10.2196/65589",
+  "topic": "emotional-dependency",
+  "summary": "Quasi-experimental evidence that social chatbots can alleviate loneliness and social anxiety — the helps direction, with limits. (JMIR, 2025)"
  }
 ]
